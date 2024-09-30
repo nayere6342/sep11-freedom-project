@@ -4,7 +4,7 @@
 
 ## Project: **Puzzle Platformer**
 
-hi
+One thing I've tried, was creating a physics body for a character.
 ---
 
 ### X/X/XX:
