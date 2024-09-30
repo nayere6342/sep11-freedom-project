@@ -1,9 +1,10 @@
 # Tool Learning Log
 
-## Tool: **Kaboom.js**!!!
+## Tool: **Kaboom.js**
 
-## Project: **X**
+## Project: **Puzzle Platformer**
 
+hi
 ---
 
 ### X/X/XX:
