@@ -54,9 +54,10 @@ add([
 
 ```
 
-This might be because of the fact that
+This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. 
 
 [Next](entry02.md)
 
 [Home](../README.md)
+
 
