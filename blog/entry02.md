@@ -1,5 +1,5 @@
 # **Entry 2:**
-### **Nayer Ebraheim X/X/XX**
+### **Nayer Ebraheim - X/X/XX**
 
 ---
 
