@@ -56,7 +56,7 @@ add([
 
 ```
 
-This mainline code is for the base for your game. This wiAlso, this might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall... I also think that _kaboom.js_ can be used for collision handling. This is great for give life thoughout your game overall. 
+This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall... I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall. 
 ```JS
 // Collision handling
 
@@ -134,7 +134,7 @@ add([
 	sprite("grass"),
 	pos(center()),
 	area(),
-	// This game object also has isStatic, so our player won't be able to move pass this
+	// This game object also has isStatic, so our player won't be able to move past this
 	body({ isStatic: true }),
 	"grass",
 ])
@@ -194,7 +194,7 @@ debug.inspect = true
 * [**_SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
 
     * [JS-bin](https://jsbin.com/?js,output)
-    * [Code Samles]()
+    * [Code Samples](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
@@ -208,5 +208,6 @@ debug.inspect = true
 [Next Entry](entry02.md)
 
 [Back Home](../README.md)
+
 
 
