@@ -184,7 +184,8 @@ debug.inspect = true
 // Check out https://kaboomjs.com#AreaComp for everything area() provides
 ```
 
-Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in a this type of space. 
+First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in a this type of space. As I just said, I believe 
+
 
 ---
 
@@ -195,6 +196,7 @@ Like I said before, I also think that _kaboom.js_ can be used for collision hand
 * [**_SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
 
     * [JS-bin](https://jsbin.com/?js,output)
+
     * [Code Samples](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
