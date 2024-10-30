@@ -56,7 +56,8 @@ add([
 
 ```
 
-This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. 
+This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall...
+I also think that _kaboom.js_ can be usec for 
 
 ---
 
@@ -66,13 +67,14 @@ This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (
 
 * [**_SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
 
-    * [**JS-bin**](https://jsbin.com/?js,output)
+    * [JS-bin](https://jsbin.com/?js,output)
+    * [Code Samles]()
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
-    * [** _SEP11_ Blog Page Overview**](https://github.com/nayere6342/sep11-freedom-project/tree/main)
+    * [_SEP11_ Blog Page Overview](https://github.com/nayere6342/sep11-freedom-project/tree/main)
 
-    * [** _SEP11_ Entry Backup Doc**](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
+    * [_SEP11_ Entry Backup Doc](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
 
 
 ---
