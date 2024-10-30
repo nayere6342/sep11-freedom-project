@@ -56,7 +56,8 @@ add([
 
 ```
 
-This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall... I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall. 
+This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in a this type of space. 
+
 ```JS
 // Collision handling
 
@@ -181,9 +182,9 @@ player.onUpdate(() => {
 debug.inspect = true
 
 // Check out https://kaboomjs.com#AreaComp for everything area() provides
-
-
 ```
+
+Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in a this type of space. 
 
 ---
 
@@ -204,6 +205,8 @@ debug.inspect = true
 
 
 ---
+
+
 
 [Next Entry](entry02.md)
 
