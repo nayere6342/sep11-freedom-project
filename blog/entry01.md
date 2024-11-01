@@ -306,21 +306,6 @@ const SPEED = 320
 const ENEMY_SPEED = 16000
 const BULLET_SPEED = 800
 
-// Add player game object
-const player = add([
-	sprite("bean"),
-	pos(80, 80),
-	area(),
-	anchor("center"),
-])
-
-const enemy = add([
-	sprite("ghosty"),
-	pos(width() - 80, height() - 80),
-	anchor("center"),
-	// This enemy cycle between 3 states, and start from "idle" state
-	state("move", [ "idle", "attack", "move" ]),
-])
 ```
 
 Second: 
@@ -403,21 +388,26 @@ That's what all the code does in this part of the game, As you can see this part
 	* _This was before I started researching things about kaboom.js._ 
 
 * Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.  
-	* _This was because I keep getting errors, crashes, and plain issues._ 
+	* _*because I keep getting errors, crashes, and plain issues._ 
 
-* One Last challenge I had in my experience in this entry was that
+* One last challenge I had in my experience in this entry was that I didn't ask for help enough.
+	* _Mostly because I didn't use slack or any other help._
 
-*
+* One takeaway I have was that I need to tinker more with my tool.
+	* _Can because I can get a better knowing of what my tool can do._
 
-* 
+* Another takeaway I got from this is that I need better time management skills in this space. 
+	* _As in not doing everything last minute..._
 
-*
+* One last takeaway I have from this entry is that I would like to learn more from this point and knowing more about my tool will help me in the long run.
 
 
 
 
 
 ---
+
+
 
 
 #### **__Links:__**
@@ -436,7 +426,17 @@ That's what all the code does in this part of the game, As you can see this part
     * [_SEP11_ Entry Backup Doc](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
 
 
+
+
 ---
+
+
+
+
+
+
+
+
 
 
 
@@ -458,3 +458,4 @@ That's what all the code does in this part of the game, As you can see this part
 [Next Entry](entry02.md)
 
 [Back Home](../README.md)
+
