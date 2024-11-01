@@ -187,7 +187,7 @@ debug.inspect = true
 First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_. Such as this here:
    
 
-```
+```JS
 // Use state() component to handle basic AI
 
 // Start kaboom
@@ -217,8 +217,8 @@ const enemy = add([
 	state("move", [ "idle", "attack", "move" ]),
 ])
 
-// Run the callback once every time we enter "idle" state.
-// Here we stay "idle" for 0.5 second, then enter "attack" state.
+// Run the callback once every time we enter an "idle" state.
+// Here we stay "idle" for 0.5 second, then enter the "attack" state.
 enemy.onStateEnter("idle", async () => {
 	await wait(0.5)
 	enemy.enterState("attack")
@@ -293,19 +293,93 @@ This code is only for handling basic _AI_. I think _kaboom.js_  does basic _AI_ 
 First: 
 * Loading both the player character & enemy character.
 
+* Then it sets the speed for the enemy character & player character as well as the enemy bullet
+
+As shown in part of the _JS_ code;
+
+```JS
+// Load assets
+loadSprite("bean", "/sprites/bean.png")
+loadSprite("ghosty", "/sprites/ghosty.png")
+
+const SPEED = 320
+const ENEMY_SPEED = 16000
+const BULLET_SPEED = 800
+
+// Add player game object
+const player = add([
+	sprite("bean"),
+	pos(80, 80),
+	area(),
+	anchor("center"),
+])
+
+const enemy = add([
+	sprite("ghosty"),
+	pos(width() - 80, height() - 80),
+	anchor("center"),
+	// This enemy cycle between 3 states, and start from "idle" state
+	state("move", [ "idle", "attack", "move" ]),
+])
+```
+
 Second: 
 * Setting a _”idle”_ & _”attack”_ state
 
 * idle is the state the enemy is in if it doesn’t see the player
+
 * attack is the state the enemy is in if it does see the player
 
-If the enemy is far away from the player it shoots at the player. If the enemy is close it hits the player.  
+**If the enemy is far away from the player it shoots at the player. If the enemy is close it hits the player. You can see this in this part of the code;
+
+```JS
+// Run the callback once every time we enter an "idle" state.
+// Here we stay "idle" for 0.5 second, then enter the "attack" state.
+enemy.onStateEnter("idle", async () => {
+	await wait(0.5)
+	enemy.enterState("attack")
+})
+
+// When we enter "attack" state, we fire a bullet, and enter "move" state after 1 sec
+enemy.onStateEnter("attack", async () => {
+
+	// Don't do anything if player doesn't exist anymore
+	if (player.exists()) {
+
+		const dir = player.pos.sub(enemy.pos).unit()
+
+		add([
+			pos(enemy.pos),
+			move(dir, BULLET_SPEED),
+			rect(12, 12),
+			area(),
+			offscreen({ destroy: true }),
+			anchor("center"),
+			color(BLUE),
+			"bullet",
+		])
+
+	}
+
+	await wait(1)
+	enemy.enterState("move")
+
+})
+
+enemy.onStateEnter("move", async () => {
+	await wait(2)
+	enemy.enterState("idle")
+})
+```
+
+Third:
+* After all that, it calculates where in the grid the enemy should be relative to the player's position.
+
+That's all the code 
 
 
 
-
-
-### **_Takeaways / Challenges:_**
+### **_Challenges / Takeaways:_**
 
 
 
@@ -335,4 +409,5 @@ If the enemy is far away from the player it shoots at the player. If the enemy i
 [Next Entry](entry02.md)
 
 [Back Home](../README.md)
+
 
