@@ -375,13 +375,39 @@ enemy.onStateEnter("move", async () => {
 Third:
 * After all that, it calculates where in the grid the enemy should be relative to the player's position.
 
-That's all the code 
+```JS
+// Add player game object
+const player = add([
+	sprite("bean"),
+	pos(80, 80),
+	area(),
+	anchor("center"),
+])
+
+const enemy = add([
+	sprite("ghosty"),
+	pos(width() - 80, height() - 80),
+	anchor("center"),
+	// This enemy cycle between 3 states, and start from "idle" state
+	state("move", [ "idle", "attack", "move" ]),
+])
+```
+
+That's what all the code does in this part of the game, As you can see this part of the code is very simple in most ways.
 
 
 
 ### **_Challenges / Takeaways:_**
 
+*
 
+*
+
+*
+
+*
+
+* 
 
 ---
 
