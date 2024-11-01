@@ -56,7 +56,7 @@ add([
 
 ```
 
-This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. 
+This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
 
 ```JS
 // Collision handling
@@ -184,7 +184,129 @@ debug.inspect = true
 // Check out https://kaboomjs.com#AreaComp for everything area() provides
 ```
 
-First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. 
+First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_. Such as this here:
+   
+
+```
+// Use state() component to handle basic AI
+
+// Start kaboom
+kaboom()
+
+// Load assets
+loadSprite("bean", "/sprites/bean.png")
+loadSprite("ghosty", "/sprites/ghosty.png")
+
+const SPEED = 320
+const ENEMY_SPEED = 16000
+const BULLET_SPEED = 800
+
+// Add player game object
+const player = add([
+	sprite("bean"),
+	pos(80, 80),
+	area(),
+	anchor("center"),
+])
+
+const enemy = add([
+	sprite("ghosty"),
+	pos(width() - 80, height() - 80),
+	anchor("center"),
+	// This enemy cycle between 3 states, and start from "idle" state
+	state("move", [ "idle", "attack", "move" ]),
+])
+
+// Run the callback once every time we enter "idle" state.
+// Here we stay "idle" for 0.5 second, then enter "attack" state.
+enemy.onStateEnter("idle", async () => {
+	await wait(0.5)
+	enemy.enterState("attack")
+})
+
+// When we enter "attack" state, we fire a bullet, and enter "move" state after 1 sec
+enemy.onStateEnter("attack", async () => {
+
+	// Don't do anything if player doesn't exist anymore
+	if (player.exists()) {
+
+		const dir = player.pos.sub(enemy.pos).unit()
+
+		add([
+			pos(enemy.pos),
+			move(dir, BULLET_SPEED),
+			rect(12, 12),
+			area(),
+			offscreen({ destroy: true }),
+			anchor("center"),
+			color(BLUE),
+			"bullet",
+		])
+
+	}
+
+	await wait(1)
+	enemy.enterState("move")
+
+})
+
+enemy.onStateEnter("move", async () => {
+	await wait(2)
+	enemy.enterState("idle")
+})
+
+// Like .onUpdate() which runs every frame, but only runs when the current state is "move"
+// Here we move towards the player every frame if the current state is "move"
+enemy.onStateUpdate("move", () => {
+	if (!player.exists()) return
+	const dir = player.pos.sub(enemy.pos).unit()
+	enemy.move(dir.scale(ENEMY_SPEED))
+})
+
+// Taking a bullet makes us disappear
+player.onCollide("bullet", (bullet) => {
+	destroy(bullet)
+	destroy(player)
+	addKaboom(bullet.pos)
+})
+
+// Register input handlers & movement
+onKeyDown("left", () => {
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+```
+
+This code is only for handling basic _AI_. I think _kaboom.js_  does basic _AI_ really well in this space by:
+
+First: 
+* Loading both the player character & enemy character.
+
+Second: 
+* Setting a _”idle”_ & _”attack”_ state
+
+* idle is the state the enemy is in if it doesn’t see the player
+* attack is the state the enemy is in if it does see the player
+
+If the enemy is far away from the player it shoots at the player. If the enemy is close it hits the player.  
+
+
+
+
+
+### **_Takeaways / Challenges:_**
+
 
 
 ---
@@ -213,3 +335,4 @@ First part of the code fully loads all the assets. Then it gets the texture for 
 [Next Entry](entry02.md)
 
 [Back Home](../README.md)
+
