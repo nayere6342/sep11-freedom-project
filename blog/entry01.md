@@ -400,10 +400,10 @@ That's what all the code does in this part of the game, As you can see this part
 ### **_Challenges / Takeaways:_**
 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
-	* _This was before I started reseaching things about kaboom.js._ 
+	* _This was before I started researching things about kaboom.js._ 
 
 * Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.  
-	* _This was because I keeped getting errors, crashs, and plain issues._ 
+	* _This was because I keep getting errors, crashes, and plain issues._ 
 
 * One Last challenge I had in my experience in this entry was that
 
