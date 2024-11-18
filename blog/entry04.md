@@ -610,7 +610,7 @@ In this code code snippet:
 * [**SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
 
     * [**JS-bin**](https://jsbin.com/?js,output)
-    * [**Code Samples (JS/HTML/CSS/FP)**]([https://jsbin.com/?js,output](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit?tab=t.0))
+    * [**Code Samples (JS/HTML/CSS/FP)**](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit?tab=t.0)
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
