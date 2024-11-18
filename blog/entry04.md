@@ -3,7 +3,7 @@
 
 ---
 
-To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that, _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. Before I get into that, I will show you a quick recap!
+To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. Before I get into that, I will show you a quick recap!
 
 ### Recap:
 
@@ -343,7 +343,7 @@ shown here:
 
 Moving on,
 
-One thing I have learned thoughout this entry process is that. One like I said before I have learned is that, _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier then ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool _kaboom.js_ As shown here in this code snippet:
+One thing I have learned throughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool _kaboom.js_ As shown here in this code snippet:
 
 ```JS
 // simple rpg style walk and talk
@@ -437,7 +437,7 @@ scene("main", (levelIdx) => {
 			],
 		},
 		// any() is a special function that gets called everytime there's a
-		// symbole not defined above and is supposed to return what that symbol
+		// symbol not defined above and is supposed to return what that symbol
 		// means
 		wildcardTile(ch) {
 			const char = characters[ch]
@@ -554,11 +554,11 @@ go("main", 0)
 
 ```
 
-In this code snippet it supposed to resent a RPG in _kaboom.js_. To summerize what's going on in this code snippet:
+In this code snippet it is supposed to present a RPG in _kaboom.js_. To summarize what's going on in this code snippet:
 
 First:
 
-* It loads the level room as well the player spirte and the NPC spirte,
+* It loads the level room as well the player sprite and the NPC sprite,
 
 * As well as setting the player's default speed,
 
@@ -681,4 +681,5 @@ scene("main", (levelIdx) => {
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
