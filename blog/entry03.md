@@ -219,6 +219,167 @@ Second:
 		addKaboom(bean.pos)
 	})
 ```
+That's what mostly happened while I was tinkering with my tool. To recap in the last entry, I learn how sprites work in a game space shown here:
+
+## Recap:
+
+This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
+
+```JS
+// Collision handling
+
+// Start kaboom
+kaboom({
+	scale: 2,
+})
+
+// Load assets
+loadSprite("bean", "/sprites/bean.png")
+loadSprite("ghosty", "/sprites/ghosty.png")
+loadSprite("grass", "/sprites/grass.png")
+loadSprite("steel", "/sprites/steel.png")
+
+// Define player movement speed
+const SPEED = 320
+
+// Add player game object
+const player = add([
+	sprite("bean"),
+	pos(80, 40),
+	color(),
+	rotate(0),
+	// area() component gives the object a collider, which enables collision checking
+	area(),
+	// area({ shape: new Polygon([vec2(0), vec2(100), vec2(-100, 100)]) }),
+	// area({ shape: new Rect(vec2(0), 12, 120) }),
+	// area({ scale: 0.5 }),
+	// body() component makes an object respond to physics
+	body(),
+])
+
+// Register input handlers & movement
+onKeyDown("left", () => {
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+
+onKeyDown("q", () => {
+	player.angle -= SPEED * dt()
+})
+
+onKeyDown("e", () => {
+	player.angle += SPEED * dt()
+})
+
+// Add enemies
+for (let i = 0; i < 3; i++) {
+
+	const x = rand(0, width())
+	const y = rand(0, height())
+
+	add([
+		sprite("ghosty"),
+		pos(x, y),
+		// Both objects must have area() component to enable collision detection between
+		area(),
+		"enemy",
+	])
+
+}
+
+add([
+	sprite("grass"),
+	pos(center()),
+	area(),
+	// This game object also has isStatic, so our player won't be able to move past this
+	body({ isStatic: true }),
+	"grass",
+])
+
+add([
+	sprite("steel"),
+	pos(100, 200),
+	area(),
+	// This will not be static, but have a big mass that's hard to push over
+	body({ mass: 10 }),
+])
+
+// .onCollide() is provided by area() component, it registers an event that runs when an objects collides with another object with certain tag
+// In this case we destroy (remove from game) the enemy when player hits one
+player.onCollide("enemy", (enemy) => {
+	destroy(enemy)
+})
+
+// .onCollideUpdate() runs every frame when an object collides with another object
+player.onCollideUpdate("enemy", () => {
+})
+
+// .onCollideEnd() runs once when an object stopped colliding with another object
+player.onCollideEnd("grass", (a) => {
+	debug.log("leave grass")
+})
+
+// .clicks() is provided by area() component, it registers an event that runs when the object is clicked
+player.onClick(() => {
+	debug.log("what up")
+})
+
+player.onUpdate(() => {
+	// .isHovering() is provided by area() component, which returns a boolean of if the object is currently being hovered on
+	if (player.isHovering()) {
+		player.color = rgb(0, 0, 255)
+	} else {
+		player.color = rgb()
+	}
+})
+
+// Enter inspect mode, which shows the collider outline of each object with area() component, handy for debugging
+// Can also be toggled by pressing F1
+debug.inspect = true
+
+// Check out https://kaboomjs.com#AreaComp for everything area() provides
+```
+
+First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_.
+
+
+
+### **_Challenges / Takeaways:_**
+
+* One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
+	* _This was before I started researching things about kaboom.js._ 
+
+* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.  
+	* _*because I keep getting errors, crashes, and plain issues._ 
+
+* One last challenge I had in my experience in this entry was that I didn't ask for help enough.
+	* _Mostly because I didn't use slack or any other help._
+
+* One takeaway I have was that I need to tinker more with my tool.
+	* _Can because I can get a better knowing of what my tool can do._
+
+* Another takeaway I got from this is that I need better time management skills in this space. 
+	* _As in not doing everything last minute..._
+
+* One last takeaway I have from this entry is that I would like to learn more from this point and knowing more about my tool will help me in the long run.
+
+
+
+
+
+
+
 
 
 ---
