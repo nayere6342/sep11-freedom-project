@@ -554,9 +554,66 @@ go("main", 0)
 
 ```
 
-In this code code snippet:
+In this code snippet it supposed to resent a RPG in _kaboom.js_. To summerize what's going on in this code snippet:
 
+First:
 
+* It loads the level room as well the player spirte and the NPC spirte,
+
+* As well as setting the player's default speed,
+
+```JS
+kaboom({
+	background: [74, 48, 82],
+})
+
+loadSprite("bag", "/sprites/bag.png")
+loadSprite("ghosty", "/sprites/ghosty.png")
+loadSprite("grass", "/sprites/grass.png")
+loadSprite("steel", "/sprites/steel.png")
+loadSprite("door", "/sprites/door.png")
+loadSprite("key", "/sprites/key.png")
+loadSprite("bean", "/sprites/bean.png")
+
+scene("main", (levelIdx) => {
+
+	const SPEED = 320
+
+	// character dialog data
+	const characters = {
+		"a": {
+			sprite: "bag",
+			msg: "Hi Bean! You should get that key!",
+		},
+		"b": {
+			sprite: "ghosty",
+			msg: "Who are you? You can see me??",
+		},
+	}
+
+	// level layouts
+	const levels = [
+		[
+			"===|====",
+			"=      =",
+			"= $    =",
+			"=    a =",
+			"=      =",
+			"=   @  =",
+			"========",
+		],
+		[
+			"--------",
+			"-      -",
+			"-   $  -",
+			"|      -",
+			"-    b -",
+			"-  @   -",
+			"--------",
+		],
+	]
+
+```
 
 
 
