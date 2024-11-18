@@ -341,10 +341,29 @@ shown here:
 	})
 ```
 
+Moving on,
+
+One thing I have learned thoughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### **_Challenges / Takeaways:_**
 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
+  
 	* _This was before I started researching things about kaboom.js._ 
 
 * Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.
@@ -354,18 +373,14 @@ shown here:
 	* _Mostly because I didn't use slack or any other help._
 
 * One takeaway I have was that I need to tinker more with my tool.
+  
 	* _Can because I can get a better knowing of what my tool can do._
 
 * Another takeaway I have from this entry is that I would like to learn more from this point and knowing more about my tool will help me in the long run.
 
-* One last takeaway I got from this is that I need better time management skills in this space. 
+* One last takeaway I got from this is that I need better time management skills in this space.
+  
 	* _As in not doing everything last minute..._
-
-
-
-
-
-
 
 
 
