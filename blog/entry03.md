@@ -219,6 +219,7 @@ Second:
 		addKaboom(bean.pos)
 	})
 ```
+
 That's what mostly happened while I was tinkering with my tool. To recap in the last entry, I learn how sprites work in a game space shown here:
 
 ## Recap:
