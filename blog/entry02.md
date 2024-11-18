@@ -1,5 +1,5 @@
 # **Entry 2:**
-### **Nayer Ebraheim - 11/8/24**
+### **Nayer Ebraheim - 11/X/24**
 
 ---
 This is a short recap from the last entry to my blog:
