@@ -3,7 +3,7 @@
 
 ---
 
-To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time.
+To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time. To show what I have been doing. Here is some code:
 
 ```JS
 kaboom()
@@ -161,6 +161,65 @@ scene("lose", (score) => {
 go("game")
 
 ```
+This code is from _kaboom.js_ code snippts. All the code does is:
+
+First
+
+* creates a player sprite with gravity,
+  
+	* this play sprite also has a set speed,
+
+shown here:
+
+```JS
+	const JUMP_FORCE = 800
+	const SPEED = 320
+	const CEILING = -60
+
+	// a game object consists of a list of components and tags
+	const bean = add([
+		// sprite() means it's drawn with a sprite of name "bean" (defined above in 'loadSprite')
+		sprite("bean"),
+		// give it a position
+		pos(width() / 4, 0),
+		// give it a collider
+		area(),
+		// body component enables it to fall and jump in a gravity world
+		body(),
+	])
+
+	// check for fall death
+	bean.onUpdate(() => {
+		if (bean.pos.y >= height() || bean.pos.y <= CEILING) {
+			// switch to "lose" scene
+			go("lose", score)
+		}
+	})
+
+	// jump
+	onKeyPress("space", () => {
+		bean.jump(JUMP_FORCE)
+		play("wooosh")
+	})
+```
+
+Second: 
+
+* It set up a death and final score screen,
+  
+	* The final score screen uses the amount of times the player jumps over the pipes,
+   
+ As shown here:
+
+```JS
+// callback when bean onCollide with objects with tag "pipe"
+	bean.onCollide("pipe", () => {
+		go("lose", score)
+		play("hit")
+		addKaboom(bean.pos)
+	})
+```
+
 
 ---
 
