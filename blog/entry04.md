@@ -7,7 +7,7 @@ To start off my entry, I have been working on my freedom project (FP). For a lon
 
 ### Recap:
 
-This is a short recap to what I have learn in my last entry of this blog:
+This is a short recap to what I have learn in my last entry of this blog: _(entry 1)_
 
 The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
 
