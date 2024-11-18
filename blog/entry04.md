@@ -3,7 +3,7 @@
 
 ---
 
-To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. Before I get into that, I will show you a quick recap!
+To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that, _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. Before I get into that, I will show you a quick recap!
 
 ### Recap:
 
@@ -343,7 +343,7 @@ shown here:
 
 Moving on,
 
-One thing I have learned thoughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with.
+One thing I have learned thoughout this entry process is that. One like I said before I have learned is that, _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with.
 
 
 
