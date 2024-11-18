@@ -2,6 +2,9 @@
 ### **Nayer Ebraheim - 11/18/24**
 
 ---
+
+To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complexed overall. This was because I didn't really know how _kaboom.js_ work to begain with. Before I get into that, I will show you a quick recap!
+
 ### Recap:
 
 This is a short recap to what I have learn in my last entry of this blog:
@@ -135,8 +138,7 @@ debug.inspect = true
 ```
 
 First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_.
-
-To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have  
+ 
 
 ---
 
