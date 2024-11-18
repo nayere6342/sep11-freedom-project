@@ -1,9 +1,9 @@
 # **Entry 3:**
-### **Nayer Ebraheim - X/X/XX**
+### **Nayer Ebraheim - 11/3/24**
 
 ---
 
-Text
+To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time. 
 
 ---
 
