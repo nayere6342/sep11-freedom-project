@@ -360,19 +360,21 @@ First part of the code fully loads all the assets. Then it gets the texture for 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
 	* _This was before I started researching things about kaboom.js._ 
 
-* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.  
-	* _*because I keep getting errors, crashes, and plain issues._ 
-
-* One last challenge I had in my experience in this entry was that I didn't ask for help enough.
+* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.
+  
+	* _*because I keep getting errors, crashes, and plain issues._
+   
 	* _Mostly because I didn't use slack or any other help._
 
 * One takeaway I have was that I need to tinker more with my tool.
 	* _Can because I can get a better knowing of what my tool can do._
 
-* Another takeaway I got from this is that I need better time management skills in this space. 
+* Another takeaway I have from this entry is that I would like to learn more from this point and knowing more about my tool will help me in the long run.
+
+* One last takeaway I got from this is that I need better time management skills in this space. 
 	* _As in not doing everything last minute..._
 
-* One last takeaway I have from this entry is that I would like to learn more from this point and knowing more about my tool will help me in the long run.
+
 
 
 
