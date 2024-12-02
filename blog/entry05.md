@@ -692,6 +692,7 @@ onUpdate(() => {
 * [**_SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
 
     * [**JS-bin**](https://jsbin.com/?js,output)
+    *  [Code Samples](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
