@@ -1,9 +1,11 @@
 # **Entry 5:**
-### **Nayer Ebraheim - X/X/XX**
+### **Nayer Ebraheim - 12/2/24**
 
 ---
 
-Text
+For starters, this log was fun, I have learned a whole lot about _kaboom.js_. Such as how to create a player event call. This allows parts of the game to react to the environment. That one task in the game can make the whole game feel more alive in this context. But, before I get into that, a recap is need from the last learning log,
+
+## Recap:
 
 ---
 
