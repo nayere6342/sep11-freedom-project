@@ -10,7 +10,8 @@ For starters, this log was fun, I have learned a whole lot about _kaboom.js_. Su
 **This is the recap for _(entry #4)_**
 
 One thing I have learned throughout this entry process is that. One like I said before I have learned is that kaboom.js is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how kaboom.js work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool kaboom.js As shown here in this code snippet:
-```
+
+```JS
 // simple rpg style walk and talk
 
 kaboom({
@@ -225,7 +226,8 @@ First:
 It loads the level room as well the player sprite and the NPC sprite,
 
 As well as setting the player's default speed,
-```
+
+```JS
 kaboom({
 	background: [74, 48, 82],
 })
@@ -321,7 +323,8 @@ Second:
 After that, the game loads all the game objects in the space,
 
 Then it get the height, position and width of the level layout,
-```
+
+```JS
 // get the player game obj by tag
 	const player = level.get("player")[0]
 
@@ -405,7 +408,7 @@ Lastly, this part of the code snippet just get the player game object by tag,
 
 As well as giving the main NPC dialog with the addDialog function.
 
-```
+```JS
 		// any() is a special function that gets called everytime there's a
 		// symbol not defined above and is supposed to return what that symbol
 		// means
@@ -525,7 +528,10 @@ go("main", 0)
 
 Moving on,
 
-This is all the things that I have learn with this entry. In entry #4 I have learned that,
+This is all the things that I have learn with this entry. In _entry #4_ I have learned that,
+
+```
+```
 
 ---
 
