@@ -683,12 +683,12 @@ onUpdate(() => {
 
 ```
 
-As you can see here, It shows the ground work for a simple rendering system in _kaboom.js_. Using the user's mouse. This is the full explanation for this code snippet;
+As you can see here, It shows the groundwork for a simple rendering system in _kaboom.js_. Using the user's mouse. This is the full explanation for this code snippet;
 
 
 First:
 
- * The script first tries the find the user's mouse in the window space.
+ * The script first tries to find the user's mouse in the window space.
    
  * then, script loads the following sprite for the mouse.
 	* This just simply adds a shader to the mouse without using any inputs
@@ -732,5 +732,6 @@ vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
