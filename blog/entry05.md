@@ -688,6 +688,25 @@ As you can see here, It shows the ground work for a simple rendering system in _
 
 First:
 
+ * The script first tries the find the user's mouse in the window space.
+   
+ * then, script loads the following sprite for the mouse.
+	* This just simply adds a shader to the mouse without using any inputs
+
+
+```JS
+loadShader("spiral", null, `
+uniform float u_time;
+uniform vec2 u_mpos;
+vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
+	vec2 pp = uv - u_mpos;
+	float angle = atan(pp.y, pp.x);
+	float dis = length(pp);
+	float c = sin(dis * 48.0 + u_time * 8.0 + angle);
+	return vec4(c, c, c, 1);
+}
+`)
+```
 
 
 ---
