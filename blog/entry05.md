@@ -696,9 +696,9 @@ onUpdate(() => {
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
-    * [SEP11_Blog Page Overview](https://github.com/nayere6342/sep11-freedom-project/tree/main)
+    * [_SEP11_ Entry Page Overview](https://github.com/nayere6342/sep11-freedom-project/tree/main)
 
-    * [SEP11_Entry Backup Doc](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
+    * [_SEP11_ Entry Backup Doc](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
 
 
 ---
