@@ -9,7 +9,7 @@ For starters, this log was fun, I have learned a whole lot about _kaboom.js_. Su
 
 **This is the recap for _(entry #4)_**
 
-One thing I have learned throughout this entry process is that. One like I said before I have learned is that kaboom.js is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how kaboom.js work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool kaboom.js As shown here in this code snippet:
+One thing I have learned throughout this entry process is that. Like I said before, I have learned that kaboom.js is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how kaboom.js work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool kaboom.js As shown here in this code snippet:
 
 ```JS
 // simple rpg style walk and talk
@@ -528,7 +528,7 @@ go("main", 0)
 
 Moving on,
 
-This is all the things that I have learn with this entry. In _entry #4_ I have learned that,
+These are all the things that I have learned with this entry. In _entry #4_ I have learned that,
 
 ```JS
 // Kaboom as pure rendering lib (no component / game obj etc.)
@@ -706,3 +706,4 @@ onUpdate(() => {
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
