@@ -712,7 +712,7 @@ Second:
 
  * After the script finds the user's mouse, it draws a trail that follows the user's mouse.
 
- * Once it's done with that, it wait until the the user's clicks on something.
+ * Once it's done with that, it waits until the the user's clicks on something.
 
  * It takes that position, and draws an outline around that part of the screen where the user's clicks.
 
@@ -733,7 +733,7 @@ const outline = {
 
 Third:
 
- * At the very end of the script, the scene is drawen into the window.
+ * At the very end of the script, the scene is drawn into the window.
 
  * **This is only for the art style of the window**
    
@@ -887,6 +887,7 @@ onUpdate(() => {
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
