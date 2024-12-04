@@ -737,7 +737,11 @@ Third:
 
  * **This is only for the art style of the window**
    
- 	* _This is not that important overall_    
+ 	* _This is not that important overall_
+    
+  * Also this might because of the fact that tt's pretty common to put all input handling and state updates before rendering begains.
+  	*  
+ 
 
 ```JS
 function drawStuff() {
