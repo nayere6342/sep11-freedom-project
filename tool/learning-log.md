@@ -4,7 +4,7 @@
 
 ## Project: **Puzzle Platformer**
 
-# **Part 1:**
+# **Section #1:**
 ### **Nayer Ebraheim - 10/28/24**
 
 ---
@@ -409,7 +409,7 @@ That's what all the code does in this part of the game, As you can see this part
 
 
 
-# **Entry 2:**
+# **Section #2:**
 ### **Nayer Ebraheim - 11/11/24**
 
 ---
@@ -491,7 +491,7 @@ This mainline code is for the base for your game. This might be because of the f
 * One last takeaway I have from this entry is that I would like to learn more from this point and knowing more about my tool will help me in the long run.
 
 
-# **Entry 3:**
+# **Section #3:**
 ### **Nayer Ebraheim - 11/3/24**
 
 ---
@@ -872,7 +872,7 @@ First part of the code fully loads all the assets. Then it gets the texture for 
 
 
 
-# **Entry 4:**
+# **Section #4:**
 ### **Nayer Ebraheim - 11/18/24**
 
 ---
@@ -1767,7 +1767,7 @@ That's all with this entry!
 
 
 
-# **Entry 5:**
+# **Section #5:**
 ### **Nayer Ebraheim - 12/2/24**
 
 ---
