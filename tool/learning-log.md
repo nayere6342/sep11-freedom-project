@@ -4,9 +4,7 @@
 
 ## Project: **Puzzle Platformer**
 
-One thing I've tried, was creating a physics body for a character:
-
-# **Entry 1:**
+# **Part 1:**
 ### **Nayer Ebraheim - 10/28/24**
 
 ---
