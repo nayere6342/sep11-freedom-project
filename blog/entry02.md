@@ -5,7 +5,7 @@
 
 ### **_Intro_**
 
-Doing this entry has taught me a ton about how _kaboom.js_ works in this code space. This can be because of the fact that I tinker a lot in  
+Doing this entry has taught me a ton about how _kaboom.js_ works in this code space. This can be because of the fact that I tinker a lot in _kaboom.js_ for quite a while now. I have learned that   
 
 
 
