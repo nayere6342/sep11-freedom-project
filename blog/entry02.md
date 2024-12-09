@@ -3,7 +3,14 @@
 
 ---
 
-Do
+### **_Intro_**
+
+Doing this entry has taught me a ton about how _kaboom.js_ works in this code space. This can be because of the fact that I tinker a lot in  
+
+
+
+
+### **_Challenges / Takeaways:_**
 
 
 ---
