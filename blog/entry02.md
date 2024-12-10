@@ -5,10 +5,12 @@
 
 ### **_Intro:_**
 
-Doing this entry has taught me a ton about how _kaboom.js_ works in this code space. This can be because of the fact that I tinker a lot in _kaboom.js_ for quite a while now. I have learned that like I said before; I started thinking with _kaboom.js_. overall, _kaboom.js_ I just started researching about my tool _kaboom.js_. And what I found out was that it's pretty simple for a baseline JS tool. You can see this here in the code presentation. In this entry log, I will also be talking about my challenges in this entry as well as my takeaways.
+Doing this entry has taught me a ton about how _kaboom.js_ works in this code space. This can be because of the fact that I have been tinkering a lot in _kaboom.js_ for quite a while now. I have learned that like I said before; I started thinking with _kaboom.js_. overall, _kaboom.js_ I just started researching about my tool _kaboom.js_. And what I found out was that it's pretty simple for a baseline JS tool. You can see this here in the code presentation. In this entry log, I will also be talking about my challenges in this entry as well as my takeaways.
 
 
 ### **_Code Presentation:_**
+
+Starting off, this part of _kaboom.js_ was mostly just me relearning things from my last entry log. This was because of the fact I forgot a ton of stuff from the last entry log.
 
 In this code presentation these are some things I have learned, 
 
@@ -172,6 +174,7 @@ add([
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
