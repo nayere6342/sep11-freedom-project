@@ -144,7 +144,13 @@ Here is a step by step list of how this code presentation works.
 
 First:
 
-To start of the code snippent, the first thing that happends are the custom  
+* To start of the code snippent, the first thing that happends is the fonts loading into the window.
+
+* Then it picks the style of that font using the `outline` tag set to the value of `4`
+  
+	* As well as the `filter` tag for that font that's set to `linear` shown here: `{ outline: 4, filter: "linear" }`.
+
+* After that, with the help _kaboom.js's_ built-in fonts _(using the font "monospace")_. it set the height and width of each character.
 
 ```JS
 // Load a custom font from a .ttf file
@@ -164,6 +170,13 @@ const builtinFonts = [
 ```
 
 Second:
+
+* Secondly it creates a list of fonts that it cycle through _(4x4, unscii, apl386 etc)_.
+
+* Then it set up a text input system, using the `const input` statement.
+
+* After that, it starts doing more of the same things as before. Like setting the width and height as well as setting the fonts for that text.
+
 
 ```JS
 // Make a list of fonts that we cycle through
