@@ -144,6 +144,8 @@ Here is a step by step list of how this code presentation works.
 
 First:
 
+To start of the code snippent, the first thing that happends are the custom  
+
 ```JS
 // Load a custom font from a .ttf file
 loadFont("FlowerSketches", "/examples/fonts/FlowerSketches.ttf")
@@ -281,12 +283,11 @@ add([
 
 ### **_Challenges / Takeaways:_**
 
-* t
-* t
-* t
-* c
-* c
-* c
+* One big challenge I had in my experience in this entry was that I didn't ask for help enough.
+	* _Mostly because I didn't use slack or any other help._
+
+* One takeaway I have was that I need to tinker more with my tool.
+	* _Can because I can get a better knowing of what my tool can do._
 
 
 ---
