@@ -222,6 +222,14 @@ const input = add([
 
 Third:
 
+* This is where the code gets a bit more complex. In this first part it listens for any key inputs.
+
+  * It displays that on to the window with some randomized fonts and sizes.
+
+* Also, if the code hears the user types the enter key, it creates a new line in the window for some more text.
+
+* After all that, it sets keys like right arrow key to go to previous font.
+
 ```JS
 // Like onKeyPressRepeat() but more suitable for text input.
 onCharInput((ch) => {
