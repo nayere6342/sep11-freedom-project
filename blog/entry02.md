@@ -311,9 +311,13 @@ add([
 ### **_Challenges / Takeaways:_**
 
 * One big challenge I had in my experience in this entry was that I didn't ask for help enough.
+  
 	* _Mostly because I didn't use slack or any other help._
 
-* One takeaway I have was that I need to tinker more with my tool.
+* One other challenge I had from this was the fact that my IDE keeped crashing throughout the whole tinker section. 
+
+* One small takeaway I had from this was that I need to tinker more with my tool.
+  
 	* _Can because I can get a better knowing of what my tool can do._
 
 
