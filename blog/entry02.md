@@ -278,6 +278,12 @@ onKeyDown("down", () => {
 
 Fourth:
 
+* At last part of this code, it sets the scale of the final text style and by using CharTransformFunc.
+
+* Like this style, `wavy` is a tag that is stored in the class called `styles` with the `color` tag which is set to `rgb(128, 128, 255)`
+  
+	* the `RGB` color set is just a light shade of green.
+
 ```JS
 
 // Use this syntax and style option to style chunks of text, with CharTransformFunc.
