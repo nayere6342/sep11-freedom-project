@@ -2297,6 +2297,8 @@ go("main", 0)
 
 Moving on from this recap,
 
+# Main
+
 These are all the things that I have learned with this entry. In _entry #4_ I have learned that like I said before. One thing I have learned throughout this entry process is that. I have learned that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here;
 
 ```JS
