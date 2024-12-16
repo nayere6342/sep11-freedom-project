@@ -9,7 +9,7 @@
 
 ---
 
-# Main Content
+### Main Content
 
 To start off my entry, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. For this tool, _kaboom.js_ I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_.
 
@@ -498,7 +498,7 @@ This mainline code is for the base for your game. This might be because of the f
 
 ---
 
-# Main Content
+### Main Content
 
 To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time. To show what I have been doing. Here is some code:
 
@@ -719,7 +719,7 @@ Second:
 
 That's what mostly happened while I was tinkering with my tool. To recap in the last entry, I learn how sprites work in a game space shown here:
 
-## Recap:
+### Recap:
 
 This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
 
@@ -1221,7 +1221,7 @@ shown here:
 
 Moving on,
 
-# Main Content
+### Main Content
 
 One thing I have learned throughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool _kaboom.js_ As shown here in this code snippet:
 
@@ -1780,7 +1780,7 @@ That's all with this entry!
 
 For starters, this log was fun, I have learned a whole lot about _kaboom.js_. Such as how to create a player event call. This allows parts of the game to react to the environment. That one task in the game can make the whole game feel more alive in this context. But, before I get into that, a recap is need from the last learning log,
 
-## Recap:
+### Recap:
 
 **This is the recap for _(entry #4)_**
 
@@ -2649,7 +2649,9 @@ onUpdate(() => {
 
 ---
 
-# Main Content
+### Recap
+
+### Main Content
 
 
 
