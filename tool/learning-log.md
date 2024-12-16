@@ -9,6 +9,8 @@
 
 ---
 
+# Main Content
+
 To start off my entry, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. For this tool, _kaboom.js_ I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_.
 
 ```JS
@@ -495,6 +497,8 @@ This mainline code is for the base for your game. This might be because of the f
 ### **Nayer Ebraheim - 11/3/24**
 
 ---
+
+# Main Content
 
 To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time. To show what I have been doing. Here is some code:
 
@@ -1216,6 +1220,8 @@ shown here:
 ```
 
 Moving on,
+
+# Main Content
 
 One thing I have learned throughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool _kaboom.js_ As shown here in this code snippet:
 
@@ -2297,7 +2303,7 @@ go("main", 0)
 
 Moving on from this recap,
 
-# Main
+# Main Content
 
 These are all the things that I have learned with this entry. In _entry #4_ I have learned that like I said before. One thing I have learned throughout this entry process is that. I have learned that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here;
 
@@ -2642,6 +2648,8 @@ onUpdate(() => {
 ### **Nayer Ebraheim - 12/17/24**
 
 ---
+
+# Main Content
 
 
 
