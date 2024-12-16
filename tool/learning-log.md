@@ -717,7 +717,7 @@ Second:
 	})
 ```
 
-That's what mostly happened while I was tinkering with my tool. To recap in the last entry, I learn how sprites work in a game space shown here:
+That's what mostly happened while I was tinkering with my tool. To recap in the last entry, I learn how sprites work in a game space shown here: But before we get into that, lets recap what over the past week in this learning log - section #3.
 
 ### Recap:
 
@@ -2303,7 +2303,7 @@ go("main", 0)
 
 Moving on from this recap,
 
-# Main Content
+### Main Content
 
 These are all the things that I have learned with this entry. In _entry #4_ I have learned that like I said before. One thing I have learned throughout this entry process is that. I have learned that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here;
 
