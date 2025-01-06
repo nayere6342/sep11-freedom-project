@@ -2645,6 +2645,27 @@ onUpdate(() => {
 
 ```
 
+### **_Challenges / Takeaways:_**
+
+* One challenge I had was that felt like whole lot of time to really tinker with this entry.
+
+* One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
+  
+	* _This was before I started researching things about kaboom.js._ 
+
+* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry.
+  
+	* _*because I keep getting errors, crashes, and plain issues._
+   
+
+* One takeaway I have was that I need to tinker more with my tool.
+  
+	* _Can because I can get a better knowing of what my tool can do._
+
+* One other takeaway I a had from this learning log was that I need better time management skills in this space.
+  
+	* _As in not doing everything last minute..._
+
 # **Section #6:**
 ### **Nayer Ebraheim - 12/17/24**
 
