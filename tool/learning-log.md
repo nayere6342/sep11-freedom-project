@@ -3162,11 +3162,650 @@ This mainline code is for the base for your game. This might be because of the f
 
 ### Recap
 
-In the last learning log I learn that,
+In the last learning log I learn that, this learning log I haven't really learn a whole lot of stuff It's was mosty the same from last time. Such as: Last entry I stated that I thought it was complex overall. Also the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here in this code snippect ;
+
+```JS
+// Kaboom as pure rendering lib (no component / game obj etc.)
+
+kaboom()
+loadSprite("bean", "/sprites/bean.png")
+
+loadShader("spiral", null, `
+uniform float u_time;
+uniform vec2 u_mpos;
+vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
+	vec2 pp = uv - u_mpos;
+	float angle = atan(pp.y, pp.x);
+	float dis = length(pp);
+	float c = sin(dis * 48.0 + u_time * 8.0 + angle);
+	return vec4(c, c, c, 1);
+}
+`)
+
+const t = (n = 1) => time() * n
+const w = (a, b, n) => wave(a, b, t(n))
+const px = 160
+const py = 160
+const doodles = []
+const trail = []
+
+const outline = {
+	width: 4,
+	color: rgb(0, 0, 0),
+}
+
+function drawStuff() {
+
+	const mx = (width() - px * 2) / 2
+	const my = (height() - py * 2) / 1
+	const p = (x, y) => vec2(x, y).scale(mx, my).add(px, py)
+
+	drawSprite({
+		sprite: "bean",
+		pos: p(0, 0),
+		angle: t(40),
+		anchor: "center",
+		scale: w(1, 1.5, 4),
+		color: rgb(w(128, 255, 4), w(128, 255, 8), 255),
+	})
+
+	drawRect({
+		pos: p(1, 0),
+		width: w(60, 120, 4),
+		height: w(100, 140, 8),
+		anchor: "center",
+		radius: w(0, 32, 4),
+		angle: t(80),
+		color: rgb(w(128, 255, 4), 255, w(128, 255, 8)),
+		outline,
+	})
+
+	drawEllipse({
+		pos: p(2, 0),
+		radiusX: w(40, 70, 2),
+		radiusY: w(40, 70, 4),
+		start: 0,
+		end: w(180, 360, 1),
+		color: rgb(255, w(128, 255, 8), w(128, 255, 4)),
+		// gradient: [ Color.RED, Color.BLUE ],
+		outline,
+	})
+
+	drawPolygon({
+		pos: p(0, 1),
+		pts: [
+			vec2(w(-10, 10, 2), -80),
+			vec2(80, w(-10, 10, 4)),
+			vec2(w(30, 50, 4), 80),
+			vec2(-30, w(50, 70, 2)),
+			vec2(w(-50, -70, 4), 0),
+		],
+		colors: [
+			rgb(w(128, 255, 8), 255, w(128, 255, 4)),
+			rgb(255, w(128, 255, 8), w(128, 255, 4)),
+			rgb(w(128, 255, 8), w(128, 255, 4), 255),
+			rgb(255, 128, w(128, 255, 4)),
+			rgb(w(128, 255, 8), w(128, 255, 4), 128),
+		],
+		outline,
+	})
+
+	drawText({
+		text: "yo",
+		pos: p(1, 1),
+		anchor: "center",
+		size: w(80, 120, 2),
+		color: rgb(w(128, 255, 4), w(128, 255, 8), w(128, 255, 2)),
+	})
+
+	drawLines({
+		...outline,
+		pts: trail,
+	})
+
+	doodles.forEach((pts) => {
+		drawLines({
+			...outline,
+			pts: pts,
+		})
+	})
+
+}
+
+// onDraw() is similar to onUpdate(), it runs every frame, but after all update events.
+// All drawXXX() functions need to be called every frame if you want them to persist
+onDraw(() => {
+
+	const maskFunc = Math.floor(time()) % 2 === 0 ? drawSubtracted : drawMasked
+
+	if (isKeyDown("space")) {
+		maskFunc(() => {
+			drawUVQuad({
+				width: width(),
+				height: height(),
+				shader: "spiral",
+				uniform: {
+					"u_time": time(),
+					"u_mpos": mousePos().scale(1 / width(), 1 / height()),
+				},
+			})
+		}, drawStuff)
+	} else {
+		drawStuff()
+	}
+
+})
+
+// It's a common practice to put all input handling and state updates before rendering.
+onUpdate(() => {
+
+	trail.push(mousePos())
+
+	if (trail.length > 16) {
+		trail.shift()
+	}
+
+	if (isMousePressed()) {
+		doodles.push([])
+	}
+
+	if (isMouseDown() && isMouseMoved()) {
+		doodles[doodles.length - 1].push(mousePos())
+	}
+
+})
+
+```
+
+As you can see here, It shows the groundwork for a simple rendering system in _kaboom.js_. Using the user's mouse. This is the full explanation for this code snippet;
+
+
+First:
+
+ * The script first tries to find the user's mouse in the window space.
+   
+ * then, script loads the following sprite for the mouse.
+
+	* This just simply adds a shader to the mouse without using any inputs
+
+```JS
+loadShader("spiral", null, `
+uniform float u_time;
+uniform vec2 u_mpos;
+vec4 frag(vec2 pos, vec2 uv, vec4 color, sampler2D tex) {
+	vec2 pp = uv - u_mpos;
+	float angle = atan(pp.y, pp.x);
+	float dis = length(pp);
+	float c = sin(dis * 48.0 + u_time * 8.0 + angle);
+	return vec4(c, c, c, 1);
+}
+`)
+```
+
+Second:
+
+ * After the script finds the user's mouse, it draws a trail that follows the user's mouse.
+
+ * Once it's done with that, it waits until the the user's clicks on something.
+
+ * It takes that position, and draws an outline around that part of the screen where the user's clicks.
+
+```JS
+const t = (n = 1) => time() * n
+const w = (a, b, n) => wave(a, b, t(n))
+const px = 160
+const py = 160
+const doodles = []
+const trail = []
+
+const outline = {
+	width: 4,
+	color: rgb(0, 0, 0),
+}
+
+```
+
+As well as the fact that I was mostly debugging a TON of my broken code that I didn't fix before hand in the last learning log. Such as in this learning log To start off my entry, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. For this tool, _kaboom.js_ I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_.
+
+```JS
+// Input handling and basic player movement
+
+// Start kaboom
+kaboom()
+
+// Load assets
+loadSprite("bean", "/sprites/bean.png")
+
+// Define player movement speed (pixels per second using a large value) 
+const SPEED = 20^1024 
+
+// Add player game object
+const player = add([
+	sprite("bean"),
+	// center() returns the center point vec2(width() / 2, height() / 2)
+	pos(center()),
+])
+
+// onKeyDown() registers an event that runs every frame as long as user is holding a certain key
+onKeyDown("left", () => {
+	// .move() is provided by pos() component, move by pixels per second
+	player.move(-SPEED, 0)
+})
+
+onKeyDown("right", () => {
+	player.move(SPEED, 0)
+})
+
+onKeyDown("up", () => {
+	player.move(0, -SPEED)
+})
+
+onKeyDown("down", () => {
+	player.move(0, SPEED)
+})
+
+// onClick() registers an event that runs once when left mouse is clicked
+onClick(() => {
+	// .moveTo() is provided by pos() component, changes the position
+	player.moveTo(mousePos())
+})
+
+add([
+	// text() component is similar to sprite() but renders text
+	text("Press arrow keys", { width: width() / 2 }),
+	pos(12, 12),
+])
+
+```
+
+This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. 
+
 
 ### Main Content
 
-The main content I have learn 
+Moving on from this recap;
+
+The main content I have learn from this learning log is that making a shooter game is much more easier then before. This can also be because of the fact that _kaboom.js_ helps along with tools such as sprite sponwing code. All of this is shown in this code snippent; 
+
+```JS
+// TODO: document
+
+kaboom({
+	background: [74, 48, 82],
+})
+
+const objs = [
+	"apple",
+	"lightening",
+	"coin",
+	"egg",
+	"key",
+	"door",
+	"meat",
+	"mushroom",
+]
+
+for (const obj of objs) {
+	loadSprite(obj, `/sprites/${obj}.png`)
+}
+
+loadBean()
+loadSound("hit", "/examples/sounds/hit.mp3")
+loadSound("shoot", "/examples/sounds/shoot.mp3")
+loadSound("explode", "/examples/sounds/explode.mp3")
+loadSound("OtherworldlyFoe", "/examples/sounds/OtherworldlyFoe.mp3")
+
+scene("battle", () => {
+
+	const BULLET_SPEED = 1200
+	const TRASH_SPEED = 120
+	const BOSS_SPEED = 48
+	const PLAYER_SPEED = 480
+	const STAR_SPEED = 120
+	const BOSS_HEALTH = 1000
+	const OBJ_HEALTH = 4
+
+	const bossName = choose(objs)
+
+	let insaneMode = false
+
+	const music = play("OtherworldlyFoe")
+
+	volume(0.5)
+
+	function grow(rate) {
+		return {
+			update() {
+				const n = rate * dt()
+				this.scale.x += n
+				this.scale.y += n
+			},
+		}
+	}
+
+	function late(t) {
+		let timer = 0
+		return {
+			add() {
+				this.hidden = true
+			},
+			update() {
+				timer += dt()
+				if (timer >= t) {
+					this.hidden = false
+				}
+			},
+		}
+	}
+
+	add([
+		text("KILL", { size: 160 }),
+		pos(width() / 2, height() / 2),
+		anchor("center"),
+		lifespan(1),
+		fixed(),
+	])
+
+	add([
+		text("THE", { size: 80 }),
+		pos(width() / 2, height() / 2),
+		anchor("center"),
+		lifespan(2),
+		late(1),
+		fixed(),
+	])
+
+	add([
+		text(bossName.toUpperCase(), { size: 120 }),
+		pos(width() / 2, height() / 2),
+		anchor("center"),
+		lifespan(4),
+		late(2),
+		fixed(),
+	])
+
+	const sky = add([
+		rect(width(), height()),
+		color(0, 0, 0),
+		opacity(0),
+	])
+
+	sky.onUpdate(() => {
+		if (insaneMode) {
+			const t = time() * 10
+			sky.color.r = wave(127, 255, t)
+			sky.color.g = wave(127, 255, t + 1)
+			sky.color.b = wave(127, 255, t + 2)
+			sky.opacity = 1
+		} else {
+			sky.color = rgb(0, 0, 0)
+			sky.opacity = 0
+		}
+	})
+
+	// 	add([
+	// 		sprite("stars"),
+	// 		scale(width() / 240, height() / 240),
+	// 		pos(0, 0),
+	// 		"stars",
+	// 	])
+
+	// 	add([
+	// 		sprite("stars"),
+	// 		scale(width() / 240, height() / 240),
+	// 		pos(0, -height()),
+	// 		"stars",
+	// 	])
+
+	// 	onUpdate("stars", (r) => {
+	// 		r.move(0, STAR_SPEED * (insaneMode ? 10 : 1))
+	// 		if (r.pos.y >= height()) {
+	// 			r.pos.y -= height() * 2
+	// 		}
+	// 	})
+
+	const player = add([
+		sprite("bean"),
+		area(),
+		pos(width() / 2, height() - 64),
+		anchor("center"),
+	])
+
+	onKeyDown("left", () => {
+		player.move(-PLAYER_SPEED, 0)
+		if (player.pos.x < 0) {
+			player.pos.x = width()
+		}
+	})
+
+	onKeyDown("right", () => {
+		player.move(PLAYER_SPEED, 0)
+		if (player.pos.x > width()) {
+			player.pos.x = 0
+		}
+	})
+
+	onKeyPress("up", () => {
+		insaneMode = true
+		music.speed = 2
+	})
+
+	onKeyRelease("up", () => {
+		insaneMode = false
+		music.speed = 1
+	})
+
+	player.onCollide("enemy", (e) => {
+		destroy(e)
+		destroy(player)
+		shake(120)
+		play("explode")
+		music.detune = -1200
+		addExplode(center(), 12, 120, 30)
+		wait(1, () => {
+			music.paused = true
+			go("battle")
+		})
+	})
+
+	function addExplode(p, n, rad, size) {
+		for (let i = 0; i < n; i++) {
+			wait(rand(n * 0.1), () => {
+				for (let i = 0; i < 2; i++) {
+					add([
+						pos(p.add(rand(vec2(-rad), vec2(rad)))),
+						rect(4, 4),
+						scale(1 * size, 1 * size),
+						lifespan(0.1),
+						grow(rand(48, 72) * size),
+						anchor("center"),
+					])
+				}
+			})
+		}
+	}
+
+	function spawnBullet(p) {
+		add([
+			rect(12, 48),
+			area(),
+			pos(p),
+			anchor("center"),
+			color(127, 127, 255),
+			outline(4),
+			move(UP, BULLET_SPEED),
+			offscreen({ destroy: true }),
+			// strings here means a tag
+			"bullet",
+		])
+	}
+
+	onUpdate("bullet", (b) => {
+		if (insaneMode) {
+			b.color = rand(rgb(0, 0, 0), rgb(255, 255, 255))
+		}
+	})
+
+	onKeyPress("space", () => {
+		spawnBullet(player.pos.sub(16, 0))
+		spawnBullet(player.pos.add(16, 0))
+		play("shoot", {
+			volume: 0.3,
+			detune: rand(-1200, 1200),
+		})
+	})
+
+	function spawnTrash() {
+		const name = choose(objs.filter(n => n != bossName))
+		add([
+			sprite(name),
+			area(),
+			pos(rand(0, width()), 0),
+			health(OBJ_HEALTH),
+			anchor("bot"),
+			"trash",
+			"enemy",
+			{ speed: rand(TRASH_SPEED * 0.5, TRASH_SPEED * 1.5) },
+		])
+		wait(insaneMode ? 0.1 : 0.3, spawnTrash)
+	}
+
+	const boss = add([
+		sprite(bossName),
+		area(),
+		pos(width() / 2, 40),
+		health(BOSS_HEALTH),
+		scale(3),
+		anchor("top"),
+		"enemy",
+		{
+			dir: 1,
+		},
+	])
+
+	on("death", "enemy", (e) => {
+		destroy(e)
+		shake(2)
+		addKaboom(e.pos)
+	})
+
+	on("hurt", "enemy", (e) => {
+		shake(1)
+		play("hit", {
+			detune: rand(-1200, 1200),
+			speed: rand(0.2, 2),
+		})
+	})
+
+	const timer = add([
+		text(0),
+		pos(12, 32),
+		fixed(),
+		{ time: 0 },
+	])
+
+	timer.onUpdate(() => {
+		timer.time += dt()
+		timer.text = timer.time.toFixed(2)
+	})
+
+	onCollide("bullet", "enemy", (b, e) => {
+		destroy(b)
+		e.hurt(insaneMode ? 10 : 1)
+		addExplode(b.pos, 1, 24, 1)
+	})
+
+	onUpdate("trash", (t) => {
+		t.move(0, t.speed * (insaneMode ? 5 : 1))
+		if (t.pos.y - t.height > height()) {
+			destroy(t)
+		}
+	})
+
+	boss.onUpdate((p) => {
+		boss.move(BOSS_SPEED * boss.dir * (insaneMode ? 3 : 1), 0)
+		if (boss.dir === 1 && boss.pos.x >= width() - 20) {
+			boss.dir = -1
+		}
+		if (boss.dir === -1 && boss.pos.x <= 20) {
+			boss.dir = 1
+		}
+	})
+
+	boss.onHurt(() => {
+		healthbar.set(boss.hp())
+	})
+
+	boss.onDeath(() => {
+		music.stop()
+		go("win", {
+			time: timer.time,
+			boss: bossName,
+		})
+	})
+
+	const healthbar = add([
+		rect(width(), 24),
+		pos(0, 0),
+		color(107, 201, 108),
+		fixed(),
+		{
+			max: BOSS_HEALTH,
+			set(hp) {
+				this.width = width() * hp / this.max
+				this.flash = true
+			},
+		},
+	])
+
+	healthbar.onUpdate(() => {
+		if (healthbar.flash) {
+			healthbar.color = rgb(255, 255, 255)
+			healthbar.flash = false
+		} else {
+			healthbar.color = rgb(127, 255, 127)
+		}
+	})
+
+	add([
+		text("UP: insane mode", { width: width() / 2, size: 32 }),
+		anchor("botleft"),
+		pos(24, height() - 24),
+	])
+
+	spawnTrash()
+
+})
+
+scene("win", ({ time, boss }) => {
+
+	const b = burp({
+		loop: true,
+	})
+
+	loop(0.5, () => {
+		b.detune = rand(-1200, 1200)
+	})
+
+	add([
+		sprite(boss),
+		color(255, 0, 0),
+		anchor("center"),
+		scale(8),
+		pos(width() / 2, height() / 2),
+	])
+
+	add([
+		text(time.toFixed(2), 24),
+		anchor("center"),
+		pos(width() / 2, height() / 2),
+	])
+
+})
+
+go("battle")
+
+```
 
 
 
