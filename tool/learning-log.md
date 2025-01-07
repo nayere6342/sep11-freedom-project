@@ -3846,6 +3846,9 @@ scene("battle", () => {
 
 Second:
 
+* The second thing that happens in this code snippent is the kill system for objects.
+* This kill system for objects
+
 ```JS
 function late(t) {
 		let timer = 0
