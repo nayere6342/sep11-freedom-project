@@ -4138,13 +4138,25 @@ scene("win", ({ time, boss }) => {
 go("battle")
 ```
 
-* One takeaway I have was that I need to tinker more with my tool.
+### **_Challenges / Takeaways:_**
 
-* Can because I can get a better knowing of what my tool can do.
+* One challenge I had was the fact that I didn't know anything about kaboom.js when creating this entry.
+
+	* This was before I started researching things about kaboom.js.
+
+* Another challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
+
+* because I keep getting errors, crashes, and plain issues.
+
 
 * One other takeaway I a had from this learning log was that I need better time management skills in this space.
 
 	* As in not doing everything last minute...
+   
+* One takeaway I have was that I need to tinker more with my tool.
+  
+	* This is due to the fact that I can get a better knowing of what my tool can do.
+
 
 
 ---
