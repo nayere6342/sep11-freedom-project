@@ -3807,12 +3807,17 @@ go("battle")
 
 ```
 
+This is the full code snippent, To show all the content in this. Here is the break-down;
+
 First:
 
- * To start off, this section of the code, 
- * All it does is start loading the assest into the space
- * Such as _'BOSS SPEED'_ as well as _'BOSS HEALTH'_
- * This sets the style of the game
+ * To start off, this section of the code,
+   
+ * All it does is start loading the assest into the space.
+   
+ * Such as _'BOSS SPEED'_ as well as _'BOSS HEALTH'_.
+   
+ * This sets the style of the game.
 
 ```JS
 scene("battle", () => {
@@ -3847,7 +3852,8 @@ scene("battle", () => {
 Second:
 
 * The second thing that happens in this code snippent is the kill system for objects.
-* This kill system for objects
+  
+* This kill system for objects active when the player shots at the object in question.
 
 ```JS
 function late(t) {
@@ -3894,6 +3900,14 @@ function late(t) {
 
 Third: 
 
+* This section of the code is for keybinds.
+  
+* It firsts creates the player model then adds movement commands.
+  
+* Such as _'PLAYER SPEED'_ left, up, down etc...
+  
+* Then there is a sub commmand when the player get hit my an enemy using: _'destroy(player)'_.
+  
 ```JS
 const player = add([
 		sprite("bean"),
@@ -3941,6 +3955,12 @@ const player = add([
 ```
 
 Fourth:
+
+* After that, it creates a death animation for the player with an explodion.
+  
+* with the function 'addExplode' it shows the death of the player with an distortion effect.
+
+* The section of the code also creates a player bullet for the upcoming objects.
 
 ```JS
 function addExplode(p, n, rad, size) {
@@ -3993,6 +4013,8 @@ function addExplode(p, n, rad, size) {
 ```
 
 Fifth:
+
+* 
 
 ```JS
 	function spawnTrash() {
