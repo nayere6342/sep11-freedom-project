@@ -3809,6 +3809,11 @@ go("battle")
 
 First:
 
+ * To start off, this section of the code, 
+ * All it does is start loading the assest into the space
+ * Such as _'BOSS SPEED'_ as well as _'BOSS HEALTH'_
+ * This sets the style of the game
+
 ```JS
 scene("battle", () => {
 
@@ -4175,9 +4180,11 @@ go("battle")
 
 * [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
-    * [_SEP11_ Blog Page Overview](https://github.com/nayere6342/sep11-freedom-project/tree/main)
+    * [_SEP11 Blog Page Overview](https://github.com/nayere6342/sep11-freedom-project/tree/main)
 
     * [_SEP11_ Entry Backup Doc](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
+ 
+  
 
 
 
