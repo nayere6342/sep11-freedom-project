@@ -4138,7 +4138,13 @@ scene("win", ({ time, boss }) => {
 go("battle")
 ```
 
+* One takeaway I have was that I need to tinker more with my tool.
 
+* Can because I can get a better knowing of what my tool can do.
+
+* One other takeaway I a had from this learning log was that I need better time management skills in this space.
+
+	* As in not doing everything last minute...
 
 
 ---
