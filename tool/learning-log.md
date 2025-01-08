@@ -3425,7 +3425,7 @@ This mainline code is for the base for your game. This might be because of the f
 
 Moving on from this recap;
 
-The main content I have learn from this learning log is that making a shooter game is much more easier then before. This can also be because of the fact that _kaboom.js_ helps along with tools such as sprite sponwing code. All of this is shown in this code snippent; 
+The main content I have learn from this learning log is that making a shooter game is much more easier then before. Like I said before hand; I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. Also, I wanted to add that I can also be because of the fact that _kaboom.js_ helps along with tools such as sprite sponwing code all that, of this is shown in this code snippent; 
 
 ```JS
 // TODO: document
@@ -3904,7 +3904,7 @@ Third:
   
 * It firsts creates the player model then adds movement commands.
   
-* Such as _'PLAYER SPEED'_ left, up, down etc...
+* Such as _'PLAYER_SPEED'_ left, up, down etc...
   
 * Then there is a sub commmand when the player get hit my an enemy using: _'destroy(player)'_.
   
@@ -4014,7 +4014,13 @@ function addExplode(p, n, rad, size) {
 
 Fifth:
 
-* 
+* For the last thing on this code snippent, it adds a boss name with a health bar.
+  
+	* Using the _'bossName' && 'BOSS_HEALTH'_ tag for the boss.
+   
+* After that, it checks if the player's bullet hit the boss and deceases the _'BOSS_HEALTH'_ value.
+  
+* Once the boss dies, in the _'boss.onDeath()'_ it stops the game and plays a win sound effect. 
 
 ```JS
 	function spawnTrash() {
