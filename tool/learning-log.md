@@ -4182,8 +4182,7 @@ go("battle")
 
 * Another challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
 
-* because I keep getting errors, crashes, and plain issues.
-
+	* because I keep getting errors, crashes, and plain issues.
 
 * One other takeaway I a had from this learning log was that I need better time management skills in this space.
 
