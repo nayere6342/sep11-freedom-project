@@ -3425,7 +3425,7 @@ This mainline code is for the base for your game. This might be because of the f
 
 Moving on from this recap;
 
-The main content I have learn from this learning log is that making a shooter game is much more easier then before. Like I said before hand; I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. Also, I wanted to add that I can also be because of the fact that _kaboom.js_ helps along with tools such as sprite sponwing code all that, of this is shown in this code snippent; 
+The main content I have learn from this learning log is that making a shooter game is much more easier then before. Like I said before hand; I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. Also, I wanted to add that it can also be because of the fact that _kaboom.js_ helps along with tools such as sprite sponwing code and all that. With that being said, here is all what is shown in this code snippent; 
 
 ```JS
 // TODO: document
