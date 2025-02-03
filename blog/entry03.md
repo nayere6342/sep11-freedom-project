@@ -5,9 +5,9 @@
 
 ## Intro:
 
-For a bit of context. My third entry I have been mostly learn the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_ I have learn a ton of things such as  
+For a bit of context. My third entry I have been mostly learn the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_ I have learn a ton of things such as how to create a object spawning loop. With this you can create a puzzle game or like a endless runner! But it can also led to crashs though game object spawning.    
 
-## Code:
+## Code Presentation:
 
 ```
 const FLOOR_HEIGHT = 48
