@@ -1,8 +1,11 @@
-# **Entry 3:**
-### **Nayer Ebraheim - XX/X/XX**
+# **Entry Log 3:**
+### **Nayer Ebraheim - 2/3/25**
 
 ---
 
+## Intro:
+
+For a bit of context. My third entry I have been mostly learn the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_  
 
 ---
 
