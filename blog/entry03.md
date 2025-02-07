@@ -9,7 +9,9 @@ For a bit of context. My third entry I have been mostly learn the same sort of t
 
 ## Code Presentation:
 
-```
+Now, on to the code presentation. This 
+
+```Js
 const FLOOR_HEIGHT = 48
 const JUMP_FORCE = 800
 const SPEED = 480
