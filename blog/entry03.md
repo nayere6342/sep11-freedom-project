@@ -135,9 +135,9 @@ go("game")
 
 First:
 
-*
+* The first of the code is pretty simple, All it does is that is loads the game player into the space.
 
-*
+* It also set the sets the gravity of the player as well as giving it a 
 
 ```Js
 // load assets
