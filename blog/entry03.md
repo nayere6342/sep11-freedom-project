@@ -9,7 +9,7 @@ For a bit of context. My third entry I have been mostly learn the same sort of t
 
 ## Code Presentation:
 
-Now, on to the code presentation. This 
+Now, on to the code presentation. In this, it's mostly things from the last 
 
 ```Js
 const FLOOR_HEIGHT = 48
