@@ -183,7 +183,7 @@ Second:
 
 * This part of the code just adds objects that the player has to jump over. 
 
-*
+* It also creates a scoring system for the player evertime they cross a tree.
 
 ```Js
 function spawnTree() {
@@ -236,9 +236,9 @@ function spawnTree() {
 
 Third:
 
-*
+* Third of all is the lose screen. This clear all the objects on the screen.
 
-*
+* Then it load the player charactor onto the screen as well as the player's final score.
 
 ```Js
 scene("lose", (score) => {
