@@ -5,11 +5,11 @@
 
 ## Intro:
 
-For a bit of context. My third entry I have been mostly learn the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_ I have learn a ton of things such as how to create a object spawning loop. With this you can create a puzzle game or like a endless runner! But it can also led to crashs though game object spawning. Now, on to the code presentation.   
+For a bit of context. My third entry I have mostly learned the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_ I have learned a ton of things such as how to create an object spawning loop. With this you can create a puzzle game or like an endless runner! But it can also lead to crashes through game object spawning. Now, on to the code presentation.   
 
 ## Code Presentation:
 
-In this, it's mostly things from the last blog and this blog such as the spwaning object loop script. By have this, it can make a simple game into fun enjoyable game. Like I said before, I have learn a ton of things such as how to create a object spawning loop. With this you can create a puzzle game or like a endless runner! But it can also led to crashs though game object spawning. By using _kaboom.js_ you can learn so much about how game devlopment works in a small programing app. Now here is a quick preview of what was made before hand:     
+In this, it's mostly things from the last blog and this blog such as the spawning object loop script. By having this, it can make a simple game into a fun enjoyable game. Like I said before, I have learned a ton of things such as how to create an object spawning loop. With this you can create a puzzle game or like an endless runner! But it can also lead to crashes through game object spawning. By using _kaboom.js_ you can learn so much about how game development works in a small programming app. Now here is a quick preview of what was made before hand:     
 
 ```Js
 const FLOOR_HEIGHT = 48
@@ -135,9 +135,9 @@ go("game")
 
 First:
 
-* The first of the code is pretty simple, All it does is that is loads the game player into the space.
+* The first of the code is pretty simple, All it does is that it loads the game player into the space.
 
-* It also set the sets the gravity of the player as well as giving the player a jump function.
+* It also sets the gravity of the player as well as giving the player a jump function.
 
 ```Js
 // load assets
@@ -277,7 +277,7 @@ go("game")
 
 * One other challenge I had from this was the fact that my IDE keeped crashing throughout the whole tinker section. 
 
-* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry. Also, this could have been because of the fact that I keep getting errors, crashes, and plainning issues.
+* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry. Also, this could have been because of the fact that I keep getting errors, crashes, and planning issues.
    
 * One small takeaway I had from this was that I need to tinker more with my tool.
   
@@ -324,6 +324,7 @@ go("game")
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
