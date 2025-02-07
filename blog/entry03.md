@@ -5,11 +5,11 @@
 
 ## Intro:
 
-For a bit of context. My third entry I have been mostly learn the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_ I have learn a ton of things such as how to create a object spawning loop. With this you can create a puzzle game or like a endless runner! But it can also led to crashs though game object spawning.    
+For a bit of context. My third entry I have been mostly learn the same sort of thing from the last entry. For my freedom project that I have started in _kaboom.js_ I have learn a ton of things such as how to create a object spawning loop. With this you can create a puzzle game or like a endless runner! But it can also led to crashs though game object spawning. Now, on to the code presentation.   
 
 ## Code Presentation:
 
-Now, on to the code presentation. In this, it's mostly things from the last 
+In this, it's mostly things from the last blog and this blog such as the spwaning object loop script. By have this, it can make a simple game into fun enjoyable game. Like I said before, I have learn a ton of things such as how to create a object spawning loop. With this you can create a puzzle game or like a endless runner! But it can also led to crashs though game object spawning. By using _kaboom.js_ you can learn so much about how game devlopment works in a small programing app. Now here is a quick preview of what was made before hand:     
 
 ```Js
 const FLOOR_HEIGHT = 48
