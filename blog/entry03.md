@@ -137,7 +137,7 @@ First:
 
 * The first of the code is pretty simple, All it does is that is loads the game player into the space.
 
-* It also set the sets the gravity of the player as well as giving it a 
+* It also set the sets the gravity of the player as well as giving the player a jump function.
 
 ```Js
 // load assets
@@ -181,7 +181,7 @@ scene("game", () => {
 
 Second:
 
-*
+* This part of the code just adds objects that the player has to jump over. 
 
 *
 
@@ -288,6 +288,9 @@ go("game")
 	* As in not doing everything last minute...
 
 
+
+
+
 ---
 
 
@@ -306,7 +309,17 @@ go("game")
     * [_SEP11_ Entry Backup Doc](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
 
 
+
+
+
+
+
+
 ---
+
+
+
+
 
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
