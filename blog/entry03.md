@@ -267,6 +267,26 @@ scene("lose", (score) => {
 go("game")
 ```
 
+### **_Challenges / Takeaways:_**
+
+* One big challenge I had in my experience in this entry was that I didn't ask for help enough.
+  
+	* _Mostly because I didn't use slack or any other help._
+
+* One other challenge I had from this was the fact that my IDE keeped crashing throughout the whole tinker section. 
+
+* Another challenge I faced was that I didn't tinker enough while working on _kaboom.js_ entry. Also, this could have been because of the fact that I keep getting errors, crashes, and plainning issues.
+
+   
+* One small takeaway I had from this was that I need to tinker more with my tool.
+  
+	* _Can because I can get a better knowing of what my tool can do._
+
+* Another takeaway I got from this is that I need better time management skills in this space.
+
+	* As in not doing everything last minute...
+
+
 ---
 
 
