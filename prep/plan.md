@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: Kaboom.js 
-## Product: 
+## Tool: Kaboom.js
+## Product: Platformer
 
 ---
 
@@ -9,8 +9,8 @@
 
 #### MVP
 
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+- [ ] Getting the player to make (deadline: 2/11)
+  - [ ] Have a death screen for the player (deadline: 2/11)
 
 #### Beyond MVP
 
