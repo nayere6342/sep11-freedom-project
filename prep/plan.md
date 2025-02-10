@@ -1,7 +1,7 @@
 # Plan
 
-## Tool: Kaboom.js
-## Product: Platformer
+## Tool: _Kaboom.js_
+## Product: _Platformer_
 
 ---
 
@@ -16,8 +16,8 @@
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+- [ ] Creating more and more levels for the player to go though 
+  - [ ] By doing this, there can be an storyline or somthing like that  
 
 
 <!-- EXAMPLE
