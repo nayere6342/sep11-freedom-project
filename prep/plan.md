@@ -9,7 +9,7 @@
 
 #### MVP
 
-- [x] Getting the player to mave (deadline: 2/11)
+- [ ] Getting the player to mave (deadline: 2/11)
   - [ ] Have a death screen for the player (deadline: 2/11)
 - [ ] creating the map for the player (deadline: 2/12)
   - [ ] Making an end screen for the player (deadline: 2/13)
