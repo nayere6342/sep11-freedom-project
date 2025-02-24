@@ -135,7 +135,7 @@ go("game")
 
 First:
 
-* The first of the code is pretty simple, All it does is that it loads the game player into the space.
+* The first part of the code is pretty simple. All it does is that it loads the game player into space.
 
 * It also sets the gravity of the player as well as giving the player a jump function.
 
@@ -183,7 +183,7 @@ Second:
 
 * This part of the code just adds objects that the player has to jump over. 
 
-* It also creates a scoring system for the player evertime they cross a tree.
+* It also creates a scoring system for the player every time they cross a tree.
 
 ```Js
 function spawnTree() {
@@ -236,9 +236,9 @@ function spawnTree() {
 
 Third:
 
-* Third of all is the lose screen. This clear all the objects on the screen.
+* Third of all is the loose screen. This clears all the objects on the screen.
 
-* Then it load the player charactor onto the screen as well as the player's final score.
+* Then it loads the player character onto the screen as well as the player's final score.
 
 ```Js
 scene("lose", (score) => {
@@ -269,7 +269,7 @@ go("game")
 
 ## Design Process:
 
-The design of this was that the collisons object were weird at first. Due to me, not know everything there is to know about this topic. Thus not getting a grip on what I was going to do in the begining of this. Like how should the playe's hitbox hiting the object they should avoid in the game. I did have help from videos on youtube to help me get a grip on what I'm supposed to in this entry. That's what help me get to be a bit more knowing on this topic overall. That's my design process for this entry. It was a bit complex overall and thanks to these videos. I figured out how it all works. 
+The design of this was that the collision objects were weird at first. Due to me, not know everything there is to know about this topic. Thus not getting a grip on what I was going to do in the beginning of this. Like how should the player's hitbox hit the object they should avoid in the game. I did have help from videos on youtube to help me get a grip on what I'm supposed to in this entry. That's what help me get to be a bit more knowing on this topic overall. That's my design process for this entry. It was a bit complex overall and thanks to these videos. I figured out how it all works. 
 
 ### **_Challenges / Takeaways:_**
 
@@ -328,6 +328,7 @@ The design of this was that the collisons object were weird at first. Due to me,
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
