@@ -4197,7 +4197,13 @@ go("battle")
 
 ### Main Content:
 
-Starting off like all enties, I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. This entry I want it to be diffent, insted of talking about the project I chouse. I want to first explain what it is I'm talking about in the first place, second show the process in which I got to where I am. That's what I want to do.  
+Starting off like all enties, I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. This entry I want it to be diffent, insted of talking about the project I chouse. I want to first explain what it is I'm talking about in the first place, second show the process in which I got to where I am. That's what I want to do.
+
+```JS
+```
+
+
+### Content Process:
 
 ### **_Challenges / Takeaways:_**
 
