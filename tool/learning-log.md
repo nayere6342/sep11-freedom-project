@@ -659,7 +659,7 @@ scene("lose", (score) => {
 go("game")
 
 ```
-This code is from _kaboom.js_ code snippts. All the code does is:
+This code is from _kaboom.js_ code snippets. All the code does is:
 
 First
 
@@ -1750,7 +1750,7 @@ That's all with this entry!
 
 ### **_Challenges / Takeaways:_**
 
-* One challenge I had was that felt like whole lot of time to really tinker with this entry.
+* One challenge I had was that it felt like a whole lot of time to really tinker with this entry.
 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
   
@@ -2490,7 +2490,7 @@ Second:
 
  * After the script finds the user's mouse, it draws a trail that follows the user's mouse.
 
- * Once it's done with that, it waits until the the user's clicks on something.
+ * Once it's done with that, it waits until the user's clicks on something.
 
  * It takes that position, and draws an outline around that part of the screen where the user's clicks.
 
@@ -2517,7 +2517,7 @@ Third:
    
  	* _This is not that important overall_
     
-  * Also this might because of the fact that tt's pretty common to put all input handling and state updates before rendering begains.
+  * Also this might be because of the fact that it's pretty common to put all input handling and state updates before rendering begins.
   	*  
  
 
@@ -2647,7 +2647,7 @@ onUpdate(() => {
 
 ### **_Challenges / Takeaways:_**
 
-* One challenge I had was that felt like whole lot of time to really tinker with this entry.
+* One challenge I had was that it felt like a whole lot of time to really tinker with this entry.
 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
   
@@ -2662,7 +2662,7 @@ onUpdate(() => {
   
 	* _Can because I can get a better knowing of what my tool can do._
 
-* One other takeaway I a had from this learning log was that I need better time management skills in this space.
+* One other takeaway I had from this learning log was that I need better time management skills in this space.
   
 	* _As in not doing everything last minute..._
 
@@ -2857,7 +2857,7 @@ Second:
 
  * After the script finds the user's mouse, it draws a trail that follows the user's mouse.
 
- * Once it's done with that, it waits until the the user's clicks on something.
+ * Once it's done with that, it waits until the user's clicks on something.
 
  * It takes that position, and draws an outline around that part of the screen where the user's clicks.
 
@@ -2880,7 +2880,7 @@ const outline = {
 
 Moving on from the recap;
 
-this learning log I haven't really learn a whole lot of stuff It's was mosty the same from last time. Such as: Last entry I stated that I thought it was complex overall. Also the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here in this code snippect ;
+This learning log I haven't really learned a whole lot of stuff. It was mostly the same from last time. Such as: Last entry I stated that I thought it was complex overall. Also the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here in this code snippet ;
 
 ```JS
 // Kaboom as pure rendering lib (no component / game obj etc.)
@@ -3064,7 +3064,7 @@ Second:
 
  * After the script finds the user's mouse, it draws a trail that follows the user's mouse.
 
- * Once it's done with that, it waits until the the user's clicks on something.
+ * Once it's done with that, it waits until the user's clicks on something.
 
  * It takes that position, and draws an outline around that part of the screen where the user's clicks.
 
@@ -3162,7 +3162,7 @@ This mainline code is for the base for your game. This might be because of the f
 
 ### Recap
 
-In the last learning log I learn that, this learning log I haven't really learn a whole lot of stuff It's was mosty the same from last time. Such as: Last entry I stated that I thought it was complex overall. Also the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here in this code snippect ;
+In the last learning log I learned that, this learning log I haven't really learned a whole lot of stuff. It was mostly the same from last time. Such as: Last entry I stated that I thought it was complex overall. Also the fact that it has gotten easier than ever for the whole tinkering process. As well as the fact that in this code snippet it shows that what I was just talking about how I have learned is that _kaboom.js_ is much more simple than I thought. All shown here in this code snippet ;
 
 ```JS
 // Kaboom as pure rendering lib (no component / game obj etc.)
@@ -3346,7 +3346,7 @@ Second:
 
  * After the script finds the user's mouse, it draws a trail that follows the user's mouse.
 
- * Once it's done with that, it waits until the the user's clicks on something.
+ * Once it's done with that, it waits until the user's clicks on something.
 
  * It takes that position, and draws an outline around that part of the screen where the user's clicks.
 
@@ -3425,7 +3425,7 @@ This mainline code is for the base for your game. This might be because of the f
 
 Moving on from this recap;
 
-The main content I have learn from this learning log is that making a shooter game is much more easier then before. Like I said before hand; I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. Also, I wanted to add that it can also be because of the fact that _kaboom.js_ helps along with tools such as sprite sponwing code and all that. With that being said, here is all what is shown in this code snippent; 
+The main content I have learned from this learning log is that making a shooter game is much easier than before. Like I said before hand; I have been learning _kaboom.js_ for a bit now. What I learned is that _kaboom.js_ has more depth than I thought. So I started thinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. Also, I wanted to add that it can also be because of the fact that _kaboom.js_ helps along with tools such as sprite spawning code and all that. With that being said, here is all what is shown in this code snippet; 
 
 ```JS
 // TODO: document
@@ -3733,7 +3733,7 @@ scene("battle", () => {
 	})
 
 	boss.onHurt(() => {
-		healthbar.set(boss.hp())
+		health bar.set(boss.hp())
 	})
 
 	boss.onDeath(() => {
@@ -3744,7 +3744,7 @@ scene("battle", () => {
 		})
 	})
 
-	const healthbar = add([
+	const health bar = add([
 		rect(width(), 24),
 		pos(0, 0),
 		color(107, 201, 108),
@@ -3759,11 +3759,11 @@ scene("battle", () => {
 	])
 
 	healthbar.onUpdate(() => {
-		if (healthbar.flash) {
-			healthbar.color = rgb(255, 255, 255)
-			healthbar.flash = false
+		if (health bar.flash) {
+			health bar.color = rgb(255, 255, 255)
+			health bar.flash = false
 		} else {
-			healthbar.color = rgb(127, 255, 127)
+			health bar.color = rgb(127, 255, 127)
 		}
 	})
 
@@ -3807,13 +3807,13 @@ go("battle")
 
 ```
 
-This is the full code snippent, To show all the content in this. Here is the break-down;
+This is the full code snippet, To show all the content in this. Here is the break-down;
 
 First:
 
  * To start off, this section of the code,
    
- * All it does is start loading the assest into the space.
+ * All it does is start loading the assets into the space.
    
  * Such as _'BOSS SPEED'_ as well as _'BOSS HEALTH'_.
    
@@ -3851,7 +3851,7 @@ scene("battle", () => {
 
 Second:
 
-* The second thing that happens in this code snippent is the kill system for objects.
+* The second thing that happens in this code snippet is the kill system for objects.
   
 * This kill system for objects active when the player shots at the object in question.
 
@@ -3902,11 +3902,11 @@ Third:
 
 * This section of the code is for keybinds.
   
-* It firsts creates the player model then adds movement commands.
+* It first creates the player model then adds movement commands.
   
 * Such as _'PLAYER_SPEED'_ left, up, down etc...
   
-* Then there is a sub commmand when the player get hit my an enemy using: _'destroy(player)'_.
+* Then there is a sub command when the player gets hit by an enemy using: _'destroy(player)'_.
   
 ```JS
 const player = add([
@@ -3956,9 +3956,9 @@ const player = add([
 
 Fourth:
 
-* After that, it creates a death animation for the player with an explodion.
+* After that, it creates a death animation for the player with an explosion.
   
-* with the function 'addExplode' it shows the death of the player with an distortion effect.
+* with the function 'addExplode' it shows the death of the player with a distortion effect.
 
 * The section of the code also creates a player bullet for the upcoming objects.
 
@@ -4014,11 +4014,11 @@ function addExplode(p, n, rad, size) {
 
 Fifth:
 
-* For the last thing on this code snippent, it adds a boss name with a health bar.
+* For the last thing on this code snippet, it adds a boss name with a health bar.
   
 	* Using the _'bossName' && 'BOSS_HEALTH'_ tag for the boss.
    
-* After that, it checks if the player's bullet hit the boss and deceases the _'BOSS_HEALTH'_ value.
+* After that, it checks if the player's bullet hit the boss and decreases the _'BOSS_HEALTH'_ value.
   
 * Once the boss dies, in the _'boss.onDeath()'_ it stops the game and plays a win sound effect. 
 
@@ -4101,7 +4101,7 @@ Fifth:
 	})
 
 	boss.onHurt(() => {
-		healthbar.set(boss.hp())
+		health bar.set(boss.hp())
 	})
 
 	boss.onDeath(() => {
@@ -4184,20 +4184,20 @@ go("battle")
 
 	* because I keep getting errors, crashes, and plain issues.
 
-* One other takeaway I a had from this learning log was that I need better time management skills in this space.
+* One other takeaway I had from this learning log was that I need better time management skills in this space.
 
 	* As in not doing everything last minute...
    
 * One takeaway I have was that I need to tinker more with my tool.
   
-	* This is due to the fact that I can get a better knowing of what my tool can do.
+	* This is due to the fact that I can get a better understanding of what my tool can do.
 
 
 # Section #8:
 
 ### Main Content:
 
-Starting off like all enties, I have been learning _kaboom.js_ for a bit now. What I learned that _kaboom.js_ has more depth than I thought. So I started tinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. This entry I want it to be diffent, insted of talking about the project I chouse. I want to first explain what it is I'm talking about in the first place, second show the process in which I got to where I am. That's what I want to do. This is that example; 
+Starting off like all entries, I have been learning _kaboom.js_ for a bit now. What I learned is that _kaboom.js_ has more depth than I thought. So I started thinking with this tool. With this tool, _kaboom.js_. I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_. This entry I want to be different, instead of talking about the project I choose. I want to first explain what it is I'm talking about in the first place, second show the process in which I got to where I am. That's what I want to do. This is that example; 
 
 ```JS
 // Start game
@@ -4321,7 +4321,7 @@ scene("game", ({ levelIdx, score }) => {
 				score: score,
 			})
 		} else {
-			// Otherwise we have reached the end of game, go to "win" scene!
+			// Otherwise we have reached the end of the game, go to the "win" scene!
 			go("win", { score: score })
 		}
 	})
@@ -4374,7 +4374,7 @@ start()
 
 ### Content Process:
 
-This _kaboom.js_ code is quite simple first what happends is that it loads all the assests. Then it sets the player's gravity and makes a movments system to that player. As you can see here;
+This _kaboom.js_ code is quite simple. First, what happens is that it loads all the assets. Then it sets the player's gravity and makes a movement system to that player. So that the player can smoothly move around the screen. As you can see in this code snippet, here;
 
 ```JS
 // Load assets
@@ -4392,7 +4392,10 @@ setGravity(2400)
 const SPEED = 480
 ```
 
-After that is done it actally starts the game.
+After that is done it actually starts the game. With the player's movement system it creates a simple map with the fully loaded assets. Such as a kill part that makes the player restart. It also loads the portal assets that reports the player when they go over it.
+
+```JS
+```
 
 ### **_Challenges / Takeaways:_**
 
@@ -4402,13 +4405,14 @@ After that is done it actally starts the game.
    
  	* This was before I started researching things about kaboom.js.
 
-* One other takeaway I a had from this learning log was that I need better time management skills in this space.
+* One other takeaway I had from this learning log was that I need better time management skills in this space.
 
 	* As in not doing everything last minute...
    
 * One takeaway I have was that I need to tinker more with my tool.
   
-	* This is due to the fact that I can get a better knowing of what my tool can do.
+	* This is due to the fact that I can get a better understanding of what my tool can do.
+
 
 
 
@@ -4460,4 +4464,5 @@ After that is done it actally starts the game.
 
 
 ---
+
 
