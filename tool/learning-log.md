@@ -4376,8 +4376,9 @@ start()
 
 This _kaboom.js_ code is quite simple. First, what happens is that it loads all the assets. Then it sets the player's gravity and makes a movement system to that player. So that the player can smoothly move around the screen. As you can see in this code snippet, here;
 
+Assets:
+
 ```JS
-// Load assets
 loadSprite("bean", "/sprites/bean.png")
 loadSprite("coin", "/sprites/coin.png")
 loadSprite("spike", "/sprites/spike.png")
@@ -4388,13 +4389,114 @@ loadSound("score", "/examples/sounds/score.mp3")
 loadSound("portal", "/examples/sounds/portal.mp3")
 
 setGravity(2400)
-
 const SPEED = 480
 ```
 
-After that is done it actually starts the game. With the player's movement system it creates a simple map with the fully loaded assets. Such as a kill part that makes the player restart. It also loads the portal assets that reports the player when they go over it.
+Movement:
 
 ```JS
+	const player = level.get("player")[0]
+	onKeyPress("space", () => {
+		if (player.isGrounded()) {
+			player.jump()
+		}
+	})
+	onKeyDown("left", () => {
+		player.move(-SPEED, 0)
+	})
+	onKeyDown("right", () => {
+		player.move(SPEED, 0)
+	})
+```
+
+After that is done it actually starts the game. With the player's movement system it creates a simple map with the fully loaded assets. Such as a kill part that makes the player restart. It also loads the portal assets that reports the player when they go over it. As shown here in this code snippet; 
+
+```JS
+scene("game", ({ levelIdx, score }) => {
+	const level = addLevel(LEVELS[levelIdx || 0], {
+		tileWidth: 64,
+		tileHeight: 64,
+		pos: vec2(100, 200),
+		tiles: {
+			"@": () => [
+				sprite("bean"),
+				area(),
+				body(),
+				anchor("bot"),
+				"player",
+			],
+			"=": () => [
+				sprite("grass"),
+				area(),
+				body({ isStatic: true }),
+				anchor("bot"),
+			],
+			"$": () => [
+				sprite("coin"),
+				area(),
+				anchor("bot"),
+				"coin",
+			],
+			"^": () => [
+				sprite("spike"),
+				area(),
+				anchor("bot"),
+				"danger",
+			],
+			">": () => [
+				sprite("portal"),
+				area(),
+				anchor("bot"),
+				"portal",
+			],
+		},
+	})
+
+```
+
+Finaly, the last part of the code is a bit more complex the rest of the code. This part of the code listens for when the player collides with an object. Such as a spike or a coin. If the pkayer collides with a spike - it's known as a "danger" class. - The player will just simple die and get the lose screen (the whole game resets). Now, if the player collides with a coin - it will just add points to the player's score. At the very end of the level, there is a portal. If the player goes though this portal, they get transported to the next level. All of this code is shown here in this code snippet;       
+
+Player Collides + Scoring:
+
+```JS
+player.onCollide("danger", () => {
+		player.pos = level.tile2Pos(0, 0)
+		// Go to "lose" scene when we hit a "danger"
+		go("lose")
+	})
+
+	player.onCollide("coin", (coin) => {
+		destroy(coin)
+		play("score")
+		score++
+		scoreLabel.text = score
+	})
+
+	player.onUpdate(() => {
+		if (player.pos.y >= 480) {
+			go("lose")
+		}
+	})
+
+	player.onCollide("portal", () => {
+		play("portal")
+		if (levelIdx < LEVELS.length - 1) {
+			// If there's a next level, go() to the same scene but load the next level
+			go("game", {
+				levelIdx: levelIdx + 1,
+				score: score,
+			})
+		} else {
+			// Otherwise we have reached the end of the game, go to the "win" scene!
+			go("win", { score: score })
+		}
+	})
+
+
+	const scoreLabel = add([
+		text(score),
+		pos(12),
+	])
 ```
 
 ### **_Challenges / Takeaways:_**
