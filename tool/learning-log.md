@@ -4650,7 +4650,7 @@ onClick(() => {
 
 ### Content Process:
 
-As you can see, this code is actally pretty simple at first glans. First, it creates an assest with the width valve set to _64_ in `const TILE_WIDTH = 64,` and with `const TILE_HEIGHT = TILE_WIDTH`. Then it randomizes the assest placements with the function `.createMazeMap`. In this function, it gets the `index`, pushs the `index` valve. After that it returns the map layout with `stack.push(neighbour), return map` As you can see bellow;
+As you can see, this code is actally pretty simple at first glans. First, it creates an assest with the width valve set to 64 in `const TILE_WIDTH = 64,` and with `const TILE_HEIGHT = TILE_WIDTH`. Then it randomizes the assest placements with the function `.createMazeMap`. In this function, it gets the `index`, pushs the `index` valve. After that it returns the map layout with `stack.push(neighbour), return map`. As shown bellow;
 
 **Tile Width + Maze Randomiztion:**
 ```JS
@@ -4699,7 +4699,50 @@ function createMazeMap(width, height) {
 }
 ```
 
-Second,
+Second, once it's done with that, it actually louds the maze in the window with `const symbols = options?.symbols || {}, const map = createMazeMap(width, height), const space = symbols[" "] || " ", const fence = symbols["#"] || "#"`. Using this, will print it onto the screen. Once that is done, it returns the space using the function `symbolMap`.    
+
+```JS
+function createMazeLevelMap(width, height, options) {
+	const symbols = options?.symbols || {}
+	const map = createMazeMap(width, height)
+	const space = symbols[" "] || " "
+	const fence = symbols["#"] || "#"
+	const detail = [
+		space,
+		symbols["╸"] || "╸",   //  1
+		symbols["╹"] || "╹",   //  2
+		symbols["┛"] || "┛",   //  3
+		symbols["╺"] || "╺",   //  4
+		symbols["━"] || "━",   //  5
+		symbols["┗"] || "┗",   //  6
+		symbols["┻"] || "┻",   //  7
+		symbols["╻"] || "╻",   //  8
+		symbols["┓"] || "┓",   //  9
+		symbols["┃"] || "┃",   //  a
+		symbols["┫"] || "┫",   //  b
+		symbols["┏"] || "┏",   //  c
+		symbols["┳"] || "┳",   //  d
+		symbols["┣"] || "┣",   //  e
+		symbols["╋ "] || "╋ ", //  f
+	]
+	const symbolMap = options?.detailed ? map.map((s, index) => {
+		if (s === 0) return space
+		const x = Math.floor(index % width)
+		const leftWall = x > 0 && map[index - 1] == 1 ? 1 : 0
+		const rightWall = x < width - 1 && map[index + 1] == 1 ? 4 : 0
+		const topWall = index >= width && map[index - width] == 1 ? 2 : 0
+		const bottomWall = index < height * width - width && map[index + width] == 1 ? 8 : 0
+		return detail[leftWall | rightWall | topWall | bottomWall]
+	}) : map.map((s) => {
+		return s == 1 ? fence : space
+	})
+	const levelMap = []
+	for (let i = 0; i < height; i++) {
+		levelMap.push(symbolMap.slice(i * width, i * width + width).join(""))
+	}
+	return levelMap
+}
+```
 
 ### **_Challenges / Takeaways:_**
 
