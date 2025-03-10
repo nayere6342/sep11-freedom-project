@@ -4520,7 +4520,7 @@ player.onCollide("danger", () => {
 
 ### Main Content:
 
-Like ever section, at first I started off with googleing "how do mouse postions work in kaboom.js?" Which didn't get me anything at first. But I did some digging, and I found out how to use to in my platformer game. This led me into a rabbit hole I didn't even know was possiable. But    
+Like ever section, at first I started off with googleing "how do mouse postions work in kaboom.js?" Which didn't get me anything at first. But I did some digging, and I found out how to use to in my platformer game. This led me into a rabbit hole I didn't even know was possiable. But I got though it and found a way to create user mouse inputs. This code shown bellow shows the user mouse inputs used in a maze type game. Here is the code for this:        
 
 ```JS
 kaboom({
@@ -4650,7 +4650,56 @@ onClick(() => {
 
 ### Content Process:
 
-This code is actally pretty simple at first glans
+As you can see, this code is actally pretty simple at first glans. First, it creates an assest with the width valve set to _64_ in `const TILE_WIDTH = 64,` and with `const TILE_HEIGHT = TILE_WIDTH`. Then it randomizes the assest placements with the function `.createMazeMap`. In this function, it gets the `index`, pushs the `index` valve. After that it returns the map layout with `stack.push(neighbour), return map` As you can see bellow;
+
+**Tile Width + Maze Randomiztion:**
+```JS
+const TILE_WIDTH = 64
+const TILE_HEIGHT = TILE_WIDTH
+
+function createMazeMap(width, height) {
+	const size = width * height
+	function getUnvisitedNeighbours(map, index) {
+		const n = []
+		const x = Math.floor(index / width)
+		if (x > 1 && map[index - 2] === 2) n.push(index - 2)
+		if (x < width - 2 && map[index + 2] === 2) n.push(index + 2)
+		if (index >= 2 * width && map[index - 2 * width] === 2) n.push(index - 2 * width)
+		if (index < size - 2 * width && map[index + 2 * width] === 2) n.push(index + 2 * width)
+		return n
+	}
+	const map = new Array(size).fill(1, 0, size)
+	map.forEach((_, index) => {
+		const x = Math.floor(index / width)
+		const y = Math.floor(index % width)
+		if ((x & 1) === 1 && (y & 1) === 1) {
+			map[index] = 2
+		}
+	})
+
+	const stack = []
+	const startX = Math.floor(Math.random() * (width - 1)) | 1
+	const startY = Math.floor(Math.random() * (height - 1)) | 1
+	const start = startX + startY * width
+	map[start] = 0
+	stack.push(start)
+	while (stack.length) {
+		const index = stack.pop()
+		const neighbours = getUnvisitedNeighbours(map, index)
+		if (neighbours.length > 0) {
+			stack.push(index)
+			const neighbour = neighbours[Math.floor(neighbours.length * Math.random())]
+			const between = (index + neighbour) / 2
+			map[neighbour] = 0
+			map[between] = 0
+			stack.push(neighbour)
+		}
+	}
+	return map
+}
+```
+
+Second,
 
 ### **_Challenges / Takeaways:_**
 
