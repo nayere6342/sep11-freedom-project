@@ -3,6 +3,10 @@
 
 ---
 
+At the time of me writing this blob, it's probably one of the must complexed I haved done so far in this freedom project.
+
+```JS
+```
 
 ---
 
