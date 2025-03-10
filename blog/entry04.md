@@ -3,7 +3,12 @@
 
 ---
 
-At the time of me writing this blob, it's probably one of the must complexed I haved done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. 
+## Intro:
+
+At the time of me writing this fourth blog entry, it's probably one of the must complexed I haved done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. 
+
+## Code Presentation:
+
 
 ```JS
 ```
