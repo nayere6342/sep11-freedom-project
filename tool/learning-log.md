@@ -4193,11 +4193,12 @@ go("battle")
 	* This is due to the fact that I can get a better understanding of what my tool can do.
 
 
+
 # Section #9:
 
 ### Main Content:
 
-Like every section, at first I started off by googling "how do mouse positions work in kaboom.js?" Which didn't get me anything at first. But I did some digging, and I found out how to use to in my platformer game. This led me into a rabbit hole I didn't even know was possible. But I got through it and found a way to create user mouse inputs. This code shown below shows the user mouse inputs used in a maze type game. Here is the code for this:        
+Like every section, at first I started off by googling "how do mouse positions work in kaboom.js?" Which didn't get me anything at first. But I did some digging, and I found out how to use it in my platformer game. This led me into a rabbit hole I didn't even know was possible. But I got through it and found a way to create user mouse inputs. This code shown below shows the user mouse inputs used in a maze type game. Here is the code for this:        
 
 ```JS
 kaboom({
@@ -4424,9 +4425,9 @@ function createMazeLevelMap(width, height, options) {
 }
 ```
 
-Finally, 
+Finally, the last thing on the list is this. This is what makes the player move around the maze. Using the `level.spawn` addon, it allows the player to move around with a set speed, height, and size. Now to make the player actually move using the user mouse inputs. It can be used by the `onClick` type with `const pos = mousePos(), bean.setTarget(vec2`. It first listens for the user mouse click. Then it gets the position relative to the window space. After that it creates a path to the mouse so that the assets (player) can go to that position. As shown in this code piece.    
 
-
+**Player Movement + User Mouse Input:**
 ```JS
 const level = addLevel(
 	createMazeLevelMap(15, 15, {}),
@@ -4462,6 +4463,10 @@ onClick(() => {
 
 ### **_Challenges / Takeaways:_**
 
+* I don't have a lot of changes for this log but I believe that One challenge I had while writing up this learning log was that I felt that I had forgotten a bit of kaboom.js over the weeks.
+
+	* This might have been because I had stopped tinkering for a bit of time while doing other things. 
+
 * Another challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
 
 	* because I keep getting errors, crashes, and plain issues.
@@ -4470,12 +4475,15 @@ onClick(() => {
 
 * One other takeaway I had from this learning log was that I need better time management skills in this space.
 
-	* As in not doing everything last minute...
+	* As in not doing everything last minute.
+
+* Another takeaway I got from this is that these logs shouldn't be tossed away and forgotten.
+  
+	* Instead it should be done right in this context.
    
 * One takeaway I have was that I need to tinker more with my tool.
   
 	* This is due to the fact that I can get a better understanding of what my tool can do.
-
 
 
 
