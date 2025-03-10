@@ -4516,7 +4516,29 @@ player.onCollide("danger", () => {
 	* This is due to the fact that I can get a better understanding of what my tool can do.
 
 
+# Section #9:
 
+### Main Content:
+
+
+### Content Process:
+
+
+### **_Challenges / Takeaways:_**
+
+* Another challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
+
+	* because I keep getting errors, crashes, and plain issues.
+   
+ 	* This was before I started researching things about kaboom.js.
+
+* One other takeaway I had from this learning log was that I need better time management skills in this space.
+
+	* As in not doing everything last minute...
+   
+* One takeaway I have was that I need to tinker more with my tool.
+  
+	* This is due to the fact that I can get a better understanding of what my tool can do.
 
 
 
@@ -4600,26 +4622,6 @@ player.onCollide("danger", () => {
 
 
 
-#### **__Links:__**
 
-
-* [**_SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
-
-    * [JS-bin:](https://jsbin.com/?js,output)
-
-    * [Code Samples:](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
-
-* [**The Full Students Repo!**](https://github.com/hstatsep-students/)
-
-    * [_SEP11_ Blog Page Overview:](https://github.com/nayere6342/sep11-freedom-project/tree/main)
-
-    * [_SEP11_ Entry Backup Doc:](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
- 
-  
-
-
-
-
----
 
 
