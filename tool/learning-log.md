@@ -4652,7 +4652,8 @@ onClick(() => {
 
 As you can see, this code is actally pretty simple at first glans. First, it creates an assest with the width valve set to 64 in `const TILE_WIDTH = 64,` and with `const TILE_HEIGHT = TILE_WIDTH`. Then it randomizes the assest placements with the function `.createMazeMap`. In this function, it gets the `index`, pushs the `index` valve. After that it returns the map layout with `stack.push(neighbour), return map`. As shown bellow;
 
-**Tile Width + Maze Randomiztion:**
+
+**Tile Width + Maze Matrix Randomiztion:**
 ```JS
 const TILE_WIDTH = 64
 const TILE_HEIGHT = TILE_WIDTH
@@ -4699,8 +4700,10 @@ function createMazeMap(width, height) {
 }
 ```
 
-Second, once it's done with that, it actually louds the maze in the window with `const symbols = options?.symbols || {}, const map = createMazeMap(width, height), const space = symbols[" "] || " ", const fence = symbols["#"] || "#"`. Using this, will print it onto the screen. Once that is done, it returns the space using the function `symbolMap`.    
+Second, once it's done with that, it actually louds the maze in the window with `const symbols = options?.symbols || {}, const map = createMazeMap(width, height), const space = symbols[" "] || " ", const fence = symbols["#"] || "#"`. Using this, will print it onto the screen. Once that is done, it returns the space using the function `symbolMap`. It uses the math matrix to print out the maze onto the screen. With the help of the `const detail`. After all of that is done it returns the valve of `levelMap` as shown here;  
 
+
+**Maze Metrix Printing:**
 ```JS
 function createMazeLevelMap(width, height, options) {
 	const symbols = options?.symbols || {}
@@ -4742,6 +4745,42 @@ function createMazeLevelMap(width, height, options) {
 	}
 	return levelMap
 }
+```
+
+Finally, 
+
+
+```JS
+const level = addLevel(
+	createMazeLevelMap(15, 15, {}),
+	{
+		tileWidth: TILE_WIDTH,
+		tileHeight: TILE_HEIGHT,
+		tiles: {
+			"#": () => [
+				sprite("steel"),
+				tile({ isObstacle: true }),
+			],
+		},
+	},
+)
+
+const bean = level.spawn([
+	sprite("bean"),
+	anchor("center"),
+	pos(32, 32),
+	tile(),
+	agent({ speed: 640, allowDiagonals: true }),
+	"bean",
+], 1, 1)
+
+onClick(() => {
+	const pos = mousePos()
+	bean.setTarget(vec2(
+		Math.floor(pos.x / TILE_WIDTH) * TILE_WIDTH + TILE_WIDTH / 2,
+		Math.floor(pos.y / TILE_HEIGHT) * TILE_HEIGHT + TILE_HEIGHT / 2,
+	))
+})
 ```
 
 ### **_Challenges / Takeaways:_**
