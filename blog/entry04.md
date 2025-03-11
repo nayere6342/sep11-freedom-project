@@ -5,11 +5,11 @@
 
 ## Intro:
 
-At the time of me writing this fourth blog entry, it's probably one of the must complexed I haved done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. It might seen conplex at first. But I got the hang of it when I started tinkering. So that's what I did, I started thinkering in perview mode.   
+At the time of me writing this fourth blog entry, it's probably one of the must complexed I haved done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. It might seen conplex at first. But I got the hang of it when I started tinkering. So that's what I did, I started thinkering in perview mode. And I found out that game I'm working on has a lot of things that aren't simple. Even though I have tried to keep the code simple in the fact that I try to avoid big errors in my code.     
 
 ## Code Presentation:
 
-As shown her it is pretty complex at first. But when it's broken down into smaller pieces it gets simpler. By doing this method the code will get simpler by the fact that like I said before that; I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now.    
+Now, onto, the code presentation; it's all shown here that it's is pretty complex at first. But when it's broken down into smaller pieces it gets simpler. By doing this method the code will get simpler by the fact that like I said before that; I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. This is useful for many reasons like; getting a death screen for my platformer game I'm working on in kaboom.js. As well as having a coin pick-ups so that the player can get a scoring system set in place for future things like an item shop. Anyways, here is the code for this entry;    
 
 ```JS
 kaboom({
