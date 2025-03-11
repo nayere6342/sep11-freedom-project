@@ -388,7 +388,7 @@ go("game")
 
 ### Design Process: 
 
-
+My design process for this is that I believe that all things can be simplfulied by broking it down in the sence of this. That's what I believe, this is because of the simple fact that I have already shown how simple the code it is itself. 
 
 ### **_Challenges / Takeaways:_**
 
