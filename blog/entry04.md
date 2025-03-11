@@ -5,7 +5,7 @@
 
 ## Intro:
 
-At the time of me writing this fourth blog entry, it's probably one of the must complexed I haved done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. It might seen conplex at first. But I got the hang of it when I started tinkering.  
+At the time of me writing this fourth blog entry, it's probably one of the must complexed I haved done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. It might seen conplex at first. But I got the hang of it when I started tinkering. So that's what I did, I started thinkering in perview mode.   
 
 ## Code Presentation:
 
