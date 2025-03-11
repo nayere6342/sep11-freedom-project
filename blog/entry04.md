@@ -9,6 +9,7 @@ At the time of me writing this fourth blog entry, it's probably one of the must 
 
 ## Code Presentation:
 
+As shown her it is pretty complex at first. But when it's broken down into smaller pieces it gets simpler. By doing this method the code will get simpler by the fact that like I said before that; I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now.    
 
 ```JS
 kaboom({
