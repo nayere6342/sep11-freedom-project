@@ -386,6 +386,66 @@ go("game")
 
 ```
 
+The first thing that happends in code is the d 
+
+```JS
+// custom component controlling enemy patrol movement
+function patrol(speed = 60, dir = 1) {
+	return {
+		id: "patrol",
+		require: [ "pos", "area" ],
+		add() {
+			this.on("collide", (obj, col) => {
+				if (col.isLeft() || col.isRight()) {
+					dir = -dir
+				}
+			})
+		},
+		update() {
+			this.move(speed * dir, 0)
+		},
+	}
+}
+
+// custom component that makes stuff grow big
+function big() {
+	let timer = 0
+	let isBig = false
+	let destScale = 1
+	return {
+		// component id / name
+		id: "big",
+		// it requires the scale component
+		require: [ "scale" ],
+		// this runs every frame
+		update() {
+			if (isBig) {
+				timer -= dt()
+				if (timer <= 0) {
+					this.smallify()
+				}
+			}
+			this.scale = this.scale.lerp(vec2(destScale), dt() * 6)
+		},
+		// custom methods
+		isBig() {
+			return isBig
+		},
+		smallify() {
+			destScale = 1
+			timer = 0
+			isBig = false
+		},
+		biggify(time) {
+			destScale = 2
+			timer = time
+			isBig = true
+		},
+	}
+}
+
+```
+
 ### Design Process: 
 
 For this design process I will try to keep processing short for this entry, that's what I will be doing in this entry. My design process for this is that I believe that all things can be simplified by breaking it down in the sense of this. That's what I believe, this is because of the simple fact that I have already shown how simple the code itself is by this. Due to this fact, it is easy to point out that parts of the code are in fact really complex at first looking at it. But after all that, it becomes super simple once it's all broken down. As well as having a calm mindset while coding is my process for this entry. Besides that, it's overall pretty simple in the sense of this entry. That's pretty much it for this entry.     
