@@ -3,11 +3,11 @@
 
 ---
 
-## Intro:
+## **Intro:**
 
 At the time of me writing this fourth blog entry, it's probably one of the most complex I have done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. It might seem complex at first. But I got the hang of it when I started tinkering. So that's what I did, I started thinking in preview mode. And I found out that the game I'm working on has a lot of things that aren't simple. Even though I have tried to keep the code simple in the fact that I try to avoid big errors in my code.     
 
-## Code Presentation:
+## **Code Presentation:**
 
 Now, onto the code presentation; it's all shown here that it is pretty complex at first. But when it's broken down into smaller pieces it gets simpler. By doing this method the code will get simpler by the fact that like I said before that; I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. This is useful for many reasons like; getting a death screen for my platformer game I'm working on in kaboom.js. As well as having coin pick-ups so that the player can get a scoring system set in place for future things like an item shop. Anyways, here is the code for this entry;    
 
@@ -750,11 +750,23 @@ go("game")
 
 ```
 
-### Design Process: 
+### **Design Process:** 
 
 For this design process I will try to keep processing short for this entry, that's what I will be doing in this entry. My design process for this is that I believe that all things can be simplified by breaking it down in the sense of this. That's what I believe, this is because of the simple fact that I have already shown how simple the code itself is by this. Due to this fact, it is easy to point out that parts of the code are in fact really complex at first looking at it. But after all that, it becomes super simple once it's all broken down. As well as having a calm mindset while coding is my process for this entry. Besides that, it's overall pretty simple in the sense of this entry. That is as simple as it gets. That's pretty much it for this entry.     
 
+### **Challenges & Takeaways:**
 
+* I don't have many challenges but, one big challenge I had in my experience in this entry was that I didn't ask for help enough.
+  
+	* _Mostly because I didn't use slack or any other help like before in the older entries._
+
+* Also, I had challenges that this was the fact that my IDE keeped lagging throughout the whole time I was testing out things for the project. 
+
+* Another challenge I faced was that I feel thai I didn't tinker enough while working on this entry. Thus having a bit of a harder time working on this entry. Also, this could have been because of the fact that I keep getting errors, lagging, and plan bugs.
+   
+* One takeaway I had from this was that I need to tinker more in my own time while doing this entry.
+
+* Last takeaway that I got from this was that I didn't spend my time well in that I didn't make any time so that when I would do it be harder for me.
 
 
 ---
