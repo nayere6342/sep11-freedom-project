@@ -3,7 +3,7 @@
 
 ---
 
-## Intro:
+## **Intro:**
 
 At the time of me writing this fourth blog entry, it's probably one of the most complex I have done so far in this freedom project. That's why I started tinkering with kaboom.js again. This code is a sample of what I'm doing right now in SEP. That's what I'm doing as of now. It might seem complex at first. But I got the hang of it when I started tinkering. So that's what I did, I started thinking in preview mode. And I found out that the game I'm working on has a lot of things that aren't simple. Even though I have tried to keep the code simple in the fact that I try to avoid big errors in my code.     
 
