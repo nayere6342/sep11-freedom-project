@@ -760,13 +760,13 @@ For this design process I will try to keep processing short for this entry, that
   
 	* _Mostly because I didn't use slack or any other help like before in the older entries._
 
-* Also, I had challenges that this was the fact that my IDE keeped lagging throughout the whole time I was testing out things for the project. 
+* Also, I had challenges with the fact that my I.D.E keeps lagging throughout the whole time I was testing out things for the project. 
 
-* Another challenge I faced was that I feel thai I didn't tinker enough while working on this entry. Thus having a bit of a harder time working on this entry. Also, this could have been because of the fact that I keep getting errors, lagging, and plan bugs.
+* Another challenge I faced was that I feel that I didn't tinker enough while working on this entry. Thus having a bit of a harder time working on this entry. Also, this could have been because of the fact that I keep getting errors, lagging, and plan bugs.
    
 * One takeaway I had from this was that I need to tinker more in my own time while doing this entry.
 
-* Last takeaway that I got from this was that I didn't spend my time well in that I didn't make any time so that when I would do it be harder for me.
+* Last takeaway that I got from this was that I didn't spend my time well in that I didn't make any time so that when I would do it was harder for me.
 
 
 ---
@@ -792,6 +792,7 @@ For this design process I will try to keep processing short for this entry, that
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
