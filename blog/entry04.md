@@ -388,8 +388,10 @@ go("game")
 
 ```
 
-The first thing that happens in code is the set enemy movement system. This is actually pretty simple at first look. All it does is that it first patrols at the set speed of 60 in `speed = 60, dir = 1` then it creates a collision hitbox around itself shown here; `add() { this.on("collide", (obj, col) => { if (col.isLeft() || col.isRight()) { dir = -dir }`. So that if the player hits that collision box it reset the whole game (game over). But the complicated part comes after that, in the item growing system. This does the task of growing the player model in the game. This also changes the hit box of the player as well so that they can get coins or even get killed by an outside spike trap. As shown here; `return { id: "big", require: [ "scale" ], update() { if (isBig) { timer -= dt() if (timer <= 0) { this.smallify() } } his.scale = this.scale.lerp(vec2(destScale), dt() * 6)}` The item also has a collision hitbox so that once the player goes through the item it gets sent to the code which updates the player model. Once it's done with that: It starts a timer. When that timer finishes the player mode goes back to normal. With this; `isBig() { return isBig }, smallify() { destScale = 1 timer = 0 isBig = false }, biggify(time) { destScale = 2 timer = time isBig = true }, }`. Here is the full code snippet:       
+The first thing that happens in code is the set enemy movement system. This is actually pretty simple at first look. All it does is that it first patrols at the set speed of 60 in `speed = 60, dir = 1` then it creates a collision hitbox around itself shown here; `add() { this.on("collide", (obj, col) => { if (col.isLeft() || col.isRight()) { dir = -dir }`. So that if the player hits that collision hitbox it reset the whole game (game over). But the complicated part comes after that, in the item growing system. This does the task of growing the player model in the game. This also changes the hit box of the player as well so that they can get coins or even get killed by an outside spike trap. As shown here; `return { id: "big", require: [ "scale" ], update() { if (isBig) { timer -= dt() if (timer <= 0) { this.smallify() } } his.scale = this.scale.lerp(vec2(destScale), dt() * 6)}` The item also has a collision hitbox so that once the player goes through the item it gets sent to the code which updates the player model. Once it's done with that: It starts a timer. When that timer finishes the player mode goes back to normal. With this; `isBig() { return isBig }, smallify() { destScale = 1 timer = 0 isBig = false }, biggify(time) { destScale = 2 timer = time isBig = true }, }`. Here is the full code snippet:       
 
+
+**Enemy Movement System+ Power-up Collision Hitbox:**
 ```JS
 function patrol(speed = 60, dir = 1) {
 	return {
@@ -445,6 +447,8 @@ function big() {
 
 Then the second thing that happened in this is the map loader. The map loader was a bit more difficult than it seems to be. This is because of all the values loaded into it. Such as `$` representing the coin layout in the map with this; `"$": () => [ sprite("coin"), area(), pos(0, -9), anchor("bot"), offscreen({ hide: true }), "coin", ]`. This helps the game to know the model of the code as well as the position, area point and the class of the model. It's useful for the game to know all of those values to make it run better. This can be shown here in the `const LEVELS` array. The whole code piece is shown right here;    
 
+
+**Map Layout + Game Art:**
 ```JS
 const JUMP_FORCE = 1320
 const MOVE_SPEED = 480
@@ -751,11 +755,7 @@ go("game")
 For this design process I will try to keep processing short for this entry, that's what I will be doing in this entry. My design process for this is that I believe that all things can be simplified by breaking it down in the sense of this. That's what I believe, this is because of the simple fact that I have already shown how simple the code itself is by this. Due to this fact, it is easy to point out that parts of the code are in fact really complex at first looking at it. But after all that, it becomes super simple once it's all broken down. As well as having a calm mindset while coding is my process for this entry. Besides that, it's overall pretty simple in the sense of this entry. That is as simple as it gets. That's pretty much it for this entry.     
 
 
-### **_Challenges / Takeaways:_**
 
-* 
-* 
-* 
 
 ---
 
