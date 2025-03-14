@@ -442,7 +442,7 @@ function big() {
 
 ```
 
-Then the second thing that happenes in this is the map loader. The map loader was is a bit more diffcult that it seems to be. This is because of all the values loadeed into it. Such as `$` representing the coin layout in the map with this; `"$": () => [ sprite("coin"), area(), pos(0, -9), anchor("bot"), offscreen({ hide: true }), "coin", ]`. This helps the game to know the model of the code as well as the postion, area point and the class of the model. It's useful for the game to know all of those values to make it run better.    
+Then the second thing that happenes in this is the map loader. The map loader was is a bit more diffcult that it seems to be. This is because of all the values loadeed into it. Such as `$` representing the coin layout in the map with this; `"$": () => [ sprite("coin"), area(), pos(0, -9), anchor("bot"), offscreen({ hide: true }), "coin", ]`. This helps the game to know the model of the code as well as the postion, area point and the class of the model. It's useful for the game to know all of those values to make it run better. This can be shown here in the `const LEVELS` array. The whole code piece is shown right here;    
 
 ```JS
 const JUMP_FORCE = 1320
@@ -564,6 +564,8 @@ const levelConf = {
 	},
 }
 ```
+
+Last and finaully.
 
 ### Design Process: 
 
