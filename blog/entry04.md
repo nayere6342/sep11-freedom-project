@@ -567,7 +567,7 @@ const levelConf = {
 }
 ```
 
-Finally at last of them all is the final layout screen. This is the thing the player will see once they first boot-up like seeing the all the object models in the playable window here; `const player = add([ sprite("bean"), pos(0, 0), area(),scale(1)]`. All it does it just loads in all the game assests. After that it checks if the player is no longer on the map, in the game it's the void. Once the player is in the void they are killed instndly from this; `player.onUpdate(() => { camPos(player.pos) if (player.pos.y >= FALL_DEATH) { go("lose") }})`. When the player is killed, the whole map is cleared and the death screen appeas. The player model also has a hitbox as well     
+Finally at last of them all is the final layout screen. This is the thing the player will see once they first boot-up like seeing all the object models in the playable window here; `const player = add([ sprite("bean"), pos(0, 0), area(),scale(1)]`. All it does is just load in all the game assets. After that it checks if the player is no longer on the map, in the game it's the void. Once the player is in the void they are killed instantly from this; `player.onUpdate(() => { camPos(player.pos) if (player.pos.y >= FALL_DEATH) { go("lose") }})`. When the player is killed, the whole map is cleared and the death screen appears. The player model also has a hitbox as well     
 
 ```JS
 scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 }) => {
@@ -779,6 +779,7 @@ For this design process I will try to keep processing short for this entry, that
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
