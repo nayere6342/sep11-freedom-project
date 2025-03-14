@@ -386,10 +386,10 @@ go("game")
 
 ```
 
-The first thing that happends in code is the d 
+The first thing that happends in code is the set enemy movement system. This is actually pretty simple at first look. All it does is that it first patrols at the set spped of 60 in `speed = 60, dir = 1` then it creates a collidion box around it's self shown here; `	add() { this.on("collide", (obj, col) => { if (col.isLeft() || col.isRight()) { dir = -dir }`. So that if the player hits that collidion box it reset the whole game (game over). But the complacted comes after that, in the item growing system. This does the task of growing the player charactor in the game. This also changes the hit box of the player as well so that they can get coins or even get killed by an outside spike trap. As shown here; `	return { id: "big", require: [ "scale" ], update() { if (isBig) { timer -= dt() if (timer <= 0) { this.smallify() } } his.scale = this.scale.lerp(vec2(destScale), dt() * 6)
+}` The item      
 
 ```JS
-// custom component controlling enemy patrol movement
 function patrol(speed = 60, dir = 1) {
 	return {
 		id: "patrol",
@@ -407,17 +407,13 @@ function patrol(speed = 60, dir = 1) {
 	}
 }
 
-// custom component that makes stuff grow big
 function big() {
 	let timer = 0
 	let isBig = false
 	let destScale = 1
 	return {
-		// component id / name
 		id: "big",
-		// it requires the scale component
 		require: [ "scale" ],
-		// this runs every frame
 		update() {
 			if (isBig) {
 				timer -= dt()
