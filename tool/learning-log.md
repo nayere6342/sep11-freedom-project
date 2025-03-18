@@ -4811,17 +4811,19 @@ onClick(() => {
 
 
 
+
+
 # Section #10:
 ### Nayer Ebraheim - 3/17/25
 
 ### Main Content:
 
-For some context; like every log I have done so far, I believe that over the months that actually I have learned a ton over these mouths. This is why I reseached things before I started this learning log. To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. That why I did it to get a better understanding of the js framework. I started reseaching the framework because I mostly forgot the framework itself. Since I had completly stop reseaching the parts I needed for the project. 
+For some context; like every log I have done so far, I believe that over the months that actually I have learned a ton over these mouths. This is why I researched things before I started this learning log. To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. That why I did it to get a better understanding of the js framework. I started researching the framework because I mostly forgot the framework itself. Since I had completely stopped researching the parts I needed for the project. 
 
 
 ### Content Process:
 
-Moving on to the content process; I have done a lot of reseaching over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this reseach I kept trying to find more things to use for my project, even if it was small things. Such as have an object follow your mouse or even a moving ball that gets destroyed if it collids with the borders of the window. With just these two things you have yourself a game of pong. As shown in the preview bellow in this;   
+Moving on to the content process; I have done a lot of research over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connected to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. With just these two things you have yourself a game of pong. As shown in the preview bellow in this;   
 
 Preview:
 ```JS
@@ -4906,6 +4908,7 @@ console.log(score++)
 
 
 * One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
+
 
 
 
