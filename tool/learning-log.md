@@ -4870,10 +4870,12 @@ kaboom({
 	const ball = add([
 		pos(center()),
 		circle(30),
-		outline(40),
+		outline(40,255),
+
 		area({ shape: new Rect(vec2(-16), 32, 32) }),
 		{ vel: Vec2.fromAngle(rand(-20, 20)) },
 	])
+
 	
 	// if the ball hits the floor, it bounds back:
 
@@ -4892,10 +4894,11 @@ kaboom({
 	
 	//  With this, the ball should be able to bound of the sliders 
 	ball.onCollide("slide", (p) => {
-		speed += 300
+		speed += 100
 		ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos))
 		score++
 	})
+console.log(score++)
 
 ```
 
