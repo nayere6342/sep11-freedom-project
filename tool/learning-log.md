@@ -4193,6 +4193,7 @@ go("battle")
 	* This is due to the fact that I can get a better understanding of what my tool can do.
 
 # Section #8:
+### Nayer Ebraheim - 2/20/25
 
 ### Main Content:
 
@@ -4517,6 +4518,7 @@ player.onCollide("danger", () => {
 
 
 # Section #9:
+### Nayer Ebraheim - 3/10/25
 
 ### Main Content:
 
@@ -4810,90 +4812,96 @@ onClick(() => {
 
 
 # Section #10:
+### Nayer Ebraheim - 3/17/25
 
 ### Main Content:
 
-Like every log I have done so far, I believe that over the months that actually I have learned a ton over these mouths. This is why I  
+For some context; like every log I have done so far, I believe that over the months that actually I have learned a ton over these mouths. This is why I reseached things before I started this learning log. To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. That why I did it to get a better understanding of the js framework. I started reseaching the framework because I mostly forgot the framework itself. Since I had completly stop reseaching the parts I needed for the project. 
+
 
 ### Content Process:
 
+Moving on to the content process; I have done a lot of reseaching over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this reseach I kept trying to find more things to use for my project
+
+Preview:
 ```JS
 kaboom({
-	background: [ 255, 255, 128 ],
+	background: [ 200, 255, 128 ],
 })
 
 // add paddles
-add([
-	pos(40, 0),
-	rect(20, 80),
-	outline(4),
-	anchor("center"),
-	area(),
-	"paddle",
-])
-
-add([
-	pos(width() - 40, 0),
-	rect(20, 80),
-	outline(4),
-	anchor("center"),
-	area(),
-	"paddle",
-])
-
-// move paddles with mouse
-onUpdate("paddle", (p) => {
-	p.pos.y = mousePos().y
-})
-
-// score counter
-let score = 0
-
-add([
-	text(score),
-	pos(center()),
-	anchor("center"),
-	z(50),
-	{ update() { this.text = score }},
-])
-
-// ball
-let speed = 480
-
-const ball = add([
-	pos(center()),
-	circle(16),
-	outline(4),
-	area({ shape: new Rect(vec2(-16), 32, 32) }),
-	{ vel: Vec2.fromAngle(rand(-20, 20)) },
-])
-
-// move ball, bounce it when touche horizontal edges, respawn when touch vertical edges
-ball.onUpdate(() => {
-	ball.move(ball.vel.scale(speed))
-	if (ball.pos.x < 0 || ball.pos.x > width()) {
-		score = 0
-		ball.pos = center()
-		ball.vel = Vec2.fromAngle(rand(-20, 20))
-		speed = 320
-	}
-	if (ball.pos.y < 0 || ball.pos.y > height()) {
-		ball.vel.y = -ball.vel.y
-	}
-})
-
-// bounce when touch paddle
-ball.onCollide("paddle", (p) => {
-	speed += 60
-	ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos))
-	score++
-})
+	add([
+		pos(40, 0),
+		rect(20, 180),
+		outline(15),
+		anchor("center"),
+		area(),
+		"paddle",
+	])
+	
+	add([
+		pos(width() - 40, 0),
+		rect(20, 180),
+		outline(15),
+		anchor("center"),
+		area(),
+		"paddle",
+	])
+	
+	// move paddles with mouse
+	onUpdate("paddle", (p) => {
+		p.pos.y = mousePos().y
+	})
+	
+	// score counter
+	let score = 0
+	
+	add([
+		text(score),
+		pos(center()),
+		anchor("center"),
+		z(50),
+		{ update() { this.text = score }},
+	])
+	
+	// ball
+	let speed = 500
+	
+	const ball = add([
+		pos(center()),
+		circle(30),
+		outline(40),
+		area({ shape: new Rect(vec2(-16), 32, 32) }),
+		{ vel: Vec2.fromAngle(rand(-20, 20)) },
+	])
+	
+	// move ball, bounce it when touche horizontal edges, respawn when touch vertical edges
+	ball.onUpdate(() => {
+		ball.move(ball.vel.scale(speed))
+		if (ball.pos.x < 0 || ball.pos.x > width()) {
+			score = 0
+			ball.pos = center()
+			ball.vel = Vec2.fromAngle(rand(-20, 20))
+			speed = 500
+		}
+		if (ball.pos.y < 0 || ball.pos.y > height()) {
+			ball.vel.y = -ball.vel.y
+		}
+	})
+	
+	// bounce when touch paddle
+	ball.onCollide("paddle", (p) => {
+		speed += 60
+		ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos))
+		score++
+	})
 
 ```
 
 ### **_Challenges / Takeaways:_**
 
 
+* One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
 
 
 
@@ -4932,14 +4940,6 @@ ball.onCollide("paddle", (p) => {
     * [Code Samples:](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
 
 * [**The Full Students Repo!**](https://github.com/hstatsep-students/)
-
-    * [_SEP11_ Blog Page Overview:](https://github.com/nayere6342/sep11-freedom-project/tree/main)
-
-    * [_SEP11_ Entry Backup Doc:](https://docs.google.com/document/d/1YnfwCAMGU6oB6WFvHh2m1oW8arNfXkU21ra7zhBruOA/edit?tab=t.0)
- 
-  
-
-
 
 
 ---
