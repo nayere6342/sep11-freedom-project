@@ -4821,22 +4821,22 @@ For some context; like every log I have done so far, I believe that over the mon
 
 ### Content Process:
 
-Moving on to the content process; I have done a lot of reseaching over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this reseach I kept trying to find more things to use for my project
+Moving on to the content process; I have done a lot of reseaching over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this reseach I kept trying to find more things to use for my project, even if it was small things. Such as have an object follow your mouse or even a moving ball that gets destroyed if it collids with the borders of the window. With just these two things you have yourself a game of pong.   
 
 Preview:
 ```JS
 kaboom({
-	background: [ 200, 255, 128 ],
+	background: [ 255, 100, 128 ],
 })
 
-// add paddles
+ // adding all phs obj into the window
 	add([
 		pos(40, 0),
 		rect(20, 180),
 		outline(15),
 		anchor("center"),
 		area(),
-		"paddle",
+		"slide",
 	])
 	
 	add([
@@ -4845,11 +4845,11 @@ kaboom({
 		outline(15),
 		anchor("center"),
 		area(),
-		"paddle",
+		"slide",
 	])
 	
-	// move paddles with mouse
-	onUpdate("paddle", (p) => {
+	// this moves the slides with mouse
+	onUpdate("slide", (p) => {
 		p.pos.y = mousePos().y
 	})
 	
@@ -4875,7 +4875,8 @@ kaboom({
 		{ vel: Vec2.fromAngle(rand(-20, 20)) },
 	])
 	
-	// move ball, bounce it when touche horizontal edges, respawn when touch vertical edges
+	// if the ball hits the floor, it bounds back:
+
 	ball.onUpdate(() => {
 		ball.move(ball.vel.scale(speed))
 		if (ball.pos.x < 0 || ball.pos.x > width()) {
@@ -4889,9 +4890,9 @@ kaboom({
 		}
 	})
 	
-	// bounce when touch paddle
-	ball.onCollide("paddle", (p) => {
-		speed += 60
+	//  With this, the ball should be able to bound of the sliders 
+	ball.onCollide("slide", (p) => {
+		speed += 300
 		ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos))
 		score++
 	})
