@@ -4821,7 +4821,7 @@ For some context; like every log I have done so far, I believe that over the mon
 
 ### Content Process:
 
-Moving on to the content process; I have done a lot of reseaching over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this reseach I kept trying to find more things to use for my project, even if it was small things. Such as have an object follow your mouse or even a moving ball that gets destroyed if it collids with the borders of the window. With just these two things you have yourself a game of pong.   
+Moving on to the content process; I have done a lot of reseaching over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this reseach I kept trying to find more things to use for my project, even if it was small things. Such as have an object follow your mouse or even a moving ball that gets destroyed if it collids with the borders of the window. With just these two things you have yourself a game of pong. As shown in the preview bellow in this;   
 
 Preview:
 ```JS
