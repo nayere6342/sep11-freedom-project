@@ -4509,7 +4509,7 @@ player.onCollide("danger", () => {
 
 * One other takeaway I had from this learning log was that I need better time management skills in this space.
 
-	* As in not doing everything last minute...
+	* _As in not doing everything last minute..._
    
 * One takeaway I have was that I need to tinker more with my tool.
   
@@ -4950,7 +4950,7 @@ Now before I get into the explanation, like I said before; _this research I kept
 	])
 ```
 
-The second part of this code that happens is the playable physics ball that bounds off the moving sliders once it hits the sliders. How this works is actually pretty simple, it first creates the ball with a set speed using this; `let speed = 500,` as well as `const ball = add([ pos(center()), circle(30), outline(40,255), area({ shape: new Rect(vec2(-16), 32, 32) }), { vel: Vec2.fromAngle(rand(-20, 20)) }, ])`JS  
+The second part of this code that happens is the playable physics ball that bounds off the moving sliders once it hits the sliders. How this works is actually pretty simple, it first creates the ball with a set speed using this; `let speed = 500,` as well as `const ball = add([ pos(center()), circle(30), outline(40,255), area({ shape: new Rect(vec2(-16), 32, 32) }), { vel: Vec2.fromAngle(rand(-20, 20)) }, ])` This ball will beable to move on it's own. So, it needs something to add to make it a fun and enjoyable game. A lose system: If it his the borders it will reset the score & the ball. however if the ball hits the floor it bounds back, by using this line here; `ball.onUpdate(() => { ball.move(ball.vel.scale(speed)) if (ball.pos.x < 0 || ball.pos.x > width()) { score = 0 ball.pos = center() ball.vel = Vec2.fromAngle(rand(-20, 20)) speed = 500 } if (ball.pos.y < 0 || ball.pos.y > height()) { ball.vel.y = -ball.vel.y } })` This, like I said before just adds a lose state to the game. The last and final thing here is the ball scoring system, like I said before; `ball.onCollide("slide", (p) => { speed += 100 ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos)) score++ })` If one of the sliders were to be hit by the ball, it just adds a point to the score. That's it and that final. The rest of the code is shown here;    
 
 **Ball Physics + Window Borders:** 
 
@@ -4969,7 +4969,6 @@ The second part of this code that happens is the playable physics ball that boun
 
 	
 	// if the ball hits the floor, it bounds back:
-
 	ball.onUpdate(() => {
 		ball.move(ball.vel.scale(speed))
 		if (ball.pos.x < 0 || ball.pos.x > width()) {
@@ -4997,6 +4996,13 @@ console.log(score++)
 
 * One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
 
+* One takeaway I have was that I need to tinker more with my tool.
+  
+	* This is due to the fact that I can get a better understanding of what my tool can do.
+
+* One other takeaway I had from this learning log was that I need better time management skills in this space.
+
+	* _As in not doing everything last minute..._
 
 
 
@@ -5047,29 +5053,6 @@ console.log(score++)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
 
 
 
