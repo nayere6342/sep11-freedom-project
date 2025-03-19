@@ -4828,20 +4828,21 @@ For some context; like every log I have done so far, I believe that over the mon
 
 Moving on to the content process; I have done a lot of research over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connected to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. With just these two things you have yourself a game of pong. As shown in the preview bellow in this;   
 
-Preview:
+**Preview:**
+
 ```JS
 kaboom({
 	background: [ 255, 100, 128 ],
 })
 
- // adding all phs obj into the window
+ // adding all phy obj into the window
 	add([
 		pos(40, 0),
 		rect(20, 180),
 		outline(15),
 		anchor("center"),
 		area(),
-		"slide",
+		"slider",
 	])
 	
 	add([
@@ -4850,11 +4851,11 @@ kaboom({
 		outline(15),
 		anchor("center"),
 		area(),
-		"slide",
+		"slider",
 	])
 	
 	// this moves the slides with mouse
-	onUpdate("slide", (p) => {
+	onUpdate("slider", (p) => {
 		p.pos.y = mousePos().y
 	})
 	
@@ -4898,7 +4899,7 @@ kaboom({
 	})
 	
 	//  With this, the ball should be able to bound of the sliders 
-	ball.onCollide("slide", (p) => {
+	ball.onCollide("slider", (p) => {
 		speed += 100
 		ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos))
 		score++
@@ -4907,12 +4908,13 @@ console.log(score++)
 
 ```
 
-Now before I get into the explanation, like I said before; this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. I said this because of the fact that I tried keeping the code simple so that it would be easier for me to use it in my game. The first thing in the preview that happens is spawning the both sliders as well as the scoring system. Using the `add` tag it will (you guessed it,) add objects into the playable window. Now onto the scoring system, all it does is that it detectes when one of the sliders has been hit. Using `let score = 0, add([ text(score), pos(center()), anchor("center"), z(50), { update() { this.text = score }}, ])` If one of the sliders were to be hit by the ball, it just adds a point to the score. All of the code is shown bellow;     
+Now before I get into the explanation, like I said before; _this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window._ I said this because of the fact that I tried keeping the code simple so that it would be easier for me to use it in my game. The first thing in the preview that happens is spawning the both sliders as well as the scoring system. Using the `add` _tag_ it will _(you guessed it)_ add objects into the playable window. After that, the sliders get linked to the mouse. So that if the mouse moves up, the sliders move up _(and vice versa.)_ Now onto the scoring system, all it does is that it detects when one of the sliders has been hit. Using `let score = 0, add([ text(score), pos(center()), anchor("center"), z(50), { update() { this.text = score }}, ])` If one of the sliders were to be hit by the ball, it just adds a point to the score. All of the code is shown below;     
 
 
-Adding Objects + Scoring System: 
+**Adding Objects + Scoring System:**
+
 ```JS
-// adding all phs obj into the window
+// adding all phy obj into the window
 	add([
 		pos(40, 0),
 		rect(20, 180),
@@ -4948,9 +4950,10 @@ Adding Objects + Scoring System:
 	])
 ```
 
-The last thing in this code is the 
+The second part of this code that happens is the playable physics ball that bounds off the moving sliders once it hits the sliders. How this works is actually pretty simple, it first creates the ball with a set speed using this; `let speed = 500,` as well as `const ball = add([ pos(center()), circle(30), outline(40,255), area({ shape: new Rect(vec2(-16), 32, 32) }), { vel: Vec2.fromAngle(rand(-20, 20)) }, ])`JS  
 
-Ball Physics + Window Bornders: 
+**Ball Physics + Window Borders:** 
+
 ```JS
 	// ball
 	let speed = 500
@@ -4993,6 +4996,7 @@ console.log(score++)
 
 
 * One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
+
 
 
 
