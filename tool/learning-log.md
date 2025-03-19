@@ -5038,7 +5038,8 @@ console.log(score++)
 
 * [**The Full Students Repo!**](https://github.com/hstatsep-students/)
 
-* [**Back-up File**]([https://github.com/hstatsep-students/](https://docs.google.com/document/d/1yrKNAZdbyX2kILznwNRwCuQ5KQs6V8Or137lMeWlbgc/edit?tab=t.0))
+
+* [**The Full Students Repo!**](https://github.com/hstatsep-students/](https://docs.google.com/document/d/1yrKNAZdbyX2kILznwNRwCuQ5KQs6V8Or137lMeWlbgc/edit?tab=t.0)
 
 
 ---
