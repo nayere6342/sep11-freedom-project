@@ -4816,12 +4816,15 @@ onClick(() => {
 # Section #10:
 ### Nayer Ebraheim - 3/17/25
 
+
 ### Main Content:
 
-For some context; like every log I have done so far, I believe that over the months that actually I have learned a ton over these mouths. This is why I researched things before I started this learning log. To get a better feel for how I'm going to layout the whole document for this project that's connect to kaboom.js. That why I did it to get a better understanding of the js framework. I started researching the framework because I mostly forgot the framework itself. Since I had completely stopped researching the parts I needed for the project. 
+
+For some context; like every log I have done so far, I believe that over the months that actually I have learned a ton over these mouths. This is why I researched things before I started this learning log. To get a better feel for how I'm going to layout the whole document for this project that's connected to kaboom.js. That is why I did it to get a better understanding of the js framework. I started researching the framework because I mostly forgot the framework itself. Since I had completely stopped researching the parts I needed for the project. 
 
 
 ### Content Process:
+
 
 Moving on to the content process; I have done a lot of research over the mouth like I said before, To get a better feel for how I'm going to layout the whole document for this project that's connected to kaboom.js. for the major reason of understanding the framework better. That's simply why I did it. Now, this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. With just these two things you have yourself a game of pong. As shown in the preview bellow in this;   
 
@@ -4855,7 +4858,7 @@ kaboom({
 		p.pos.y = mousePos().y
 	})
 	
-	// score counter
+	// score settings: 
 	let score = 0
 	
 	add([
@@ -4904,10 +4907,51 @@ console.log(score++)
 
 ```
 
+Now before I get into the explanation, like I said before; this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. I said this because of the fact that I tried keeping the code simple so that it would be easier for me to use it in my game. The first thing in the preview that happens is spawning the both sliders as well as the scoring system. Using the    
+
+```JS
+// adding all phs obj into the window
+	add([
+		pos(40, 0),
+		rect(20, 180),
+		outline(15),
+		anchor("center"),
+		area(),
+		"slide",
+	])
+	
+	add([
+		pos(width() - 40, 0),
+		rect(20, 180),
+		outline(15),
+		anchor("center"),
+		area(),
+		"slide",
+	])
+	
+	// this moves the slides with mouse
+	onUpdate("slide", (p) => {
+		p.pos.y = mousePos().y
+	})
+	
+	// score settings: 
+	let score = 0
+	
+	add([
+		text(score),
+		pos(center()),
+		anchor("center"),
+		z(50),
+		{ update() { this.text = score }},
+	])
+```
+
+
 ### **_Challenges / Takeaways:_**
 
 
 * One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
+
 
 
 
@@ -4940,13 +4984,15 @@ console.log(score++)
 #### **__Links:__**
 
 
-* [**_SEP11_ Notes**](https://docs.google.com/document/d/1Q65VlDlA7tV9fuXP8XF-dxXL7TYyunfjoUTJqYvnTyI/edit)
+* [**_SEP11_ Notes**](https://docs.google.com/document/d/1gly2fPFv1kMC2Yhh0gaxdvVpJllQ7ZP_zgr2o0gLdO0/edit?tab=t.0#heading=h.13rj6cmkj5s0)
 
     * [JS-bin:](https://jsbin.com/?js,output)
 
     * [Code Samples:](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
 
 * [**The Full Students Repo!**](https://github.com/hstatsep-students/)
+
+* [**Back-up File**]([https://github.com/hstatsep-students/](https://docs.google.com/document/d/1yrKNAZdbyX2kILznwNRwCuQ5KQs6V8Or137lMeWlbgc/edit?tab=t.0))
 
 
 ---
