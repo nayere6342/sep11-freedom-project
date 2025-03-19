@@ -4907,8 +4907,10 @@ console.log(score++)
 
 ```
 
-Now before I get into the explanation, like I said before; this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. I said this because of the fact that I tried keeping the code simple so that it would be easier for me to use it in my game. The first thing in the preview that happens is spawning the both sliders as well as the scoring system. Using the    
+Now before I get into the explanation, like I said before; this research I kept trying to find more things to use for my project, even if it was small things. Such as having an object follow your mouse or even a moving ball that gets destroyed if it collides with the borders of the window. I said this because of the fact that I tried keeping the code simple so that it would be easier for me to use it in my game. The first thing in the preview that happens is spawning the both sliders as well as the scoring system. Using the `add` tag it will (you guessed it,) add objects into the playable window. Now onto the scoring system, all it does is that it detectes when one of the sliders has been hit. Using `let score = 0, add([ text(score), pos(center()), anchor("center"), z(50), { update() { this.text = score }}, ])` If one of the sliders were to be hit by the ball, it just adds a point to the score. All of the code is shown bellow;     
 
+
+Adding Objects + Scoring System: 
 ```JS
 // adding all phs obj into the window
 	add([
@@ -4946,6 +4948,46 @@ Now before I get into the explanation, like I said before; this research I kept 
 	])
 ```
 
+The last thing in this code is the 
+
+Ball Physics + Window Bornders: 
+```JS
+	// ball
+	let speed = 500
+	
+	const ball = add([
+		pos(center()),
+		circle(30),
+		outline(40,255),
+
+		area({ shape: new Rect(vec2(-16), 32, 32) }),
+		{ vel: Vec2.fromAngle(rand(-20, 20)) },
+	])
+
+	
+	// if the ball hits the floor, it bounds back:
+
+	ball.onUpdate(() => {
+		ball.move(ball.vel.scale(speed))
+		if (ball.pos.x < 0 || ball.pos.x > width()) {
+			score = 0
+			ball.pos = center()
+			ball.vel = Vec2.fromAngle(rand(-20, 20))
+			speed = 500
+		}
+		if (ball.pos.y < 0 || ball.pos.y > height()) {
+			ball.vel.y = -ball.vel.y
+		}
+	})
+	
+	//  With this, the ball should be able to bound of the sliders 
+	ball.onCollide("slide", (p) => {
+		speed += 100
+		ball.vel = Vec2.fromAngle(ball.pos.angle(p.pos))
+		score++
+	})
+console.log(score++)
+```
 
 ### **_Challenges / Takeaways:_**
 
@@ -5028,6 +5070,6 @@ Now before I get into the explanation, like I said before; this research I kept 
 
 
 
-
+**(End of Page)**
 
 
