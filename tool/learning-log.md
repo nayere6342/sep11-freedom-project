@@ -5006,9 +5006,8 @@ console.log(score++)
 
 
 
-# Section #10:
+# Section #11:
 ### Nayer Ebraheim - 3/24/25
-
 
 ### Main Content:
 
