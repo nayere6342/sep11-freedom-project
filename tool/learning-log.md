@@ -5006,14 +5006,20 @@ console.log(score++)
 
 
 
+
+
 # Section #11:
 ### Nayer Ebraheim - 3/24/25
 
 ### Main Content:
 
-Now with all the 
+
+Now with all the things I have shown beforehand. Now I can begin the design side of the game. In every game there is a set-up starter for every game. First the mesh of the map, (this is the wireframe of the map.) After that, it's the textures of the map that adds detail to the map. Last and finally is the lighting, all games have some kind of lighting system. Whether it be the most top of the line lighting or low poly. This process looks messy and not very appealing to the player. So game dev's created this thing called the loading screen. It was made just to cover up all the messy map loading processes that game dev's don't want the player to see.
+
 
 ### Content Process:
+
+
 
 ```JS
 	// Customizing the asset loader
@@ -5037,7 +5043,7 @@ Now with all the
 	loadSprite("ghosty", "/sprites/ghosty.png")
 	
 	// load() adds a Promise under kaboom's management, which affects loadProgress()
-	// Here we intentionally stall the loading by 1sec to see the loading screen
+	// Here we intentionally stall the loading by 1 sec to see the loading screen
 	load(new Promise((res) => {
 		// wait() won't work here because timers are not run during loading so we use setTimeout
 		setTimeout(() => {
@@ -5095,6 +5101,7 @@ Now with all the
 ```
 
 ### **_Challenges / Takeaways:_**
+
 
 
 
