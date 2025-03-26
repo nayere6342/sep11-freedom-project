@@ -3736,7 +3736,7 @@ In this content process I don't want to over complicate things by over explainin
 
     * [Code Samples:](https://docs.google.com/document/d/1-mfcBeP-TTHBOmmZzVRX3DUNUvo62zFFuJiPtEnw_aw/edit)
 
-* [**The Full Students Repo!**](https://github.com/hstatsep-students/)
+* [**The Full Students Repo**](https://github.com/hstatsep-students/)
 
 * [**Back-up Learning Log File**](https://docs.google.com/document/d/1yrKNAZdbyX2kILznwNRwCuQ5KQs6V8Or137lMeWlbgc/edit?tab=t.0)
 
