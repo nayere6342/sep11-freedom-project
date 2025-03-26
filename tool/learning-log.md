@@ -9,9 +9,11 @@
 
 ---
 
-### Main Content
+### _Main Content:_
 
 To start off my entry, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. For this tool, _kaboom.js_ I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_.
+
+**Preview:**
 
 ```JS
 // Input handling and basic player movement
@@ -66,8 +68,10 @@ add([
 
 This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
 
+**Collision Handling + Input Handlers:**
+
 ```JS
-// Collision handling
+
 
 // Start kaboom
 kaboom({
@@ -194,6 +198,7 @@ debug.inspect = true
 
 First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_. Such as this here:
    
+**Basic Attack AI:**
 
 ```JS
 // Use state() component to handle basic AI
@@ -305,6 +310,8 @@ First:
 
 As shown in part of the _JS_ code;
 
+**Preview Part #1:**
+
 ```JS
 // Load assets
 loadSprite("bean", "/sprites/bean.png")
@@ -324,6 +331,8 @@ Second:
 * attack is the state the enemy is in if it does see the player
 
 **If the enemy is far away from the player it shoots at the player. If the enemy is close it hits the player. You can see this in this part of the code;
+
+**Preview Part #2:**
 
 ```JS
 // Run the callback once every time we enter an "idle" state.
@@ -368,6 +377,8 @@ enemy.onStateEnter("move", async () => {
 Third:
 * After all that, it calculates where in the grid the enemy should be relative to the player's position.
 
+**Preview Part #3:**
+
 ```JS
 // Add player game object
 const player = add([
@@ -390,7 +401,7 @@ That's what all the code does in this part of the game, As you can see this part
 
 
 
-### **_Challenges / Takeaways:_**
+### **Challenges / Takeaways:**
 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
 	* _This was before I started researching things about kaboom.js._ 
@@ -416,9 +427,11 @@ That's what all the code does in this part of the game, As you can see this part
 
 ---
 
-### Main Content
+### _Main Content:_
 
 To start off my entry, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. For this tool, _kaboom.js_ I started researching about _kaboom.js_. For this _FP_ project. And what I found out was that it's pretty easy for a simple baseline for _kaboom.js_.
+
+**Preview:**
 
 ```JS
 // Input handling and basic player movement
@@ -499,9 +512,11 @@ This mainline code is for the base for your game. This might be because of the f
 
 ---
 
-### Main Content
+### _Main Content:_
 
 To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time. To show what I have been doing. Here is some code:
+
+**Preview:**
 
 ```JS
 kaboom()
@@ -666,8 +681,9 @@ First
 * creates a player sprite with gravity,
   
 	* this play sprite also has a set speed,
+ * shown here:
 
-shown here:
+**Preview Part #1:**
 
 ```JS
 	const JUMP_FORCE = 800
@@ -706,8 +722,9 @@ Second:
 * It set up a death and final score screen,
   
 	* The final score screen uses the amount of times the player jumps over the pipes,
-   
- As shown here:
+ * As shown here:
+
+**Preview Part #2:**
 
 ```JS
 // callback when bean onCollide with objects with tag "pipe"
@@ -718,143 +735,10 @@ Second:
 	})
 ```
 
-That's what mostly happened while I was tinkering with my tool. To recap in the last entry, I learn how sprites work in a game space shown here: But before we get into that, lets recap what over the past week in this learning log - section #3.
-
-### Recap:
-
-This mainline code is for the base for your game. This might be because of the fact that _kaboom.js_ has the same syntax as _JS_ (Javascript). That's one reason why I believe _kaboom.js_ is so simple. This allows developers to easily change the starter code and create their own video games using the sandbox. The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
-
-```JS
-// Collision handling
-
-// Start kaboom
-kaboom({
-	scale: 2,
-})
-
-// Load assets
-loadSprite("bean", "/sprites/bean.png")
-loadSprite("ghosty", "/sprites/ghosty.png")
-loadSprite("grass", "/sprites/grass.png")
-loadSprite("steel", "/sprites/steel.png")
-
-// Define player movement speed
-const SPEED = 320
-
-// Add player game object
-const player = add([
-	sprite("bean"),
-	pos(80, 40),
-	color(),
-	rotate(0),
-	// area() component gives the object a collider, which enables collision checking
-	area(),
-	// area({ shape: new Polygon([vec2(0), vec2(100), vec2(-100, 100)]) }),
-	// area({ shape: new Rect(vec2(0), 12, 120) }),
-	// area({ scale: 0.5 }),
-	// body() component makes an object respond to physics
-	body(),
-])
-
-// Register input handlers & movement
-onKeyDown("left", () => {
-	player.move(-SPEED, 0)
-})
-
-onKeyDown("right", () => {
-	player.move(SPEED, 0)
-})
-
-onKeyDown("up", () => {
-	player.move(0, -SPEED)
-})
-
-onKeyDown("down", () => {
-	player.move(0, SPEED)
-})
-
-onKeyDown("q", () => {
-	player.angle -= SPEED * dt()
-})
-
-onKeyDown("e", () => {
-	player.angle += SPEED * dt()
-})
-
-// Add enemies
-for (let i = 0; i < 3; i++) {
-
-	const x = rand(0, width())
-	const y = rand(0, height())
-
-	add([
-		sprite("ghosty"),
-		pos(x, y),
-		// Both objects must have area() component to enable collision detection between
-		area(),
-		"enemy",
-	])
-
-}
-
-add([
-	sprite("grass"),
-	pos(center()),
-	area(),
-	// This game object also has isStatic, so our player won't be able to move past this
-	body({ isStatic: true }),
-	"grass",
-])
-
-add([
-	sprite("steel"),
-	pos(100, 200),
-	area(),
-	// This will not be static, but have a big mass that's hard to push over
-	body({ mass: 10 }),
-])
-
-// .onCollide() is provided by area() component, it registers an event that runs when an objects collides with another object with certain tag
-// In this case we destroy (remove from game) the enemy when player hits one
-player.onCollide("enemy", (enemy) => {
-	destroy(enemy)
-})
-
-// .onCollideUpdate() runs every frame when an object collides with another object
-player.onCollideUpdate("enemy", () => {
-})
-
-// .onCollideEnd() runs once when an object stopped colliding with another object
-player.onCollideEnd("grass", (a) => {
-	debug.log("leave grass")
-})
-
-// .clicks() is provided by area() component, it registers an event that runs when the object is clicked
-player.onClick(() => {
-	debug.log("what up")
-})
-
-player.onUpdate(() => {
-	// .isHovering() is provided by area() component, which returns a boolean of if the object is currently being hovered on
-	if (player.isHovering()) {
-		player.color = rgb(0, 0, 255)
-	} else {
-		player.color = rgb()
-	}
-})
-
-// Enter inspect mode, which shows the collider outline of each object with area() component, handy for debugging
-// Can also be toggled by pressing F1
-debug.inspect = true
-
-// Check out https://kaboomjs.com#AreaComp for everything area() provides
-```
-
-First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_.
+That's what mostly happened while I was tinkering with my tool.
 
 
-
-### **_Challenges / Takeaways:_**
+### **Challenges / Takeaways:**
 
 * One challenge I had was the fact that I didn't know anything about _kaboom.js_ when creating this entry.
 	* _This was before I started researching things about kaboom.js._ 
@@ -882,349 +766,12 @@ First part of the code fully loads all the assets. Then it gets the texture for 
 
 ---
 
-To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. Before I get into that, I will show you a quick recap!
+### _Main Content:_
 
-### Recap:
 
-This is a short recap to what I have learn in my last entry of this blog: _(entry 1)_
+To start off my entry, I have been working on my freedom project (FP). For a long time by this point. And, what I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. One thing I have learned throughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool _kaboom.js_ As shown here in this code snippet:
 
-The sandbox is where developers can try new things for their games. This is a very useful tool for _kaboom.js_ as a whole. That's what I believe overall. I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space.
-
-```JS
-// Collision handling
-
-// Start kaboom
-kaboom({
-	scale: 2,
-})
-
-// Load assets
-loadSprite("bean", "/sprites/bean.png")
-loadSprite("ghosty", "/sprites/ghosty.png")
-loadSprite("grass", "/sprites/grass.png")
-loadSprite("steel", "/sprites/steel.png")
-
-// Define player movement speed
-const SPEED = 320
-
-// Add player game object
-const player = add([
-	sprite("bean"),
-	pos(80, 40),
-	color(),
-	rotate(0),
-	// area() component gives the object a collider, which enables collision checking
-	area(),
-	// area({ shape: new Polygon([vec2(0), vec2(100), vec2(-100, 100)]) }),
-	// area({ shape: new Rect(vec2(0), 12, 120) }),
-	// area({ scale: 0.5 }),
-	// body() component makes an object respond to physics
-	body(),
-])
-
-// Register input handlers & movement
-onKeyDown("left", () => {
-	player.move(-SPEED, 0)
-})
-
-onKeyDown("right", () => {
-	player.move(SPEED, 0)
-})
-
-onKeyDown("up", () => {
-	player.move(0, -SPEED)
-})
-
-onKeyDown("down", () => {
-	player.move(0, SPEED)
-})
-
-onKeyDown("q", () => {
-	player.angle -= SPEED * dt()
-})
-
-onKeyDown("e", () => {
-	player.angle += SPEED * dt()
-})
-
-// Add enemies
-for (let i = 0; i < 3; i++) {
-
-	const x = rand(0, width())
-	const y = rand(0, height())
-
-	add([
-		sprite("ghosty"),
-		pos(x, y),
-		// Both objects must have area() component to enable collision detection between
-		area(),
-		"enemy",
-	])
-
-}
-
-add([
-	sprite("grass"),
-	pos(center()),
-	area(),
-	// This game object also has isStatic, so our player won't be able to move past this
-	body({ isStatic: true }),
-	"grass",
-])
-
-add([
-	sprite("steel"),
-	pos(100, 200),
-	area(),
-	// This will not be static, but have a big mass that's hard to push over
-	body({ mass: 10 }),
-])
-
-// .onCollide() is provided by area() component, it registers an event that runs when an objects collides with another object with certain tag
-// In this case we destroy (remove from game) the enemy when player hits one
-player.onCollide("enemy", (enemy) => {
-	destroy(enemy)
-})
-
-// .onCollideUpdate() runs every frame when an object collides with another object
-player.onCollideUpdate("enemy", () => {
-})
-
-// .onCollideEnd() runs once when an object stopped colliding with another object
-player.onCollideEnd("grass", (a) => {
-	debug.log("leave grass")
-})
-
-// .clicks() is provided by area() component, it registers an event that runs when the object is clicked
-player.onClick(() => {
-	debug.log("what up")
-})
-
-player.onUpdate(() => {
-	// .isHovering() is provided by area() component, which returns a boolean of if the object is currently being hovered on
-	if (player.isHovering()) {
-		player.color = rgb(0, 0, 255)
-	} else {
-		player.color = rgb()
-	}
-})
-
-// Enter inspect mode, which shows the collider outline of each object with area() component, handy for debugging
-// Can also be toggled by pressing F1
-debug.inspect = true
-
-// Check out https://kaboomjs.com#AreaComp for everything area() provides
-```
-
-First part of the code fully loads all the assets. Then it gets the texture for those assets. For example `"/sprites/grass.png"` the code first gets into the folder called; `sprites`. After that, it gets the file called; `grass.png` Like I said before, I also think that _kaboom.js_ can be used for collision handling. This is great for giving life throughout your game overall in this type of space. As I just said, I believe collision handling can be great for giving life throughout your game as well as letting the player have more freedom in the game. For example the player has a fully customizable room where they can move everything by push. Or even a ball pit where all the balls in the pit are callable when the player moves around in the pit. Also, I believe that _kaboom.js_ can be good for handling basic _AI_.
-
-As well as a recap to my most recent entry _(entry #3):_
-
-To start off my 3rd entry. Like I said before, I have been working on my freedom project _(FP)_. For quite a while. And I learned that _kaboom.js_ is more complex than I thought. So I started thinking with this tool. This was mostly due to the fact that I didn't really know a whole lot about my tool at the time. To show what I have been doing. Here is some code:
-
-```JS
-kaboom()
-
-loadSprite("bean", "/sprites/bean.png")
-loadSound("score", "/examples/sounds/score.mp3")
-loadSound("wooosh", "/examples/sounds/wooosh.mp3")
-loadSound("hit", "/examples/sounds/hit.mp3")
-
-// define gravity
-setGravity(3200)
-
-scene("game", () => {
-
-	const PIPE_OPEN = 240
-	const PIPE_MIN = 60
-	const JUMP_FORCE = 800
-	const SPEED = 320
-	const CEILING = -60
-
-	// a game object consists of a list of components and tags
-	const bean = add([
-		// sprite() means it's drawn with a sprite of name "bean" (defined above in 'loadSprite')
-		sprite("bean"),
-		// give it a position
-		pos(width() / 4, 0),
-		// give it a collider
-		area(),
-		// body component enables it to fall and jump in a gravity world
-		body(),
-	])
-
-	// check for fall death
-	bean.onUpdate(() => {
-		if (bean.pos.y >= height() || bean.pos.y <= CEILING) {
-			// switch to "lose" scene
-			go("lose", score)
-		}
-	})
-
-	// jump
-	onKeyPress("space", () => {
-		bean.jump(JUMP_FORCE)
-		play("wooosh")
-	})
-
-	onGamepadButtonPress("south", () => {
-		bean.jump(JUMP_FORCE)
-		play("wooosh")
-	})
-
-	// mobile
-	onClick(() => {
-		bean.jump(JUMP_FORCE)
-		play("wooosh")
-	})
-
-	function spawnPipe() {
-
-		// calculate pipe positions
-		const h1 = rand(PIPE_MIN, height() - PIPE_MIN - PIPE_OPEN)
-		const h2 = height() - h1 - PIPE_OPEN
-
-		add([
-			pos(width(), 0),
-			rect(64, h1),
-			color(0, 127, 255),
-			outline(4),
-			area(),
-			move(LEFT, SPEED),
-			offscreen({ destroy: true }),
-			// give it tags to easier define behaviors see below
-			"pipe",
-		])
-
-		add([
-			pos(width(), h1 + PIPE_OPEN),
-			rect(64, h2),
-			color(0, 127, 255),
-			outline(4),
-			area(),
-			move(LEFT, SPEED),
-			offscreen({ destroy: true }),
-			// give it tags to easier define behaviors see below
-			"pipe",
-			// raw obj just assigns every field to the game obj
-			{ passed: false },
-		])
-
-	}
-
-	// callback when bean onCollide with objects with tag "pipe"
-	bean.onCollide("pipe", () => {
-		go("lose", score)
-		play("hit")
-		addKaboom(bean.pos)
-	})
-
-	// per frame event for all objects with tag 'pipe'
-	onUpdate("pipe", (p) => {
-		// check if bean passed the pipe
-		if (p.pos.x + p.width <= bean.pos.x && p.passed === false) {
-			addScore()
-			p.passed = true
-		}
-	})
-
-	// spawn a pipe every 1 sec
-	loop(1, () => {
-		spawnPipe()
-	})
-
-	let score = 0
-
-	// display score
-	const scoreLabel = add([
-		text(score),
-		anchor("center"),
-		pos(width() / 2, 80),
-		fixed(),
-		z(100),
-	])
-
-	function addScore() {
-		score++
-		scoreLabel.text = score
-		play("score")
-	}
-
-})
-
-scene("lose", (score) => {
-
-	add([
-		sprite("bean"),
-		pos(width() / 2, height() / 2 - 108),
-		scale(3),
-		anchor("center"),
-	])
-
-	// display score
-	add([
-		text(score),
-		pos(width() / 2, height() / 2 + 108),
-		scale(3),
-		anchor("center"),
-	])
-
-	// go back to game with space is pressed
-	onKeyPress("space", () => go("game"))
-	onClick(() => go("game"))
-
-})
-
-go("game")
-
-```
-This code is from _kaboom.js_ code snippets. All the code does is:
-
-First
-
-* creates a player sprite with gravity,
-  
-	* this play sprite also has a set speed,
-
-shown here:
-
-```JS
-	const JUMP_FORCE = 800
-	const SPEED = 320
-	const CEILING = -60
-
-	// a game object consists of a list of components and tags
-	const bean = add([
-		// sprite() means it's drawn with a sprite of name "bean" (defined above in 'loadSprite')
-		sprite("bean"),
-		// give it a position
-		pos(width() / 4, 0),
-		// give it a collider
-		area(),
-		// body component enables it to fall and jump in a gravity world
-		body(),
-	])
-
-	// check for fall death
-	bean.onUpdate(() => {
-		if (bean.pos.y >= height() || bean.pos.y <= CEILING) {
-			// switch to "lose" scene
-			go("lose", score)
-		}
-	})
-
-	// jump
-	onKeyPress("space", () => {
-		bean.jump(JUMP_FORCE)
-		play("wooosh")
-	})
-```
-
-Moving on,
-
-### Main Content
-
-One thing I have learned throughout this entry process is that. One like I said before I have learned is that _kaboom.js_ is much more simple than I thought. Last entry I stated that I thought it was complex overall. This was because I didn't really know how _kaboom.js_ work to begin with. As well as the fact that it has gotten easier than ever for the whole tinkering process. This can be because of the simple fact that I have more knowledge on this subject of my tool _kaboom.js_ As shown here in this code snippet:
+**Preview:**
 
 ```JS
 // simple rpg style walk and talk
@@ -5007,19 +4554,21 @@ console.log(score++)
 
 
 
-
 # Section #11:
 ### Nayer Ebraheim - 3/24/25
 
 ### Main Content:
 
 
-Now with all the things I have shown beforehand. Now I can begin the design side of the game. In every game there is a set-up starter for every game. First the mesh of the map, (this is the wireframe of the map.) After that, it's the textures of the map that adds detail to the map. Last and finally is the lighting, all games have some kind of lighting system. Whether it be the most top of the line lighting or low poly. This process looks messy and not very appealing to the player. So game dev's created this thing called the loading screen. It was made just to cover up all the messy map loading processes that game dev's don't want the player to see.
+Now with all the things I have shown beforehand. Now I can begin the design side of the game. In every game there is a set-up starter for every game. First the mesh of the map, (this is the wireframe of the map.) After that, it's the textures of the map that adds detail to the map. Last and finally is the lighting, all games have some kind of lighting system. Whether it be the most top of the line lighting or low poly. This process looks messy and not very appealing to the player. So game dev's created this thing called the loading screen. It was made just to cover up all the messy map loading processes that game dev's don't want the player to see. That's why it is used in games. It can also look better overall in the presentation for the final product. Even though it's overused, the loading screen is very useful in the grand scheme of things.   
 
 
 ### Content Process:
 
 
+In this content process I don't want to over complicate things by over explaining the same stuff over again. So like I stated before; This process looks messy and not very appealing to the player. So game dev's created this thing called the loading screen. It was made just to cover up all the messy map loading processes that game dev's don't want the player to see. Stepping back to see the whole thing, the code itself is pretty simple. Now, here is the full preview; 
+
+**Preview:**
 
 ```JS
 	// Customizing the asset loader
@@ -5101,6 +4650,7 @@ Now with all the things I have shown beforehand. Now I can begin the design side
 ```
 
 ### **_Challenges / Takeaways:_**
+
 
 
 
