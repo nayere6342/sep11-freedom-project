@@ -1,8 +1,8 @@
-# Tool Learning Log
+# **Learning Log**
 
 ## Tool: **Kaboom.js**
 
-## Project: **Puzzle Platformer**
+## Project: **Puzzle / Platformer**
 
 # **Section #1:**
 ### **Nayer Ebraheim - 10/28/24**
