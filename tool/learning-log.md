@@ -3704,6 +3704,7 @@ In this content process I don't want to over complicate things by over explainin
 
 Before I get into the explanation, like I said earlier, this code is not the most complicated thing on this list so I want to keep it nice and simple. So that it is easier on the eyes when looking at the log. This is because I want to not have to over explain the code over and over again. Now onto the code, the first thing in the code that happened is the loading of all the background data of the game. Like the player's model as well as the backdrop of the map. Like I said this is pretty simple just by looking at it. If you know that `loadSprite` is just for loading models into the map. Here is the preview for that;    
 
+
 **Loading Data + Sprite Location:**
 
 ```JS
@@ -3736,7 +3737,11 @@ Before I get into the explanation, like I said earlier, this code is not the mos
 	
 ```
 
+Now, onto part #2: This part of the code is basically the brains of the code itself. This is the part of the code that just puts all of the things for the loading screen onto the map itself. Using the `onLoading` function with the `progress` tag. It loads all the text, models and UI elements. For this function to actually work it needs a `draw` command. For example in the code, it shows a `drawCircle` command that just draws a circle with the position set to `center()` which is related to the size of the map. Now, here is the rest of the code;      
+
+
 **Call Function + Drew UI:**
+
 ```JS
 	// make loader wait for a fetch() call
 	load(fetch("https://kaboomjs.com/"))
@@ -3792,7 +3797,7 @@ Before I get into the explanation, like I said earlier, this code is not the mos
 
 * One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
 
-* Another challenge I had while creating this entry was that it felt like I didn't spend whole lot of time to really tinker with this entry.
+* Another challenge I had while creating this entry was that it felt like I didn't spend a whole lot of time to really tinker with this entry.
 
 * One takeaway I have was that I need to tinker more with my tool.
   
@@ -3801,6 +3806,7 @@ Before I get into the explanation, like I said earlier, this code is not the mos
 * One other takeaway I had from this learning log was that I need better time management skills in this space.
 
 	* _As in not doing everything last minute..._
+
 
 
 
