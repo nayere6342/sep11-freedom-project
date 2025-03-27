@@ -3702,7 +3702,105 @@ In this content process I don't want to over complicate things by over explainin
 
 ```
 
+Before I get into the explaination, like I said earlier, this code is not the most complated thing on this list so I want to keep it nice and simple. So that it is easier on the eyes when looking about the log. This is because I want to not have to over explain the code over and over again. Now onto the code, the first thing in the code that happenes is the   
+
+**Loading Data + Sprite Location:**
+
+```JS
+	kaboom({
+		// Optionally turn off loading screen entirely
+		// Unloaded assets simply won't be drawn
+		// loadingScreen: false,
+	})
+	
+	let spr = null
+	
+	// Every loadXXX() function returns a Asset<Data> where you can customize the error handling (by default it'll stop the game and log on screen), or deal with the raw asset data yourself instead of using a name.
+	loadSprite("bean", "/sprites/bean.png").onError(() => {
+		alert("oh no we failed to load bean")
+	}).onLoad((data) => {
+		// The promise resolves to the raw sprite data
+		spr = data
+	})
+	
+	loadSprite("ghosty", "/sprites/ghosty.png")
+	
+	// load() adds a Promise under kaboom's management, which affects loadProgress()
+	// Here we intentionally stall the loading by 1 sec to see the loading screen
+	load(new Promise((res) => {
+		// wait() won't work here because timers are not run during loading so we use setTimeout
+		setTimeout(() => {
+			res()
+		}, 1000)
+	}))
+	
+```
+
+**Call Function + Drew UI:**
+```JS
+	// make loader wait for a fetch() call
+	load(fetch("https://kaboomjs.com/"))
+	
+	// You can also use the handle returned by loadXXX() as the resource handle
+	const bugSound = loadSound("bug", "/examples/sounds/bug.mp3")
+	
+	volume(0.1)
+	
+	onKeyPress("space", () => play(bugSound))
+	
+	// Custom loading screen
+	// Runs the callback every frame during loading
+	onLoading((progress) => {
+	
+		// Black background
+		drawRect({
+			width: width(),
+			height: height(),
+			color: rgb(0, 0, 0),
+		})
+	
+		// A pie representing current load progress
+		drawCircle({
+			pos: center(),
+			radius: 32,
+			end: map(progress, 0, 1, 0, 360),
+		})
+	
+		drawText({
+			text: "loading" + ".".repeat(wave(1, 4, time() * 12)),
+			font: "monospace",
+			size: 24,
+			anchor: "center",
+			pos: center().add(0, 70),
+		})
+	
+	})
+	
+	onDraw(() => {
+		if (spr) {
+			drawSprite({
+				// You can pass raw sprite data here instead of the name
+				sprite: spr,
+			})
+		}
+	})
+
+```
+
+
 ### **_Challenges / Takeaways:_**
+
+* One challenge I faced was that I didn't tinker enough while working on kaboom.js entry.
+
+* Another challenge I had while creating this entry was that it felt like a I didn't spend whole lot of time to really tinker with this entry.
+
+* One takeaway I have was that I need to tinker more with my tool.
+  
+	* This is due to the fact that I can get a better understanding of what my tool can do.
+
+* One other takeaway I had from this learning log was that I need better time management skills in this space.
+
+	* _As in not doing everything last minute..._
 
 
 
