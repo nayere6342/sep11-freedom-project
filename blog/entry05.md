@@ -5,7 +5,7 @@
 
 ## **Intro:**
 
-In this entry, I will be going over the code process of the topic that I'll be presenting. Like before, I'll explain the topic break it down into smaller bit size pieces so that it can be looked as easier. But this time, I will be presenting the parts of the code I have used in my MVP project. My MVP project was about a platformer, a platformer abuot running and about how I spend those enties to help me. I also used these enties for notes. So that I can use them in the future. Like for my game  
+In this entry, I will be going over the code process of the topic that I'll be presenting. Like before, I'll explain the topic break it down into smaller bit size pieces so that it can be looked as easier. But this time, I will be presenting the parts of the code I have used in my MVP project. My MVP project was about a platformer, a platformer abuot running and about how I spend those enties to help me. I also used these enties for notes. So that I can use them in the future. Like for the game I'm devloping for this platformer project.   
 
 ## **Code Presentation:**
 
