@@ -5,11 +5,11 @@
 
 ## **Intro:**
 
-In this entry, I will be going over the code process of the topic that I'll be presenting. Like before, I'll explain the topic by breaking it down into smaller bite size pieces so that it can be looked at easier. But this time, I will be presenting the parts of the code I have used in my MVP project. My MVP project was about a platformer, as well as about how I spend those entries notes to help me even fruther in this game I creating. I also used these entries for notes. So that I can use them in the future. Like for the game I'm developing for this platformer project.   
+In this entry, I will be going over the code process of the topic that I'll be presenting. Like before, I'll explain the topic by breaking it down into smaller bite size pieces so that it can be looked at easier. But this time, I will be presenting the parts of the code I have used in my MVP project. My MVP project was about a platformer, as well as about how I spent those entries notes to help me even further in this game I created. I also used these entries for notes. So that I can use them in the future. Like for the game I'm developing for this platformer project.   
 
 ## **Code Presentation:**
 
-Since this is the code I what have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still activly working on the platformer project. But before I get into the expalination of the game code I have to state again that code is still a work in progess so bare with the process for a bit. That's all so far but; Anyways, enough context here is the full preview with the explaintions;      
+Since this is the code I have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still actively working on the platformer project. But before I get into the explanation of the game code I have to state again that code is still a work in progress so bare with the process for a bit. That's all so far but; Anyways, enough context here is the full preview with the explanations;      
 
 **Preview:**
 ```JS
@@ -215,11 +215,11 @@ Since this is the code I what have been working on for my platformer game for th
 			})
 ```
 
-Like I said before, since this is the game preview is still a work in progess bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case   
+Like I said before, since this game preview is still a work in progress bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case   
 
 ### **Design Process:** 
 
-For this design process, I have been thinking lot of the fact that I feel my entries needs to be less conplated in the sence that I been over expaining the topic to the put that it takes me at least two paragreahs to expain the topic! That is why I have been trying to make my enties less conplated like I said before; This is because of the simple fact that I have already shown how simple the code itself is by this. Due to this fact, it is easy to point out that parts of the code are in fact really complex at first looking at it. But after all that, it becomes super simple once it's all broken down. That was the main point I was trying to convien with this entry. 
+For this design process, I have been thinking a lot about the fact that I feel my entries need to be less complicated in the sense that I have been over-explaining the topic to the point that it takes me at least two paragraphs to explain the topic! That is why I have been trying to make my entries less complicated like I said before; This is because of the simple fact that I have already shown how simple the code itself is by this. Due to this fact, it is easy to point out that parts of the code are in fact really complex at first looking at it. But after all that, it becomes super simple once it's all broken down. That was the main point I was trying to convien with this entry. 
 
 ### **Challenges & Takeaways:**
 
@@ -258,6 +258,7 @@ For this design process, I have been thinking lot of the fact that I feel my ent
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
 
 
 
