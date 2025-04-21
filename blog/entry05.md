@@ -5,12 +5,13 @@
 
 ## **Intro:**
 
-In this entry, I will be going over the code process of the topic that I'll be presenting. Like before, I'll explain the topic by breaking it down into smaller bite size pieces so that it can be looked at easier. But this time, I will be presenting the parts of the code I have used in my MVP project. My MVP project was about a platformer, a platformer about running and about how I spend those entries to help me. I also used these entries for notes. So that I can use them in the future. Like for the game I'm developing for this platformer project.   
+In this entry, I will be going over the code process of the topic that I'll be presenting. Like before, I'll explain the topic by breaking it down into smaller bite size pieces so that it can be looked at easier. But this time, I will be presenting the parts of the code I have used in my MVP project. My MVP project was about a platformer, as well as about how I spend those entries notes to help me even fruther in this game I creating. I also used these entries for notes. So that I can use them in the future. Like for the game I'm developing for this platformer project.   
 
 ## **Code Presentation:**
 
-Since this is the code I what have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still activly working on the platformer project.       
+Since this is the code I what have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still activly working on the platformer project. But before I get into the expalination of the game code I have to state again that code is still a work in progess so bare with the process for a bit. That's all so far but; Anyways, enough context here is the full preview with the explaintions;      
 
+**Preview:**
 ```JS
 <script src="main.js"></script>
 
@@ -214,12 +215,25 @@ Since this is the code I what have been working on for my platformer game for th
 			})
 ```
 
+Like I said before, since this is the game preview is still a work in progess bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case   
 
 ### **Design Process:** 
 
-For this design process
+For this design process, I have been thinking lot of the fact that I feel my entries needs to be less conplated in the sence that I been over expaining the topic to the put that it takes me at least two paragreahs to expain the topic! That is why I have been trying to make my enties less conplated like I said before; This is because of the simple fact that I have already shown how simple the code itself is by this. Due to this fact, it is easy to point out that parts of the code are in fact really complex at first looking at it. But after all that, it becomes super simple once it's all broken down. That was the main point I was trying to convien with this entry. 
 
 ### **Challenges & Takeaways:**
+
+* I don't have many challenges but, one big challenge I had in my experience in this entry was that I didn't ask for help enough.
+  
+	* _Mostly because I didn't use slack or any other help like before in the older entries._
+
+* Also, I had challenges with the fact that my I.D.E keeps lagging throughout the whole time I was testing out things for the project. 
+
+* Another challenge I faced was that I feel that I didn't tinker enough while working on this entry. Thus having a bit of a harder time working on this entry. Also, this could have been because of the fact that I keep getting errors, lagging, and plan bugs.
+   
+* One takeaway I had from this was that I need to tinker more in my own time while doing this entry.
+
+* Last takeaway that I got from this was that I didn't spend my time well in that I didn't make any time so that when I would do it was harder for me.
 
 ---
 
