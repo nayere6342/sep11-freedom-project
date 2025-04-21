@@ -1,8 +1,15 @@
 # **Entry 5:**
-### **Nayer Ebraheim - XX/X/XX**
+### **Nayer Ebraheim - 4/21/25**
 
 ---
 
+## **Intro:**
+
+## **Code Presentation:**
+
+### **Design Process:** 
+
+### **Challenges & Takeaways:**
 
 ---
 
