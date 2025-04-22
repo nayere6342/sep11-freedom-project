@@ -9,7 +9,7 @@ In this entry, I will be going over the code process of the topic that I'll be p
 
 ## **Code Presentation:**
 
-Since this is the code I have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still actively working on the platformer project. But before I get into the explanation of the game code I have to state again that code is still a work in progress so bare with the process for a bit. That's all so far but; Anyways, enough context here is the full preview with the explanations;      
+Since this is the code I have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still actively working on the platformer project. But before I get into the explanation of the game code I have to state again that code is still a work in progress so bare with the process for a bit.Like I said before, since this game preview is still a work in progress bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case I have been trying to simplfuly the whole process but that's about it so far. Anyways, enough context here is the full preview with the explanations;  
 
 **Preview:**
 ```JS
@@ -215,7 +215,7 @@ Since this is the code I have been working on for my platformer game for the las
 			})
 ```
 
-Like I said before, since this game preview is still a work in progress bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case   
+Onto the whole process; The first part of the code that is read is having a  
 
 ### **Design Process:** 
 
