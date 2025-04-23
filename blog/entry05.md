@@ -223,17 +223,24 @@ For this design process, I have been thinking a lot about the fact that I feel m
 
 ### **Challenges & Takeaways:**
 
-* I don't have many challenges but, one big challenge I had in my experience in this entry was that I didn't ask for help enough.
-  
-	* _Mostly because I didn't use slack or any other help like before in the older entries._
+* I don't have many challenges but, one big challenge I had in my experience in this entry was that I didn't ask for help enough. This was mostly because I didn't use slack or any other help like before in the older entries. That's why it took so much planning and tinkering to make the code work out at the end. 
 
-* Also, I had challenges with the fact that my I.D.E keeps lagging throughout the whole time I was testing out things for the project. 
+* Also, I had challenges with the fact that my I.D.E keeps lagging throughout the whole time I was testing out things for the project. This was not really no-ones fault but mine. Since I keeped overloading the IDE preview with all my broken up code. 
 
 * Another challenge I faced was that I feel that I didn't tinker enough while working on this entry. Thus having a bit of a harder time working on this entry. Also, this could have been because of the fact that I keep getting errors, lagging, and plan bugs.
    
 * One takeaway I had from this was that I need to tinker more in my own time while doing this entry.
 
-* Last takeaway that I got from this was that I didn't spend my time well in that I didn't make any time so that when I would do it was harder for me.
+* Another takeaway I got from this was that I felt that I rushed to get the project done as fast as possible. Which isn't great for the project itself. _(It would make it looked rushed)_
+ 
+* I guess my last takeaway that I got from entry was that I felt like really bad that I didn't spend my time well in that I didn't make any time so that when I would do it was harder for me. Since I only spent three days working on the project. I thought it would take a lot shorter time to do the whole project. 
+  
+
+
+
+
+
+
 
 ---
 
@@ -255,9 +262,21 @@ For this design process, I have been thinking a lot about the fact that I feel m
 
 ---
 
+
+
+
+
+
+
+
+
+
+
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
+
 
 
 
