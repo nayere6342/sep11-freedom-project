@@ -9,7 +9,7 @@ In this entry, I will be going over the code process of the topic that I'll be p
 
 ## **Code Presentation:**
 
-Since this is the code I have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still actively working on the platformer project. But before I get into the explanation of the game code I have to state again that code is still a work in progress so bare with the process for a bit.Like I said before, since this game preview is still a work in progress bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case I have been trying to simplfuly the whole process but that's about it so far. Anyways, enough context here is the full preview with the explanations;  
+Since this is the code I have been working on for my platformer game for the last week, it will be harder to explain the code moving on since I'm still actively working on the platformer project. But before I get into the explanation of the game code I have to state again that code is still a work in progress so bare with the process for a bit.Like I said before, since this game preview is still a work in progress bare with the process so far because it will get better over the times I update the code in my MVP project: The Unname Platformer Game. Since that is the case I have been trying to simplify the whole process but that's about it so far. Anyways, enough context here is the full preview with the explanations;  
 
 **Preview:**
 ```JS
@@ -215,7 +215,7 @@ Since this is the code I have been working on for my platformer game for the las
 			})
 ```
 
-Onto the whole process; The first part of the code that is read is having a set score that's has a `0` by `const score = add([ text("Score:"), pos(24, 24), { value: 0 }, ])` This empty `value` set to `0` can be change by the coins that are around the map as the player runs.    
+Onto the whole process; The first part of the code that is read is having a set score that's has a `0` by `const score = add([ text("Score:"), pos(24, 24), { value: 0 }, ])` This empty `value` set to `0` can be change by the coins that are around the map as the player runs. Using the code at the very end of the script: `player.onCollide("coin", (enemy) => { score.value += 1; score.text = "Score:" + score.value })` will simply destroy the coin model. Which will also add a `value` of `+1` with the help of the string: `score.value += 1`. Which is saved into the text `value`, `score.text = "Score:" + score.value`. Secondly, in the script, the player needs a way to move ofcorose in almost every game needs the player to move around. With the help of this code: `onKeyDown("KEY_CODE", () => { player.move(-SPEED, 0) })` it just changes the `SPEED` index of the player with that all. Last and finally is the third part of the script                 
 
 ### **Design Process:** 
 
@@ -258,6 +258,8 @@ For this design process, I have been thinking a lot about the fact that I feel m
 [Previous](entry01.md) | [Next Entry](entry03.md)
 
 [Back Home](../README.md)
+
+
 
 
 
