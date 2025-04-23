@@ -215,7 +215,7 @@ Since this is the code I have been working on for my platformer game for the las
 			})
 ```
 
-Onto the whole process; The first part of the code that is read is having a  
+Onto the whole process; The first part of the code that is read is having a set score that's has a `0` by `const score = add([ text("Score:"), pos(24, 24), { value: 0 }, ])` This empty `value` set to `0` can be change by the coins that are around the map as the player runs.    
 
 ### **Design Process:** 
 
