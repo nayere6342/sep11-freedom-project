@@ -1,29 +1,304 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Jump!</title>
+</head>
+<body>
+	<script src="main.js"></script>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <style>
-            /* CSS */
-            
-        </style>
-        
-        <title>Title</title>
-    </head>
-    <body>
-        <!-- HTML -->
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- <script src="script.js"></script> -->
-        <script>
-            // JS
-            
-            
-        </script>
-    </body>
+	<script type="module">
+	import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+
+	// --------------------------------------
+
+	// Basic Set-up:
+
+	// --------------------------------------
+
+			kaboom({
+				background: [50,50,50]
+			})
+
+			loadSprite("player", "/sprites/8bit-player.png")
+			loadSprite("coin", "/sprites/8bit-coin.png")
+			loadSprite("base", "/sprites/8bit-baseline.png")
+			loadSprite("plate", "/sprites/8bit-plateform.png")
+			loadSprite("fire", "/sprites/8bit-fire.png")
+			loadSprite("turtle", "/sprites/8bit-turtle.png")
+
+
+			const SPEED = 520
+			setGravity(1600)
+
+
+			const score = add([ // set score for .player
+			text("Score:"),
+			pos(24, 24),
+			{ value: 0 },
+		])
+
+
+			const player = add([
+				sprite("player"),
+				scale(.1),
+				pos(100, 100),
+				color(),
+				rotate(0),
+				area(),
+				body(),
+			])
+
+
+
+			spawnFloorPoint(); // this is where .player will start
+				add([
+				sprite("plate"),
+				scale(.2),
+				pos(40,220),
+				area(),
+				body({ isStatic: true }),
+				"plate",
+			])
+
+				const main = add ([
+					text("Jump!", {
+						size: 58, // 48 pixels tall
+       					width: 320, // it'll wrap to next line when width exceeds this value
+        				font: "sans-serif",
+					}),
+					pos(700, 200),
+				])
+
+				const main2 = add ([
+					text("Get off the plate to start:", {
+						size: 28, // 48 pixels tall
+       					width: 320, // it'll wrap to next line when width exceeds this value
+        				font: "sans-serif",
+					}),
+					pos(600, 300),
+				])
+
+			 // for (let i = 0; i < 30; i++) {
+
+				// const x = rand(+30, width())
+			 	// const y = rand(+50, height())
+			 	// const z = rand(+40, height())
+			 	// const i = rand(+30, height())
+
+			 	// add([
+			 		// sprite("coin"),
+			 		// scale(.2),
+			 		// pos(x,y,z,i),
+			 		// area(),
+			 		// "coin",
+			 	// ])
+
+			 // }
+
+
+
+	// --------------------------------------
+
+	// Controls:
+
+	// --------------------------------------
+
+			onKeyDown("left", () => { 	// all the .player movement [arrowKeys]
+				player.move(-SPEED, 0)
+			})
+
+			onKeyDown("right", () => {
+				player.move(SPEED, 0)
+			})
+
+			onKeyPress("up", () => {
+			if (player.isGrounded()) {
+				player.jump()
+			}
+		})
+
+			onKeyDown("a", () => { 	// all .player movement [W,A,D - keyBinds]
+				player.move(-SPEED, 0)
+			})
+
+			onKeyDown("d", () => {
+				player.move(SPEED, 0)
+			})
+
+			onKeyDown("space", () => {
+			if (player.isGrounded()) {
+				player.jump()
+			}
+		})
+
+
+		onKeyPressRepeat("a", () => { // if .player press [keyValue] it displays text;
+			destroy(main, main2)
+		})
+
+	// --------------------------------------
+
+	// Play Area:
+
+	// --------------------------------------
+
+			function spawnFloorPoint() {
+				add([
+					sprite("base"), // get the .base to come in frame
+					scale(.3),
+					area(),
+					body({ isStatic: true }),
+					pos(width(), height() - 10),
+					anchor("botleft"),
+					move(LEFT, 540),
+					"base",
+				]);
+				wait(rand(.4, .4), () => {
+					spawnFloorPoint();
+				});
+			}
+
+
+			function spawnKillPoint() {
+				add([
+					sprite("fire"), // `getsprite` to in .base
+					scale(.1),
+					area(),
+					body({ isStatic: true }),
+					pos(width(), height() - 200),
+					anchor("botleft"),
+					move(LEFT, 540),
+					"fire",
+				]);
+				wait(rand(1.7, 2), () => {
+					spawnKillPoint();
+				});
+			}
+
+				spawnKillPoint();
+				add([
+				sprite("fire"),
+				scale(.4),
+				pos(500,-2000),
+				area(),
+				body({ isStatic: true }),
+				"fire",
+			])
+
+
+
+			function spawnScore() {
+				add([
+					sprite("coin"), // .coin that is not connect to .base
+					scale(.1),
+					area(),
+					body({ isStatic: true }),
+					pos(width(), height() - 220),
+					anchor("botleft"),
+					move(LEFT, 440),
+					"coin",
+				]);
+				wait(rand(3, 3), () => {
+					spawnScore();
+				});
+			}
+
+				spawnScore();
+				add([
+				sprite("coin"),
+				scale(.4),
+				pos(500,-2000),
+				area(),
+				body({ isStatic: true }),
+				"coin",
+			])
+
+
+
+			function spawnRunner() {
+				add([
+					sprite("turtle"), // `movingsprite` that is not in .base
+					scale(.1),
+					area(),
+					body({ isStatic: false }), // since .base + all other things moving the sprite that is `notStatic` so that it looks like it's moving
+					pos(width(), height() - 220),
+					anchor("botleft"),
+					move(LEFT, 440),
+					"turtle",
+				]);
+				wait(rand(3, 5), () => {
+					spawnRunner();
+				});
+			}
+
+				spawnRunner();
+				add([
+				sprite("turtle"),
+				scale(.4),
+				pos(-900,-2000),
+				area(),
+				body({ isStatic: false }),
+				"turtle",
+			])
+
+
+			function spawnFlyingRunner() {
+				add([
+					sprite("base"), // `movingsprite` that -is- in .base
+					scale(.1),
+					area(),
+					body({ isStatic: true }),
+					pos(width(), height() - 450),
+					anchor("botleft"),
+					move(LEFT, 540),
+					"base",
+				]);
+				wait(rand(5, 6), () => {
+					spawnFlyingRunner();
+				});
+			}
+
+				spawnFlyingRunner();
+				add([
+				sprite("base"),
+				scale(.8),
+				pos(500,-2000),
+				area(),
+				body({ isStatic: true }),
+				"base",
+			])
+
+	// --------------------------------------
+
+	// Collide Listening:
+
+	// --------------------------------------
+
+			player.onCollide("fire", (enemy) => { // when .player hits the fire it destroy .player
+				destroy(player)
+				const die = add([ // since kaboom dosen't like no .player model it folds back onto itself, this would brick the game instead it displays text:
+				pos(700,200),
+					text("[ GAME OVER ]", {
+						size: 38, // 48 pixels tall
+       					width: 320, // it'll wrap to next line when width exceeds this value
+        				font: "sans-serif",
+					}),
+				])
+			})
+
+			player.onCollide("coin", (enemy) => { // if .player hits .coin +1 to score then display [newValue]
+				score.value += 1
+				score.text = "Score:" + score.value
+			})
+
+
+			player.onCollideUpdate("coin", (coin) => { // if .player hits .coin tell .coin that it was hit then distroy itself if so...
+				destroy(coin)
+			})
+
+
+		</script>
+
+</body>
 </html>
