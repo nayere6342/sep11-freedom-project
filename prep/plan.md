@@ -9,15 +9,15 @@
 
 #### MVP
 
-- [ x ] Getting the player to mave (deadline: 2/14)
-  - [ x ] Have a death screen for the player (deadline: 2/15)
-- [ x ] creating the map for the player (deadline: 2/13)
-  - [ x ] Making an end screen for the player (deadline: 2/13)
+- [x] Getting the player to mave (deadline: 2/14)
+  - [x] Have a death screen for the player (deadline: 2/15)
+- [x] creating the map for the player (deadline: 2/13)
+  - [x] Making an end screen for the player (deadline: 2/13)
 
 #### Beyond MVP
 
-- [ ] Creating more and more levels for the player to go though 
-  - [ ] By doing this, there can be an storyline or somthing like that  
+- [x] Creating more and more levels for the player to go though 
+  - [x] By doing this, there can be an storyline or somthing like that  
 
 
 <!-- EXAMPLE
