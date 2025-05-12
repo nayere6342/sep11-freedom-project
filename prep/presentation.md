@@ -1,10 +1,10 @@
 # Presentation Plan
 
 ## Hook
-* 
+* Talk about retro games and tie that back into the project
 
 ## Product
-* 
+* FP project
 
 ## Process
 * 

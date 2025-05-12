@@ -61,6 +61,46 @@
 				"plate",
 			])
 
+<<<<<<< HEAD
+=======
+				const main = add ([
+					text("Jump!", {
+						size: 58, // 48 pixels tall
+       					width: 320, // it'll wrap to next line when width exceeds this value
+        				font: "sans-serif",
+					}),
+					pos(700, 200),
+				])
+
+				const main2 = add ([
+					text("Get off the plate to start:", {
+						size: 28, // 48 pixels tall
+       					width: 320, // it'll wrap to next line when width exceeds this value
+        				font: "sans-serif",
+					}),
+					pos(600, 300),
+				])
+
+			 // for (let i = 0; i < 30; i++) {
+
+				// const x = rand(+30, width())
+			 	// const y = rand(+50, height())
+			 	// const z = rand(+40, height())
+			 	// const i = rand(+30, height())
+
+			 	// add([
+			 		// sprite("coin"),
+			 		// scale(.2),
+			 		// pos(x,y,z,i),
+			 		// area(),
+			 		// "coin",
+			 	// ])
+
+			 // }
+
+
+
+>>>>>>> 6130be7cf3b45371a67746e8a547e99bba596ada
 	// --------------------------------------
 
 	// Controls:
@@ -89,19 +129,29 @@
 				player.move(SPEED, 0)
 			})
 
+<<<<<<< HEAD
 			onKeyPress("w", () => {
+=======
+			onKeyDown("space", () => {
+>>>>>>> 6130be7cf3b45371a67746e8a547e99bba596ada
 			if (player.isGrounded()) {
 				player.jump()
 			}
 		})
 
 
+<<<<<<< HEAD
 		//onKeyPressRepeat("x", () => { // if .player press [keyValue] it displays text;
 				//const main = add ([
 					//text("Jump!")
 					//pos(700,200)
 				//])
 		//})
+=======
+		onKeyPressRepeat("a", () => { // if .player press [keyValue] it displays text;
+			destroy(main, main2)
+		})
+>>>>>>> 6130be7cf3b45371a67746e8a547e99bba596ada
 
 	// --------------------------------------
 
@@ -244,8 +294,17 @@
 			player.onCollide("fire", (enemy) => { // when .player hits the fire it destroy .player
 				destroy(player)
 				const die = add([ // since kaboom dosen't like no .player model it folds back onto itself, this would brick the game instead it displays text:
+<<<<<<< HEAD
 					text("[ GAME OVER ]"),
 					pos(700,200),
+=======
+				pos(700,200),
+					text("[ GAME OVER ]", {
+						size: 38, // 48 pixels tall
+       					width: 320, // it'll wrap to next line when width exceeds this value
+        				font: "sans-serif",
+					}),
+>>>>>>> 6130be7cf3b45371a67746e8a547e99bba596ada
 				])
 			})
 
