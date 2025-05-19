@@ -3,7 +3,7 @@ Nayer Ebraheim 5/19/25
 
 ## **Intro:**
 
-In this entry, I will go over the presentation from my freedom project which I showed in class. By this fact I'm sure that there are a ton of things I talk about. But I'll just talk about this presentation and the expo. The presentation was great. I hit all the points I needed to do while presenting. The presentation itself was really simple. I got the code out and I explained how the code itself worked. I basically nerded out over the whole thing. Like I always do when it comes to those projects you kind-of have to do so.                      
+In this entry, I will go over the presentation from my freedom project which I showed in class. By this fact I'm sure that there are a ton of things I talk about. But I'll just talk about this presentation and the expo. The presentation was great. I hit all the points I needed to do while presenting. The presentation itself was really simple. I got the code out and I explained how the code itself worked. I basically nerded out over the whole thing. Like I always do when it comes to those projects you kind-of have to do so. [expo part]                      
 
 ### **Design Process:** 
 
