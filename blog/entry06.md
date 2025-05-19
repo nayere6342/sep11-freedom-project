@@ -11,7 +11,15 @@ My process for these types of presentations is that; I first create the wire-fra
 
 ### **Challenges & Takeaways:**
 
-One challenge I got from this showcase was 
+- One challenge I got from this showcase was that I had a hard time locking in with the presentation itself. 
+
+- Another challenge I got from this was that, a lot of the presentation was me just troubleshooting on what I should say and how I should present the freedom project. 
+
+- One takeaway I got from this was that procrastination was a really big issue I had gotten while working on this presentation.
+
+- One more takeaway to add I got from this presentation was that I would have done differently and would be making a better schedule for myself. Even though I got the presentation done on time, I would have gotten done faster if I had made a schedule  
+ 
+
 
 ---
 
@@ -36,6 +44,8 @@ One challenge I got from this showcase was
 [Previous](entry05.md) | [Next](entry07.md)
 
 [Home](../README.md)
+
+
 
 
 
