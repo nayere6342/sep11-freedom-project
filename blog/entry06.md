@@ -3,29 +3,15 @@ Nayer Ebraheim 5/19/25
 
 ## **Intro:**
 
-In this entry, I will go over the presentation from my freedom project which I showed in class. By this fact I'm sure that there are a ton of things I talk about. But I'll just talk about this presentation and the expo. The presentation was great. I hit all the points I needed to do while presenting. The presentation itself was really simple. I got the code out and I explained how the code itself worked. I basically nerded out over the whole thing. Like I always do when it comes to those projects you kind-of have to do so. [expo part]                      
+In this entry, I will go over the presentation from my freedom project which I showed in class. By this fact I'm sure that there are a ton of things I talk about. But I'll just talk about this presentation and the expo. The presentation was great. I hit all the points I needed to do while presenting. The presentation itself was really simple. I got the code out and I explained how the code itself worked. I basically nerded out over the whole thing. Like I always do when it comes to those projects you kind-of have to do so. [expo part]:                      
 
 ### **Design Process:** 
 
+My process for these type of presentations is that; I first create the wire-frames for the presentation I would like to show. Then I would do the rest. Like the art of the presentation and the small things like the takeaways and the facts about the freedom project. Even though this maybe small on paper, it can really bring the whole presentation to life with these small things in the presentation. Also I would like to add that, a lot of the presentation was me just troubleshotting on what I should say everything and how should present the freedom project with the help of the presentation.    
 
 ### **Challenges & Takeaways:**
 
-*
-
-* 
-
-* 
-   
-* 
-
-* 
- 
-* 
-
-
-
-
-
+One challenge I got from this showcase was 
 
 ---
 
