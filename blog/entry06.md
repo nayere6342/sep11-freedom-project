@@ -7,7 +7,7 @@ In this entry, I will go over the presentation from my freedom project which I s
 
 ### **Design Process:** 
 
-My process for these type of presentations is that; I first create the wire-frames for the presentation I would like to show. Then I would do the rest. Like the art of the presentation and the small things like the takeaways and the facts about the freedom project. Even though this maybe small on paper, it can really bring the whole presentation to life with these small things in the presentation. Also I would like to add that, a lot of the presentation was me just troubleshotting on what I should say everything and how should present the freedom project with the help of the presentation.    
+My process for these types of presentations is that; I first create the wire-frames for the presentation I would like to show. Then I would do the rest. Like the art of the presentation and the small things like the takeaways and the facts about the freedom project. Even though this may be small on paper, it can really bring the whole presentation to life with these small things in the presentation. Also I would like to add that, a lot of the presentation was me just troubleshooting on what I should say and how I should present the freedom project with the help of the presentation.    
 
 ### **Challenges & Takeaways:**
 
@@ -36,5 +36,6 @@ One challenge I got from this showcase was
 [Previous](entry05.md) | [Next](entry07.md)
 
 [Home](../README.md)
+
 
 
